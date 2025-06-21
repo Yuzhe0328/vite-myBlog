@@ -2,14 +2,16 @@
     <div class="top-bar">
         <projectView />
         <technicalDocs />
+        <!-- 文章、关于，使用 t() -->
         <span @click="toArticle">{{ t('top.article') }}</span>
         <span @click="toAbout">{{ t('top.about') }}</span>
+        <!-- 语言切换 -->
         <el-dropdown popper-class="custom-dropdown">
             <span class="language">{{ t('top.language') }}</span>
             <template #dropdown>
                 <el-dropdown-menu>
-                    <el-dropdown-item @click="toggleLangZh">中文</el-dropdown-item>
-                    <el-dropdown-item @click="togglelangEn">English</el-dropdown-item>
+                    <el-dropdown-item @click="changeLang('zh')">中文</el-dropdown-item>
+                    <el-dropdown-item @click="changeLang('en')">English</el-dropdown-item>
                 </el-dropdown-menu>
             </template>
         </el-dropdown>
@@ -23,25 +25,28 @@ import projectView from './projectView.vue'
 import technicalDocs from './technicalDocs.vue'
 
 const router = useRouter()
-const { t, locale } = useI18n()
+// 明确指定全局 scope
+const { t, locale } = useI18n({ useScope: 'global' })
 
 const toArticle = () => router.push('/article')
 const toAbout = () => router.push('/about')
 
-// 支持语言切换
-const toggleLangZh = () => {
-    locale.value = 'zh'
-    localStorage.setItem('lang', locale.value) // 可选：记住语言设置
-}
-const togglelangEn = () => {
-    locale.value = 'en'
-    localStorage.setItem('lang', locale.value)
+// 统一语言切换逻辑
+function changeLang(lang: 'zh' | 'en') {
+    if (locale.value === lang) return
+    locale.value = lang
+    localStorage.setItem('lang', lang)
+    // 如果使用 switchLocale 封装，也可调用它：
+    // switchLocale(lang)
+    // 如果需要切换 Element Plus 语言：
+    // updateElementPlusLocale(lang)
 }
 </script>
 
 
 <style lang="scss">
 @use '@/styles/variables.module.scss' as *;
+
 .top-bar {
     display: flex;
     gap: 10px;

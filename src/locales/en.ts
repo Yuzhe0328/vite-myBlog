@@ -1,11 +1,11 @@
-// zh.ts
+// en.ts
 export default {
   top: {
-    project: 'project',
-    docs: 'docs',
-    article: 'article',
-    about: 'about',
-    language: 'language',
-    search: 'please search content'
-  }
+    project: "project",
+    docs: "docs",
+    article: "article",
+    about: "about",
+    language: "language",
+    search: "please search content"
+  },
 }

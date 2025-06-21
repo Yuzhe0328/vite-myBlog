@@ -55,7 +55,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import { ProjectItem } from '@/types/topNav'
-const { t } = useI18n()
+const { t } = useI18n({ useScope: 'global' })
 
 const projectList = ref<ProjectItem[]>([
   {
