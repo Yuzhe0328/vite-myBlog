@@ -1,8 +1,10 @@
 <template>
-  <router-view></router-view>
+    <div style="color: white">
+        guanyu
+    </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 
 </script>
 

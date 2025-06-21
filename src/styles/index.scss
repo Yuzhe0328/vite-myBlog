@@ -1,0 +1,16 @@
+@use './variables.module.scss' as *;
+
+/* 临时强制禁用所有焦点样式 */
+* {
+  caret-color: transparent !important;
+  &:focus {
+    outline: none !important;
+  }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: $index-bg-color;
+}
+
