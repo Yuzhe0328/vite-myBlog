@@ -6,7 +6,7 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers' // 如使用 Element Plus
 
 // https://vite.dev/config/
-export default defineConfig(({ command }) => {
+export default defineConfig(({  }) => {
   return {
     // 部署生产环境和开发环境下的url。
     // 默认情况下，vite会假设你的应用是被部署在一个域名的根路径上
@@ -37,10 +37,10 @@ export default defineConfig(({ command }) => {
     // 打包配置
     build: {
       // https://vite.dev/config/build-option.html
-      sourcemap: command === 'build' ? false : 'inline',
+      // sourcemap: command === 'build' ? false : 'inline',
       outDir: 'dist',
-      assetsDir: 'assets',
-      chunkSizeWarningLimit: 2000,
+      // assetsDir: 'assets',
+      // chunkSizeWarningLimit: 2000,
       rollupOptions: {
         output: {
           manualChunks: () => 'everything.js', // 👈 把所有依赖合并成一个

@@ -5,8 +5,9 @@
     </div>
 </template>
 <script setup lang="ts">
-import logo from '@/assets/logo1.png'
+// import logo from '@/assets/logo1.png'
 import { useRouter } from 'vue-router'
+const logo = new URL('@/assets/logo1.png', import.meta.url).href
 const router = useRouter()
 const title = import.meta.env.VITE_APP_TITLE
 const HomeIasd = () => {

@@ -1,24 +1,28 @@
-// router/routes.ts
-export const constantRouter = [
+import { RouteRecordRaw } from 'vue-router'
+export const constantRouter: RouteRecordRaw[] = [
   {
     path: '/',
-    component: () => import('@/layout/index.vue'), // Layout 是壳子，内部包含顶部、main区
+    component: () => import('@/layout/index.vue'),
     children: [
       {
-        path: '', // 默认子路由，等价于 '/'
+        path: '', 
         name: 'home',
-        component: () => import('@/views/index.vue'),
+        component: () => import('@/views/index.vue')
       },
       {
         path: 'article',
         name: 'article',
-        component: () => import('@/views/article/index.vue'),
+        component: () => import('@/views/article/index.vue')
       },
       {
         path: 'about',
         name: 'about',
-        component: () => import('@/views/about/index.vue'),
+        component: () => import('@/views/about/index.vue')
       },
-    ],
+      {
+        path: '/:pathMatch(.*)*',
+        component: () => import('@/views/404/index.vue') // ✅
+      }
+    ]
   }
 ]
