@@ -1,4 +1,4 @@
-import { u as useRouter, _ as _export_sfc } from "./index-cSOxCi9Z.js";
+import { u as useRouter, _ as _export_sfc } from "./index-BrFAQAzQ.js";
 import { d as defineComponent, k as createElementBlock, m as openBlock, y as createBaseVNode, u as unref, z as toDisplayString, r as ref, c as computed, j as createVNode, A as ElIcon, B as withCtx, C as Transition, t as nextTick, D as search_default, G as createCommentVNode, H as withModifiers, I as withDirectives, i as isRef, J as vModelText, F as Fragment, K as renderList, L as normalizeClass, M as vShow, N as createBlock, O as ElDropdown, P as ElCard, Q as ElTag, R as createTextVNode, S as document_default, U as withKeys, V as arrow_right_default, W as ElDropdownMenu, X as ElDropdownItem, o as onMounted, b as onUnmounted, l as resolveComponent } from "./vendor-CgOVNiqH.js";
 import { u as useI18n } from "./i18n-BGUYYN2N.js";
 import "./locales-CU13jLom.js";
@@ -6,7 +6,7 @@ const _hoisted_1$8 = ["src"];
 const _sfc_main$8 = /* @__PURE__ */ defineComponent({
   __name: "index",
   setup(__props) {
-    const logo2 = new URL("/assets/logo1-CBnGwMoX.png", import.meta.url).href;
+    const logo2 = new URL("" + new URL("logo1-CBnGwMoX.png", import.meta.url).href, import.meta.url).href;
     const router = useRouter();
     const title = "myBlog";
     const HomeIasd = () => {
@@ -594,20 +594,29 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
                 createVNode(_component_el_dropdown_item, {
                   onClick: _cache[0] || (_cache[0] = ($event) => changeLang("zh"))
                 }, {
-                  default: withCtx(() => _cache[2] || (_cache[2] = [
+                  default: withCtx(() => _cache[3] || (_cache[3] = [
                     createTextVNode("中文")
                   ])),
                   _: 1,
-                  __: [2]
+                  __: [3]
                 }),
                 createVNode(_component_el_dropdown_item, {
                   onClick: _cache[1] || (_cache[1] = ($event) => changeLang("en"))
                 }, {
-                  default: withCtx(() => _cache[3] || (_cache[3] = [
+                  default: withCtx(() => _cache[4] || (_cache[4] = [
                     createTextVNode("English")
                   ])),
                   _: 1,
-                  __: [3]
+                  __: [4]
+                }),
+                createVNode(_component_el_dropdown_item, {
+                  onClick: _cache[2] || (_cache[2] = ($event) => changeLang("kr"))
+                }, {
+                  default: withCtx(() => _cache[5] || (_cache[5] = [
+                    createTextVNode("한구어")
+                  ])),
+                  _: 1,
+                  __: [5]
                 })
               ]),
               _: 1
