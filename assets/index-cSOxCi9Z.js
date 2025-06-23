@@ -1,7 +1,6 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./index-BOVU4Gp4.js","./vendor-CgOVNiqH.js","./i18n-BGUYYN2N.js","./locales-CAjo02yc.js","./index-m0ECZrBH.css","./index-BAQ4dBQS.js","./index-C57FL13U.js","./index-ZoEXADBO.js","./index-CEr9emDs.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/index-Ds2l6F2N.js","assets/vendor-CgOVNiqH.js","assets/i18n-BGUYYN2N.js","assets/locales-CU13jLom.js","assets/index-m0ECZrBH.css","assets/index-aLJR3nem.js","assets/index-DR3WHy4W.js","assets/index-O9UZf6rV.js","assets/index-Cj8Xr6cI.js"])))=>i.map(i=>d[i]);
 import { k as createElementBlock, j as createVNode, l as resolveComponent, m as openBlock, s as shallowRef, d as defineComponent, u as unref, n as shallowReactive, p as reactive, a as inject, c as computed, h, q as provide, r as ref, w as watch, t as nextTick, v as createApp, E as ElementPlusIconVue, x as installer } from "./vendor-CgOVNiqH.js";
-import { s as setupI18n } from "./locales-CAjo02yc.js";
-import "./i18n-BGUYYN2N.js";
+import { s as setupI18n } from "./locales-CU13jLom.js";
 (function polyfill() {
   const relList = document.createElement("link").relList;
   if (relList && relList.supports && relList.supports("modulepreload")) {
@@ -1915,8 +1914,8 @@ function useRouter() {
   return inject(routerKey);
 }
 const scriptRel = "modulepreload";
-const assetsURL = function(dep, importerUrl) {
-  return new URL(dep, importerUrl).href;
+const assetsURL = function(dep) {
+  return "/" + dep;
 };
 const seen = {};
 const __vitePreload = function preload(baseModule, deps, importerUrl) {
@@ -1932,27 +1931,19 @@ const __vitePreload = function preload(baseModule, deps, importerUrl) {
         )
       );
     };
-    const links = document.getElementsByTagName("link");
+    document.getElementsByTagName("link");
     const cspNonceMeta = document.querySelector(
       "meta[property=csp-nonce]"
     );
     const cspNonce = (cspNonceMeta == null ? void 0 : cspNonceMeta.nonce) || (cspNonceMeta == null ? void 0 : cspNonceMeta.getAttribute("nonce"));
     promise = allSettled2(
       deps.map((dep) => {
-        dep = assetsURL(dep, importerUrl);
+        dep = assetsURL(dep);
         if (dep in seen) return;
         seen[dep] = true;
         const isCss = dep.endsWith(".css");
         const cssSelector = isCss ? '[rel="stylesheet"]' : "";
-        const isBaseRelative = !!importerUrl;
-        if (isBaseRelative) {
-          for (let i = links.length - 1; i >= 0; i--) {
-            const link2 = links[i];
-            if (link2.href === dep && (!isCss || link2.rel === "stylesheet")) {
-              return;
-            }
-          }
-        } else if (document.querySelector(`link[href="${dep}"]${cssSelector}`)) {
+        if (document.querySelector(`link[href="${dep}"]${cssSelector}`)) {
           return;
         }
         const link = document.createElement("link");
@@ -1999,26 +1990,26 @@ const __vitePreload = function preload(baseModule, deps, importerUrl) {
 const constantRouter = [
   {
     path: "/",
-    component: () => __vitePreload(() => import("./index-BOVU4Gp4.js"), true ? __vite__mapDeps([0,1,2,3,4]) : void 0, import.meta.url),
+    component: () => __vitePreload(() => import("./index-Ds2l6F2N.js"), true ? __vite__mapDeps([0,1,2,3,4]) : void 0),
     children: [
       {
         path: "",
         name: "home",
-        component: () => __vitePreload(() => import("./index-BAQ4dBQS.js"), true ? __vite__mapDeps([5,1,3,2]) : void 0, import.meta.url)
+        component: () => __vitePreload(() => import("./index-aLJR3nem.js"), true ? __vite__mapDeps([5,1,3,2]) : void 0)
       },
       {
         path: "article",
         name: "article",
-        component: () => __vitePreload(() => import("./index-C57FL13U.js"), true ? __vite__mapDeps([6,1,3,2]) : void 0, import.meta.url)
+        component: () => __vitePreload(() => import("./index-DR3WHy4W.js"), true ? __vite__mapDeps([6,1,3,2]) : void 0)
       },
       {
         path: "about",
         name: "about",
-        component: () => __vitePreload(() => import("./index-ZoEXADBO.js"), true ? __vite__mapDeps([7,1,3,2]) : void 0, import.meta.url)
+        component: () => __vitePreload(() => import("./index-O9UZf6rV.js"), true ? __vite__mapDeps([7,1,3,2]) : void 0)
       },
       {
         path: "/:pathMatch(.*)*",
-        component: () => __vitePreload(() => import("./index-CEr9emDs.js"), true ? __vite__mapDeps([8,1,3,2]) : void 0, import.meta.url)
+        component: () => __vitePreload(() => import("./index-Cj8Xr6cI.js"), true ? __vite__mapDeps([8,1,3,2]) : void 0)
         // ✅
       }
     ]

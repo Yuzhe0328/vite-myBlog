@@ -1,6 +1,6 @@
-import { _ as _export_sfc } from "./index-B9DHfs1m.js";
+import { _ as _export_sfc } from "./index-cSOxCi9Z.js";
 import "./vendor-CgOVNiqH.js";
-import "./locales-CAjo02yc.js";
+import "./locales-CU13jLom.js";
 import "./i18n-BGUYYN2N.js";
 const _sfc_main = {};
 function _sfc_render(_ctx, _cache) {
