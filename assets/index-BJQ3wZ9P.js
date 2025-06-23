@@ -1,4 +1,4 @@
-import { _ as _export_sfc } from "./index-CPRsvimA.js";
+import { _ as _export_sfc } from "./index-BrFAQAzQ.js";
 import { k as createElementBlock, m as openBlock } from "./vendor-CgOVNiqH.js";
 import "./locales-CU13jLom.js";
 import "./i18n-BGUYYN2N.js";
