@@ -1,12 +1,13 @@
-import { u as useRouter, _ as _export_sfc } from "./index-m_YzqaoQ.js";
-import { d as defineComponent, k as createElementBlock, m as openBlock, y as createBaseVNode, u as unref, z as toDisplayString, r as ref, c as computed, j as createVNode, A as ElIcon, B as withCtx, C as Transition, t as nextTick, D as search_default, G as createCommentVNode, H as withModifiers, I as withDirectives, i as isRef, J as vModelText, F as Fragment, K as renderList, L as normalizeClass, M as vShow, N as createBlock, O as ElDropdown, P as ElCard, Q as ElTag, R as createTextVNode, S as document_default, U as withKeys, V as arrow_right_default, W as ElDropdownMenu, X as ElDropdownItem, o as onMounted, b as onUnmounted, l as resolveComponent } from "./vendor-CgOVNiqH.js";
-import { u as useI18n } from "./i18n-BGUYYN2N.js";
-import "./locales-CU13jLom.js";
+import { u as useRouter, _ as _export_sfc } from "./index-L__Od_VG.js";
+import { d as defineComponent, k as createElementBlock, m as openBlock, y as createBaseVNode, u as unref, z as toDisplayString, r as ref, c as computed, j as createVNode, A as ElIcon, B as withCtx, C as Transition, t as nextTick, D as search_default, G as createCommentVNode, H as withModifiers, I as withDirectives, J as vModelText, i as isRef, K as vShow, F as Fragment, L as renderList, M as normalizeClass, N as createBlock, O as ElDropdown, P as ElCard, Q as ElTag, R as createTextVNode, S as document_default, U as withKeys, V as arrow_right_default, W as ElDropdownMenu, X as ElDropdownItem, o as onMounted, b as onUnmounted, l as resolveComponent } from "./vendor-bF0BNnCD.js";
+/* empty css                   */
+import { u as useI18n } from "./i18n-DSBQIJSl.js";
+import "./locales-BFy5bjh_.js";
 const _hoisted_1$8 = ["src"];
 const _sfc_main$8 = /* @__PURE__ */ defineComponent({
   __name: "index",
   setup(__props) {
-    const logo2 = new URL("/vite-myBlog/assets/logo1-CBnGwMoX.png", import.meta.url).href;
+    const logo2 = new URL("/vite-myBlog/assets/logo-DTDX0-Gp.png", import.meta.url).href;
     const router = useRouter();
     const title = "myBlog";
     const HomeIasd = () => {
@@ -23,9 +24,9 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const logo = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-f00e63d0"]]);
+const logo = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-384795f5"]]);
 const _hoisted_1$7 = { class: "header-search-overlay-wrapper" };
-const _hoisted_2$5 = { class: "search-container" };
+const _hoisted_2$4 = { class: "search-container" };
 const _hoisted_3$2 = { class: "suggestions-list" };
 const _hoisted_4$2 = ["onClick"];
 const _sfc_main$7 = /* @__PURE__ */ defineComponent({
@@ -99,7 +100,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
               class: "search-overlay",
               onClick: withModifiers(closeOverlay, ["self"])
             }, [
-              createBaseVNode("div", _hoisted_2$5, [
+              createBaseVNode("div", _hoisted_2$4, [
                 withDirectives(createBaseVNode("input", {
                   ref_key: "inputRef",
                   ref: inputRef,
@@ -131,7 +132,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const search = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-186e6dfe"]]);
+const search = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-137dade3"]]);
 const projectList = ref([
   {
     name: "project.customLib.name",
@@ -198,7 +199,7 @@ const projectList = ref([
   }
 ]);
 const _hoisted_1$6 = { class: "nav-item" };
-const _hoisted_2$4 = { class: "mega-menu" };
+const _hoisted_2$3 = { class: "mega-menu" };
 const _hoisted_3$1 = { class: "menu-left" };
 const _hoisted_4$1 = { class: "menu-title" };
 const _hoisted_5$1 = { class: "menu-list" };
@@ -238,7 +239,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
         "popper-class": "mega-dropdown"
       }, {
         dropdown: withCtx(() => [
-          createBaseVNode("div", _hoisted_2$4, [
+          createBaseVNode("div", _hoisted_2$3, [
             createBaseVNode("div", _hoisted_3$1, [
               createBaseVNode("div", _hoisted_4$1, toDisplayString(unref(t)("project.overviewTitle")), 1),
               createBaseVNode("ul", _hoisted_5$1, [
@@ -437,7 +438,7 @@ const docsList = ref([
   }
 ]);
 const _hoisted_1$5 = { class: "nav-item" };
-const _hoisted_2$3 = { class: "mega-menu" };
+const _hoisted_2$2 = { class: "mega-menu" };
 const _hoisted_3 = { class: "menu-lefts" };
 const _hoisted_4 = { class: "menu-title" };
 const _hoisted_5 = { class: "menu-list" };
@@ -481,7 +482,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
         "popper-class": "mega-dropdown"
       }, {
         dropdown: withCtx(() => [
-          createBaseVNode("div", _hoisted_2$3, [
+          createBaseVNode("div", _hoisted_2$2, [
             createBaseVNode("div", _hoisted_3, [
               createBaseVNode("div", _hoisted_4, [
                 createVNode(_component_el_icon, { class: "menu-title-icon" }, {
@@ -565,7 +566,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
   }
 });
 const _hoisted_1$4 = { class: "top-bar" };
-const _hoisted_2$2 = { class: "language" };
+const _hoisted_2$1 = { class: "language" };
 const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   __name: "index",
   setup(__props) {
@@ -623,7 +624,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
             })
           ]),
           default: withCtx(() => [
-            createBaseVNode("span", _hoisted_2$2, toDisplayString(unref(t)("top.language")), 1)
+            createBaseVNode("span", _hoisted_2$1, toDisplayString(unref(t)("top.language")), 1)
           ]),
           _: 1
         })
@@ -698,8 +699,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   }
 });
 const gitee = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-aaaad78d"]]);
-const _hoisted_1$1 = { class: "top-container" };
-const _hoisted_2$1 = { class: "right-nav" };
+const _hoisted_1$1 = { class: "right-nav" };
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "index",
   setup(__props) {
@@ -714,6 +714,17 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       showGitee.value = width > 500;
       showLogo.value = width > 200;
     }
+    const isFixed = ref(false);
+    const handleScroll = () => {
+      const scrollThreadshould = 100;
+      isFixed.value = window.scrollY > scrollThreadshould;
+    };
+    onMounted(() => {
+      window.addEventListener("scroll", handleScroll);
+    });
+    onUnmounted(() => {
+      window.removeEventListener("scroll", handleScroll);
+    });
     onMounted(() => {
       window.addEventListener("resize", checkSecreenWidth);
     });
@@ -721,19 +732,21 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       window.removeEventListener("resize", checkSecreenWidth);
     });
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$1, [
+      return openBlock(), createElementBlock("nav", {
+        class: normalizeClass(["top-container", { "fixed-nav": unref(isFixed) }])
+      }, [
         unref(showLogo) ? (openBlock(), createBlock(logo, { key: 0 })) : createCommentVNode("", true),
-        createBaseVNode("div", _hoisted_2$1, [
+        createBaseVNode("div", _hoisted_1$1, [
           unref(rightWidth) ? (openBlock(), createBlock(_sfc_main$4, { key: 0 })) : createCommentVNode("", true),
           createVNode(search, { class: "search-box" }),
           unref(showGithub) ? (openBlock(), createBlock(github, { key: 1 })) : createCommentVNode("", true),
           unref(showGitee) ? (openBlock(), createBlock(gitee, { key: 2 })) : createCommentVNode("", true)
         ])
-      ]);
+      ], 2);
     };
   }
 });
-const TopBar = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-0d24fa0c"]]);
+const TopBar = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-ace38a28"]]);
 const _hoisted_1 = { class: "layout-container" };
 const _hoisted_2 = { class: "main-container" };
 const _sfc_main = /* @__PURE__ */ defineComponent({
@@ -742,7 +755,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     return (_ctx, _cache) => {
       const _component_router_view = resolveComponent("router-view");
       return openBlock(), createElementBlock("div", _hoisted_1, [
-        createVNode(TopBar),
+        createVNode(TopBar, { class: "TopNav" }),
         createBaseVNode("main", _hoisted_2, [
           createVNode(_component_router_view)
         ])

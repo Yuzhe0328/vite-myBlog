@@ -1,4 +1,4 @@
-import { c as createI18n } from "./i18n-BGUYYN2N.js";
+import { c as createI18n } from "./i18n-DSBQIJSl.js";
 const zh = {
   top: {
     project: "项目概览",
@@ -220,6 +220,13 @@ const zh = {
         scriptExec: "脚本执行"
       }
     }
+  },
+  main: {
+    titleA: "代码即艺术 前端即创造",
+    titleB: "让所见不止于眼前 代码塑造无限可能",
+    titleC: "DevOps到云计算 持续集成/持续发布 一键式快速构建应用网站 赋能下一代Web应用发展",
+    docs: "查阅文档",
+    more: "了解更多"
   }
 };
 const en = {
@@ -443,6 +450,13 @@ const en = {
         scriptExec: "Script Execution"
       }
     }
+  },
+  main: {
+    titleA: "Code is Art Frontend is Creation",
+    titleB: "Beyond Meets the Eye Code Shapes Infinite Possibilities",
+    titleC: "From DevOps to Cloud Computing, CI/CD Pipeline, One-Click Rapid Application Development, Empowering Next-Gen Web Applications",
+    docs: "docs",
+    more: "more"
   }
 };
 const kr = {
@@ -665,6 +679,13 @@ const kr = {
         scriptExec: "스크립트 실행"
       }
     }
+  },
+  main: {
+    titleA: "코드는 예술 프론트엔드는 창조",
+    titleB: "눈에 보이는 것 이상의 무한한 가능성을 만드는 코드",
+    titleC: "DevOps부터 클라우드 컴퓨팅, CI/CD 파이프라인, 원클릭 빠른 애플리케이션 개발, 차세대 웹 애플리케이션의 혁신",
+    docs: "문서",
+    more: "더보기"
   }
 };
 const messages = { zh, en, kr };

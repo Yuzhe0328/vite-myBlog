@@ -1,0 +1,293 @@
+.line[data-v-a0f7c78a] {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  background: linear-gradient(to top, #999, #fff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 760px) {
+.line[data-v-a0f7c78a] {
+    line-height: 1.5 !important;
+    padding: 0 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+}
+.buttons[data-v-a0f7c78a] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+  transform: translateY(100%);
+  animation: slideDown-a0f7c78a 1s ease-out forwards;
+}
+@media (max-width: 760px) {
+.buttons[data-v-a0f7c78a] {
+    margin-top: 30px;
+}
+}
+.buttons .lines[data-v-a0f7c78a] {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  white-space: normal;
+  font-size: 1rem;
+  color: #6c6666;
+}
+@media (max-width: 760px) {
+.buttons .lines[data-v-a0f7c78a] {
+    line-height: 1.5 !important;
+    padding: 0 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+}
+.buttons .small[data-v-a0f7c78a] {
+  font-size: 1rem;
+  color: #6c6666;
+  transform: translateY(-100%);
+  animation: slideDown-a0f7c78a 3s ease-out forwards;
+}
+@keyframes slideDown-a0f7c78a {
+from {
+    opacity: 0;
+    transform: translateY(-100%) scale(0.1);
+}
+to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+}
+@keyframes slideDown-a0f7c78a {
+from {
+    opacity: 0;
+    transform: translateY(-100%) scale(0.1);
+}
+to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+}
+.buttons .btn[data-v-a0f7c78a] {
+  background: rgba(104, 109, 224, 0.3);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  box-shadow: 0 4px 20px rgba(104, 109, 224, 0.3);
+}
+.buttons .btns[data-v-a0f7c78a] {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+.svg-path[data-v-69dc75f5] {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+.label {
+&[data-v-69dc75f5] {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  display: none;
+  will-change: opacity;
+  }
+@media (min-width: 1180px) {
+    &[data-v-69dc75f5] {
+    display: block;
+    }
+}
+&.label--visible[data-v-69dc75f5] {
+    opacity: 1;
+}
+}
+.circle-dot[data-v-69dc75f5] {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  --dot-color: white;
+@media (min-width: 768px) {
+    filter: drop-shadow(0 0 3px var(--dot-color));
+}
+}
+
+.input-lines {
+&[data-v-9832e4b4] {
+  position: absolute;
+  top: 63%;
+  transform: translate3d(0, 0, 0);
+}
+&[data-v-9832e4b4] .circle-dot {
+    display: none;
+@media (min-width: 768px) {
+      display: block;
+}
+}
+}
+
+.output-line[data-v-e06aa744] {
+  position: absolute;
+  top: 20px;
+  left: 785px;
+  transform: translate3d(0, 0, 0);
+}
+/* 顶部 main-container 样式保持原有 */
+.main-container[data-v-4bfc6192] {
+  position: relative;
+  min-height: 50vh;
+  /* 如果 main-container 内也需要居中，可以在此处添加 */
+  /* 例如：max-width: 1440px; margin: 0 auto; */
+}
+@media (max-width: 768px) {
+.main-container[data-v-4bfc6192] {
+    min-height: calc(var(--vh, 1vh) * 100);
+}
+}
+
+/* masterMain: 设置宽度和居中 */
+.masterMain[data-v-4bfc6192] {
+  position: relative;
+  /* 关键：设置一个“设计参考宽度”或最大宽度，再用 margin: 0 auto 居中 */
+  width: 100%;
+  max-width: 1540px;
+  /* ← 根据你的设计稿宽度调整。如果设计稿宽度不是 1440px，请改为相应值 */
+  margin: 0 auto;
+  /* 如果你的内容在宽度小于某值时需要做响应式改动，可加媒体查询 */
+  /* 内部绝对定位元素：现在基于容器中心定位 */
+}
+@media (max-width: 768px) {
+.masterMain[data-v-4bfc6192] {
+    /* 例如小屏幕时，将绝对布局改为相对流式等，可在下面内部元素中另行设置 */
+}
+}
+.masterMain .output-line[data-v-4bfc6192] {
+  position: absolute;
+  top: 320px;
+  /* 保持原来距离顶部的值 */
+  /* 原来 left: 755px; 现在改为基于容器中心偏移 */
+  left: 68%;
+  /* 计算偏移：假设原来设计宽度中心是 720px，输出元素原来 left=755px，因此偏移量 = 755 - 720 = 35px */
+  transform: translateX(calc(-50% + 35px)) translate3d(0, 0, 0);
+  /* 
+    如果你的设计中心点不是 720px，请按照：偏移 =  原 left 值 - (设计宽度/2)
+    例如：设计宽度 1200px → 中心 600px；若原 left=650px，则偏移=50px；此处 transform: translateX(calc(-50% + 50px))
+  */
+}
+.masterMain .chip[data-v-4bfc6192] {
+  position: absolute;
+  /* 原来 left: 700px; top: 260px */
+  top: 260px;
+  left: 50%;
+  /* 偏移：700 - 720 = -20px */
+  transform: translateX(calc(-50% - 0px)) scale(0.85);
+  width: 134px;
+  height: 134px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.6s ease-out;
+  /* 注意：我们将 transform 合并到这里，移除了原 transform: translate3d + scale(0.85) */
+}
+.masterMain .chip .chip__background[data-v-4bfc6192] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  z-index: 1001;
+  opacity: 0.4;
+  transition: background 1.5s ease-out, opacity 1s ease;
+  background: radial-gradient(circle at right center, rgba(86, 50, 119, 0.6) 0%, rgba(74, 55, 140, 0.5) 50%, rgba(65, 114, 194, 0.3) 100%);
+}
+.masterMain .chip .chip__background.layered[data-v-4bfc6192] {
+  background: radial-gradient(circle at 70% 30%, rgba(255, 105, 180, 0.3) 0%, transparent 40%), radial-gradient(circle at 30% 70%, rgba(100, 200, 255, 0.4) 0%, transparent 50%), radial-gradient(circle at center, rgba(50, 100, 255, 0.6) 0%, rgba(20, 30, 48, 0.8) 100%);
+  opacity: 0.8;
+}
+.masterMain .chip .chip__background.layered .chip__logo[data-v-4bfc6192] {
+  opacity: 1;
+}
+@media (min-width: 768px) {
+.masterMain .chip .chip__background[data-v-4bfc6192] {
+    opacity: 0.1;
+}
+}
+.masterMain .chip .chip__background .chip__logo[data-v-4bfc6192] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  width: 150px;
+  opacity: 0.2;
+  filter: grayscale(100%);
+  transition: all 0.2s ease;
+  z-index: 3;
+}
+
+/* hero__background 保持原样 */
+.hero__background[data-v-4bfc6192] {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  right: 0;
+  bottom: 0%;
+  width: 100%;
+  height: 1800px;
+  z-index: 10;
+  opacity: 0.4;
+  transition: opacity 3s ease;
+  background: radial-gradient(circle at right center, rgb(86, 50, 119) 0%, rgb(74, 55, 140) 30%, rgb(65, 114, 194) 55%, rgba(50, 81, 115, 0.5) 100%);
+  mask-image: radial-gradient(ellipse 300% 30% at center center, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+@media (min-width: 768px) {
+.hero__background[data-v-4bfc6192] {
+    opacity: 0.1;
+}
+}
+@media (min-width: 1024px) {
+.hero__background[data-v-4bfc6192] {
+    background: radial-gradient(circle at right center, rgba(75, 41, 105, 0.5) 0%, rgb(86, 50, 119) 25%, rgb(74, 55, 140) 40%, rgb(64, 102, 168) 65%, rgba(50, 81, 115, 0.5) 100%);
+    mask-image: radial-gradient(ellipse 150% 30% at center center, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+}
+@media (min-width: 1500px) {
+.hero__background[data-v-4bfc6192] {
+    background: radial-gradient(circle at right center, rgba(75, 41, 105, 0.5) 0%, rgb(86, 50, 119) 25%, rgb(74, 55, 140) 45%, rgb(64, 102, 168) 65%, rgba(50, 81, 115, 0.5) 100%);
+    mask-image: radial-gradient(ellipse 80% 40% at center center, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+}
+@media (min-width: 1800px) {
+.hero__background[data-v-4bfc6192] {
+    background: radial-gradient(circle at right center, rgba(75, 41, 105, 0.5) 0%, rgb(86, 50, 119) 25%, rgb(74, 55, 140) 50%, rgb(64, 102, 168) 70%, rgba(50, 81, 115, 0.5) 100%);
+    mask-image: radial-gradient(ellipse 80% 40% at center center, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+}
+.hero__background.active[data-v-4bfc6192] {
+  opacity: 0.4;
+}
+@media (min-width: 768px) {
+.hero__background.active[data-v-4bfc6192] {
+    opacity: 0.7;
+}
+}
+
+/* keyframes 保持原样 */
+@keyframes rotateGradient-4bfc6192 {
+0% {
+    border-image-source: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.15) 65%, rgba(0, 0, 0, 0) 90%);
+}
+25% {
+    border-image-source: linear-gradient(to bottom top, rgba(0, 0, 0, 0) 60%, rgba(255, 255, 255, 0.15) 65%, rgba(0, 0, 0, 0) 90%);
+}
+50% {
+    border-image-source: linear-gradient(to top left, rgba(0, 0, 0, 0) 60%, rgba(255, 255, 255, 0.15) 65%, rgba(0, 0, 0, 0) 90%);
+}
+75% {
+    border-image-source: linear-gradient(to left bottom, rgba(0, 0, 0, 0) 60%, rgba(255, 255, 255, 0.15) 65%, rgba(0, 0, 0, 0) 90%);
+}
+100% {
+    border-image-source: liear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.15) 65%, rgba(0, 0, 0, 0) 90%);
+}
+}

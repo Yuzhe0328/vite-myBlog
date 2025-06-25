@@ -330,3 +330,22 @@ html,
 body {
   background-color: #101010;
 }
+
+/* 滚动条样式 (全局生效) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(16, 16, 16, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(67, 67, 67, 0.6);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(92.5, 92.5, 92.5, 0.8);
+}
