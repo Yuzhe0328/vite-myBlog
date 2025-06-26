@@ -1,0 +1,365 @@
+.master-top[data-v-7d52ee09] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* 预留高度确保下方内容位置固定 */
+  min-height: 500px;
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 768px) {
+.master-top[data-v-7d52ee09] {
+    min-height: 150px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+}
+.lines-wrapper[data-v-7d52ee09] {
+  height: 6.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.line[data-v-7d52ee09] {
+  font-size: clamp(2.3rem, 2vw, 3rem);
+  line-height: 1.2;
+  font-weight: 700;
+  background: linear-gradient(to top, #999, #fff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap; /* 禁止换行 */
+  margin: 0.25rem 0;
+}
+.buttons[data-v-7d52ee09] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  gap: 0.75rem;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideDownFadeIn-7d52ee09 0.6s ease-out forwards;
+}
+@keyframes slideDownFadeIn-7d52ee09 {
+from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.9);
+}
+to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+}
+.description[data-v-7d52ee09] {
+  width: 100%;
+  font-size: 1rem;
+  color: #6c6666;
+  text-align: center;
+}
+.btn[data-v-7d52ee09] {
+  background: rgba(104, 109, 224, 0.3);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+.btn-secondary[data-v-7d52ee09] {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+@media (max-width: 768px) {
+.lines-wrapper[data-v-7d52ee09] {
+    height: 2.2em;
+}
+.line[data-v-7d52ee09] {
+    font-size: clamp(1.25rem, 2vw, 2rem);
+}
+.buttons[data-v-7d52ee09] {
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+.description[data-v-7d52ee09] {
+    font-size: 0.9rem;
+}
+}
+.svg-path[data-v-69dc75f5] {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+.label {
+&[data-v-69dc75f5] {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  display: none;
+  will-change: opacity;
+  }
+@media (min-width: 1180px) {
+    &[data-v-69dc75f5] {
+    display: block;
+    }
+}
+&.label--visible[data-v-69dc75f5] {
+    opacity: 1;
+}
+}
+.circle-dot[data-v-69dc75f5] {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  --dot-color: white;
+@media (min-width: 768px) {
+    filter: drop-shadow(0 0 3px var(--dot-color));
+}
+}
+
+.input-lines {
+&[data-v-9832e4b4] {
+  position: absolute;
+  top: 63%;
+  transform: translate3d(0, 0, 0);
+}
+&[data-v-9832e4b4] .circle-dot {
+    display: none;
+@media (min-width: 768px) {
+      display: block;
+}
+}
+}
+
+.output-line[data-v-e06aa744] {
+  position: absolute;
+  top: 20px;
+  left: 785px;
+  transform: translate3d(0, 0, 0);
+}
+.master-main-top[data-v-90db490f] {
+  width: 100%;
+  /* 如果父 index.vue 已经用 .container 限制宽度并居中，这里就不需重复 max-width */
+  padding: 2rem 0;
+  /* 保证在滚动时，svg-section 保持可见 */
+  animation: slideDown-90db490f 1s ease-out forwards;
+  /* 小屏优化 */
+}
+@media (max-width: 768px) {
+.master-main-top[data-v-90db490f] {
+    padding: 1.5rem 0;
+}
+}
+@keyframes slideDown-90db490f {
+from {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+.svg-section[data-v-90db490f] {
+  position: relative;
+  width: 100%;
+  /* 给一个最小高度，确保内部元素能有足够空间展示并能控制 top 定位 */
+  min-height: 400px;
+  margin: 0 auto;
+  /* 可视需要用 flex 布局将内部组件居中或堆叠，但若用绝对定位，也应保证 min-height 足够 */
+}
+
+/* SvgInputs 居中或铺满容器 */
+.svg-inputs-wrapper[data-v-90db490f] {
+  position: absolute;
+  top: -85%;
+  left: -3%;
+  transform: translateX(-50%);
+  /* 如果 SvgInputs 内部尺寸可自适应，此处无需 hardcode 宽高 */
+  /* 也可给 padding-top 让它距离顶部有间距 */
+}
+
+/* SvgOutputs 叠加在 SvgInputs 之下，或偏移一定距离 */
+.svg-outputs-wrapper[data-v-90db490f] {
+  position: absolute;
+  top: -11%;
+  /* 根据设计调整：表示在容器顶部往下 300px 显示输出动画 */
+  left: -5%;
+  transform: translateX(-50%);
+  /* 小屏时可减小 top 值 */
+}
+
+/* chip 区域叠加到容器中心或某个位置 */
+.chip[data-v-90db490f] {
+  position: absolute;
+  /* 以 svg-section 容器中心为基准 */
+  top: -4%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.85);
+  width: 134px;
+  height: 134px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.6s ease-out;
+}
+.chip .chip__background[data-v-90db490f] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  opacity: 0.4;
+  transition: background 1.5s ease-out, opacity 1s ease;
+  background: radial-gradient(circle at right center, rgba(86, 50, 119, 0.6) 0%, rgba(74, 55, 140, 0.5) 50%, rgba(65, 114, 194, 0.3) 100%);
+}
+.chip .chip__background.layered[data-v-90db490f] {
+  background: radial-gradient(circle at 70% 30%, rgba(255, 105, 180, 0.3) 0%, transparent 40%), radial-gradient(circle at 30% 70%, rgba(100, 200, 255, 0.4) 0%, transparent 50%), radial-gradient(circle at center, rgba(50, 100, 255, 0.6) 0%, rgba(20, 30, 48, 0.8) 100%);
+  opacity: 0.8;
+}
+.chip .chip__background.layered .chip__logo[data-v-90db490f] {
+  opacity: 1;
+}
+@media (min-width: 768px) {
+.chip .chip__background[data-v-90db490f] {
+    opacity: 0.1;
+}
+}
+.chip .chip__background .chip__logo[data-v-90db490f] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  width: 150px;
+  opacity: 0.2;
+  filter: grayscale(100%);
+  transition: all 0.2s ease;
+  z-index: 3;
+}
+
+/* 小屏响应式，调整 min-height、top 值、chip 大小等 */
+@media (max-width: 768px) {
+.svg-section[data-v-90db490f] {
+    min-height: 300px;
+}
+.svg-outputs-wrapper[data-v-90db490f] {
+    top: 200px;
+}
+.chip[data-v-90db490f] {
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%) scale(0.7);
+}
+.chip__logo[data-v-90db490f] {
+    width: 100px;
+}
+}/* hero__background 保持原样 */
+.hero__background[data-v-f51d8c89] {
+  position: absolute;
+  inset: -70% -20px -70% -20px;
+  z-index: 10;
+  opacity: 0.4;
+  transition: opacity 2s ease;
+  background: radial-gradient(circle at right center, rgb(86, 50, 119) 0%, rgb(74, 55, 140) 30%, rgb(65, 114, 194) 55%, rgba(50, 81, 115, 0.5) 100%);
+  mask-image: radial-gradient(ellipse 300% 30% at center center, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+@media (min-width: 768px) {
+.hero__background[data-v-f51d8c89] {
+    opacity: 0.1;
+}
+}
+@media (min-width: 1024px) {
+.hero__background[data-v-f51d8c89] {
+    background: radial-gradient(circle at right center, rgba(75, 41, 105, 0.5) 0%, rgb(86, 50, 119) 25%, rgb(74, 55, 140) 40%, rgb(64, 102, 168) 65%, rgba(50, 81, 115, 0.5) 100%);
+    mask-image: radial-gradient(ellipse 150% 30% at center center, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+}
+@media (min-width: 1500px) {
+.hero__background[data-v-f51d8c89] {
+    background: radial-gradient(circle at right center, rgba(75, 41, 105, 0.5) 0%, rgb(86, 50, 119) 25%, rgb(74, 55, 140) 45%, rgb(64, 102, 168) 65%, rgba(50, 81, 115, 0.5) 100%);
+    mask-image: radial-gradient(ellipse 80% 40% at center center, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+}
+@media (min-width: 1800px) {
+.hero__background[data-v-f51d8c89] {
+    background: radial-gradient(circle at right center, rgba(75, 41, 105, 0.5) 0%, rgb(86, 50, 119) 25%, rgb(74, 55, 140) 50%, rgb(64, 102, 168) 70%, rgba(50, 81, 115, 0.5) 100%);
+    mask-image: radial-gradient(ellipse 80% 40% at center center, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+}
+.hero__background.active[data-v-f51d8c89] {
+  opacity: 0.4;
+}
+@media (min-width: 768px) {
+.hero__background.active[data-v-f51d8c89] {
+    opacity: 0.7;
+}
+}.master-main-main[data-v-0fbb2ed7] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 保证容器随内容自适应高度，不要设置固定 height */
+  padding: 2rem 0;
+}
+.master-main-main .rebot[data-v-0fbb2ed7] {
+  display: block;
+  width: 150px; /* 根据实际需求调整或使用 max-width:100% */
+  margin-bottom: 1.5rem;
+}
+.master-main-main .content-box[data-v-0fbb2ed7] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  border: 1px solid transparent;
+  /* 若需要背景、padding 等，可在此添加 */
+  /* margin-bottom: 1.5rem; 如需与下方内容保持间距 */
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+.master-main-main[data-v-0fbb2ed7] {
+    padding: 1.5rem 0;
+}
+.master-main-main .rebot[data-v-0fbb2ed7] {
+    width: 150px;
+    margin-bottom: 1rem;
+}
+.master-main-main .content-box[data-v-0fbb2ed7] {
+    width: 300px;
+    height: 300px;
+}
+}.container[data-v-efd30f78] {
+  max-width: 1470px;
+}
+.section-master-top[data-v-efd30f78] {
+  padding: 2rem 0;
+}
+.section-master-main-top[data-v-efd30f78] {
+  padding: 2rem 0;
+}
+
+/* 占位区域高度应与 masterMainTop 最小高度相同，以保证页面布局在动画期间位置稳定 */
+.placeholder-master-main-top[data-v-efd30f78] {
+  min-height: 300px;
+  /* 根据 masterMainTop 实际内容高度预留 */
+}
+.section-hero-background[data-v-efd30f78] {
+  position: absolute;
+  max-width: 1480px;
+  width: 100%;
+  height: 100vh;
+  overflow: visible;
+  top: 55%;
+}
+.section-master-main-main[data-v-efd30f78] {
+  position: relative;
+  padding: 2rem 0;
+}
+@media (max-width: 768px) {
+.section-master-top[data-v-efd30f78],
+  .section-master-main-top[data-v-efd30f78],
+  .section-master-main-main[data-v-efd30f78] {
+    padding: 1.5rem 0;
+}
+.placeholder-master-main-top[data-v-efd30f78] {
+    min-height: 200px;
+}
+}

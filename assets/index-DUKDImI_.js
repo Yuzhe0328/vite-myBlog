@@ -1,21 +1,22 @@
 /* empty css                   */
 import { u as useI18n } from "./i18n-DSBQIJSl.js";
 import { d as defineComponent, c as computed, r as ref, w as watch, o as onMounted, b as onUnmounted, k as createElementBlock, y as createBaseVNode, G as createCommentVNode, z as toDisplayString, j as createVNode, Y as ElButton, B as withCtx, m as openBlock, R as createTextVNode, u as unref, Z as normalizeStyle, M as normalizeClass, _ as createStaticVNode, F as Fragment, L as renderList, $ as mergeProps } from "./vendor-bF0BNnCD.js";
-import { _ as _export_sfc } from "./index-L__Od_VG.js";
+import { _ as _export_sfc } from "./index-CymdJVI9.js";
 import "./locales-BFy5bjh_.js";
-const _hoisted_1$4 = {
-  class: "line",
-  style: { "margin-top": "11rem" }
-};
-const _hoisted_2$3 = { class: "line" };
-const _hoisted_3$2 = {
+const _hoisted_1$6 = { class: "master-top" };
+const _hoisted_2$5 = { class: "lines-wrapper" };
+const _hoisted_3$3 = { class: "line" };
+const _hoisted_4$3 = { class: "line" };
+const _hoisted_5$3 = {
   key: 0,
   class: "buttons"
 };
-const _hoisted_4$2 = { class: "lines" };
-const _sfc_main$4 = /* @__PURE__ */ defineComponent({
+const _hoisted_6$3 = { class: "description" };
+const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   __name: "masterTop",
-  setup(__props) {
+  emits: ["typing-complete"],
+  setup(__props, { emit: __emit }) {
+    const emit = __emit;
     const { t, locale } = useI18n({ useScope: "global" });
     const currentContentA = computed(() => t("main.titleA"));
     const currentContentB = computed(() => t("main.titleB"));
@@ -38,6 +39,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
     };
     const startTypingAnimation = () => {
       resetAllAnimations();
+      const intervalMs = 100;
       timer = setInterval(() => {
         if (isTypingA.value) {
           if (indexA.value < currentContentA.value.length) {
@@ -54,27 +56,24 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
             clearInterval(timer);
             setTimeout(() => {
               showButtons.value = true;
+              emit("typing-complete");
             }, 100);
           }
         }
-      }, 100);
+      }, intervalMs);
     };
-    watch(locale, () => {
-      startTypingAnimation();
-    });
-    onMounted(() => {
-      startTypingAnimation();
-    });
-    onUnmounted(() => {
-      clearInterval(timer);
-    });
+    watch(locale, startTypingAnimation);
+    onMounted(startTypingAnimation);
+    onUnmounted(() => clearInterval(timer));
     return (_ctx, _cache) => {
       const _component_el_button = ElButton;
-      return openBlock(), createElementBlock("div", null, [
-        createBaseVNode("div", _hoisted_1$4, toDisplayString(contentA.value), 1),
-        createBaseVNode("div", _hoisted_2$3, toDisplayString(contentB.value), 1),
-        showButtons.value ? (openBlock(), createElementBlock("div", _hoisted_3$2, [
-          createBaseVNode("div", _hoisted_4$2, toDisplayString(currentContentC.value), 1),
+      return openBlock(), createElementBlock("div", _hoisted_1$6, [
+        createBaseVNode("div", _hoisted_2$5, [
+          createBaseVNode("div", _hoisted_3$3, toDisplayString(contentA.value), 1),
+          createBaseVNode("div", _hoisted_4$3, toDisplayString(contentB.value), 1)
+        ]),
+        showButtons.value ? (openBlock(), createElementBlock("div", _hoisted_5$3, [
+          createBaseVNode("div", _hoisted_6$3, toDisplayString(currentContentC.value), 1),
           createVNode(_component_el_button, {
             class: "btn",
             size: "large"
@@ -85,7 +84,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
             _: 1
           }),
           createVNode(_component_el_button, {
-            class: "btns",
+            class: "btn-secondary",
             size: "large"
           }, {
             default: withCtx(() => [
@@ -98,7 +97,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const masterTop = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-a0f7c78a"]]);
+const masterTop = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-7d52ee09"]]);
 function _assertThisInitialized(self) {
   if (self === void 0) {
     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -4118,16 +4117,16 @@ _forEachName("x,y,z,top,right,bottom,left,width,height,fontSize,padding,margin,p
 gsap.registerPlugin(CSSPlugin);
 var gsapWithCSS = gsap.registerPlugin(CSSPlugin) || gsap;
 gsapWithCSS.core.Tween;
-const _hoisted_1$3 = ["d", "stroke", "mask"];
-const _hoisted_2$2 = ["cx", "cy", "r", "fill"];
-const _hoisted_3$1 = ["x", "y"];
-const _hoisted_4$1 = ["id"];
-const _hoisted_5$1 = ["d"];
-const _hoisted_6 = ["cx", "cy", "r"];
-const _hoisted_7 = ["id", "cx", "cy", "r"];
-const _hoisted_8 = ["stop-color"];
-const _hoisted_9 = ["stop-color"];
-const _sfc_main$3 = /* @__PURE__ */ defineComponent({
+const _hoisted_1$5 = ["d", "stroke", "mask"];
+const _hoisted_2$4 = ["cx", "cy", "r", "fill"];
+const _hoisted_3$2 = ["x", "y"];
+const _hoisted_4$2 = ["id"];
+const _hoisted_5$2 = ["d"];
+const _hoisted_6$2 = ["cx", "cy", "r"];
+const _hoisted_7$2 = ["id", "cx", "cy", "r"];
+const _hoisted_8$1 = ["stop-color"];
+const _hoisted_9$1 = ["stop-color"];
+const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "SvgNodes",
   props: {
     path: {},
@@ -4184,7 +4183,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
           "stroke-width": "1.2",
           mask: `url(#glow_mask_${unref(pathId)})`,
           class: "svg-path"
-        }, null, 8, _hoisted_1$3),
+        }, null, 8, _hoisted_1$5),
         props.dotColor ? (openBlock(), createElementBlock("circle", {
           cx: unref(dotPosition).x,
           cy: unref(dotPosition).y,
@@ -4193,7 +4192,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
           class: "circle-dot",
           style: normalizeStyle(`--dot-color: ${props.dotColor}`),
           key: "circle-dot"
-        }, null, 12, _hoisted_2$2)) : createCommentVNode("", true),
+        }, null, 12, _hoisted_2$4)) : createCommentVNode("", true),
         props.label ? (openBlock(), createElementBlock("text", {
           key: 1,
           x: unref(dotPosition).x,
@@ -4206,7 +4205,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
           "text-anchor": "middle",
           "alignment-baseline": "hanging",
           class: normalizeClass(["label", { "label--visible": props.labelVisible }])
-        }, toDisplayString(props.label), 11, _hoisted_3$1)) : createCommentVNode("", true),
+        }, toDisplayString(props.label), 11, _hoisted_3$2)) : createCommentVNode("", true),
         createBaseVNode("defs", null, [
           createBaseVNode("mask", {
             id: `glow_mask_${unref(pathId)}`
@@ -4214,14 +4213,14 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
             createBaseVNode("path", {
               d: props.path,
               fill: "black"
-            }, null, 8, _hoisted_5$1),
+            }, null, 8, _hoisted_5$2),
             createBaseVNode("circle", {
               cx: unref(dotPosition).x,
               cy: unref(dotPosition).y,
               r: unref(gradientWidth) * unref(gradientWidthScaleFactor),
               fill: "white"
-            }, null, 8, _hoisted_6)
-          ], 8, _hoisted_4$1),
+            }, null, 8, _hoisted_6$2)
+          ], 8, _hoisted_4$2),
           createBaseVNode("radialGradient", {
             id: `glow_gradient_${unref(pathId)}`,
             cx: unref(dotPosition).x,
@@ -4233,20 +4232,20 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
               offset: "0%",
               "stop-color": props.glowColor,
               "stop-opacity": 1
-            }, null, 8, _hoisted_8),
+            }, null, 8, _hoisted_8$1),
             createBaseVNode("stop", {
               offset: "100%",
               "stop-color": props.glowColor,
               "stop-opacity": "0"
-            }, null, 8, _hoisted_9)
-          ], 8, _hoisted_7)
+            }, null, 8, _hoisted_9$1)
+          ], 8, _hoisted_7$2)
         ])
       ]);
     };
   }
 });
-const SvgNode = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-69dc75f5"]]);
-const _hoisted_1$2 = {
+const SvgNode = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-69dc75f5"]]);
+const _hoisted_1$4 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "785",
   height: "644",
@@ -4254,8 +4253,8 @@ const _hoisted_1$2 = {
   fill: "none",
   class: "input-lines"
 };
-const _hoisted_2$1 = ["d"];
-const _sfc_main$2 = /* @__PURE__ */ defineComponent({
+const _hoisted_2$3 = ["d"];
+const _sfc_main$5 = /* @__PURE__ */ defineComponent({
   __name: "SvgInputs",
   props: {
     inputLines: {
@@ -4265,7 +4264,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("svg", _hoisted_1$2, [
+      return openBlock(), createElementBlock("svg", _hoisted_1$4, [
         (openBlock(true), createElementBlock(Fragment, null, renderList(__props.inputLines, (inputLine) => {
           return openBlock(), createElementBlock("g", {
             key: inputLine.value.path
@@ -4275,7 +4274,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
               stroke: "url(#base_gradient)",
               "stroke-width": "1.2",
               style: { "opacity": "0.8" }
-            }, null, 8, _hoisted_2$1),
+            }, null, 8, _hoisted_2$3),
             createVNode(SvgNode, mergeProps({ ref_for: true }, inputLine.value), null, 16)
           ]);
         }), 128)),
@@ -4284,9 +4283,9 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const SvgInputs = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-9832e4b4"]]);
-const _hoisted_1$1 = ["height"];
-const _sfc_main$1 = /* @__PURE__ */ defineComponent({
+const SvgInputs = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-9832e4b4"]]);
+const _hoisted_1$3 = ["height"];
+const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   __name: "SvgOutputs",
   props: {
     outputLines: {
@@ -4346,11 +4345,11 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
             })
           ])
         ], -1))
-      ], 8, _hoisted_1$1);
+      ], 8, _hoisted_1$3);
     };
   }
 });
-const SvgOutputs = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-e06aa744"]]);
+const SvgOutputs = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-e06aa744"]]);
 const logo = "/vite-myBlog/assets/logo-DTDX0-Gp.png";
 var ScrollTrigger$1 = { exports: {} };
 var ScrollTrigger = ScrollTrigger$1.exports;
@@ -6580,19 +6579,25 @@ function requireScrollTrigger() {
   return ScrollTrigger$1.exports;
 }
 var ScrollTriggerExports = /* @__PURE__ */ requireScrollTrigger();
-const _hoisted_1 = { class: "main-container" };
-const _hoisted_2 = { class: "masterMain" };
-const _hoisted_3 = { class: "chip" };
-const _hoisted_4 = { class: "chip__background" };
-const _hoisted_5 = ["src"];
-const _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: "index",
+const _hoisted_1$2 = {
+  key: 0,
+  class: "master-main-top"
+};
+const _hoisted_2$2 = { class: "svg-section" };
+const _hoisted_3$1 = { class: "svg-inputs-wrapper" };
+const _hoisted_4$1 = { class: "svg-outputs-wrapper" };
+const _hoisted_5$1 = { class: "chip" };
+const _hoisted_6$1 = { class: "chip__background" };
+const _hoisted_7$1 = ["src"];
+const _sfc_main$3 = /* @__PURE__ */ defineComponent({
+  __name: "masterMainTop",
   setup(__props) {
     gsapWithCSS.registerPlugin(ScrollTriggerExports.ScrollTrigger);
+    const showLine = ref(false);
     const isUwu = ref(true);
     const illuminateLogo = ref(false);
-    let scrollTriggerInstance;
-    let timeline2;
+    let scrollTriggerInstance = null;
+    let timeline2 = null;
     const inputPaths = [
       "M843.505 284.659L752.638 284.659C718.596 284.659 684.866 280.049 653.251 271.077L598.822 255.629L0.675021 1.00011",
       "M843.505 298.181L724.342 297.36C708.881 297.36 693.45 296.409 678.22 294.518L598.822 284.659C592.82 284.659 200.538 190.002 0.675028 164.892",
@@ -6614,25 +6619,64 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       })
     );
     const outputLines = [
-      ref({
-        position: 0,
-        visible: false,
-        labelVisible: false,
-        label: ".html"
-      }),
-      ref({
-        position: 0,
-        visible: false,
-        labelVisible: false,
-        label: ".css"
-      }),
-      ref({
-        position: 0,
-        visible: false,
-        labelVisible: false,
-        label: ".js"
-      })
+      ref({ position: 0, visible: false, labelVisible: false, label: ".html" }),
+      ref({ position: 0, visible: false, labelVisible: false, label: ".css" }),
+      ref({ position: 0, visible: false, labelVisible: false, label: ".js" })
     ];
+    onMounted(() => {
+      scrollTriggerInstance = ScrollTriggerExports.ScrollTrigger.create({
+        trigger: ".svg-section",
+        start: "top 80%",
+        once: true,
+        onEnter: () => {
+          timeline2 = gsapWithCSS.timeline({
+            onComplete: () => {
+              const bgEl = document.querySelector(".chip__background");
+              if (bgEl) bgEl.classList.add("layered");
+              timeline2 == null ? void 0 : timeline2.kill();
+            }
+          });
+          timeline2.to(illuminateLogo, { value: true, duration: 1.2 });
+        }
+      }), setTimeout(() => {
+        showLine.value = true;
+      }, 1e3);
+    });
+    onUnmounted(() => {
+      scrollTriggerInstance == null ? void 0 : scrollTriggerInstance.kill();
+      timeline2 == null ? void 0 : timeline2.kill();
+    });
+    return (_ctx, _cache) => {
+      return unref(showLine) ? (openBlock(), createElementBlock("div", _hoisted_1$2, [
+        createBaseVNode("div", _hoisted_2$2, [
+          createBaseVNode("div", _hoisted_3$1, [
+            createVNode(SvgInputs, { "input-lines": unref(inputLines) }, null, 8, ["input-lines"])
+          ]),
+          createBaseVNode("div", _hoisted_4$1, [
+            createVNode(SvgOutputs, { "output-lines": outputLines })
+          ]),
+          createBaseVNode("div", _hoisted_5$1, [
+            createBaseVNode("div", _hoisted_6$1, [
+              createBaseVNode("img", {
+                src: unref(logo),
+                class: normalizeClass(["chip__logo", { uwu: unref(isUwu) }]),
+                alt: "logo"
+              }, null, 10, _hoisted_7$1)
+            ])
+          ])
+        ])
+      ])) : createCommentVNode("", true);
+    };
+  }
+});
+const masterMainTop = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-90db490f"]]);
+const _sfc_main$2 = /* @__PURE__ */ defineComponent({
+  __name: "index",
+  setup(__props) {
+    gsapWithCSS.registerPlugin(ScrollTriggerExports.ScrollTrigger);
+    const illuminateLogo = ref(false);
+    let scrollTriggerInstance;
+    let timeline2;
     onMounted(() => {
       scrollTriggerInstance = ScrollTriggerExports.ScrollTrigger.create({
         start: "center 100%",
@@ -6645,7 +6689,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
               timeline2 == null ? void 0 : timeline2.kill();
             }
           });
-          timeline2.to(illuminateLogo, { value: true, duration: 1.2 });
+          timeline2.to(illuminateLogo, { value: true, duration: 2 });
         }
       });
     });
@@ -6654,33 +6698,79 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       timeline2 == null ? void 0 : timeline2.kill();
     });
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock(Fragment, null, [
-        createBaseVNode("div", _hoisted_1, [
-          createVNode(masterTop)
-        ]),
-        createBaseVNode("div", _hoisted_2, [
-          createVNode(SvgInputs, { "input-lines": unref(inputLines) }, null, 8, ["input-lines"]),
-          createVNode(SvgOutputs, {
-            "output-lines": outputLines,
-            class: "output-line"
-          }),
-          createBaseVNode("div", _hoisted_3, [
-            createBaseVNode("div", _hoisted_4, [
-              createBaseVNode("img", {
-                src: unref(logo),
-                class: normalizeClass(["chip__logo", { uwu: unref(isUwu) }])
-              }, null, 10, _hoisted_5)
-            ])
-          ])
-        ]),
-        createBaseVNode("div", {
-          class: normalizeClass(["hero__background", { active: unref(illuminateLogo) }])
-        }, null, 2)
-      ], 64);
+      return openBlock(), createElementBlock("div", {
+        class: normalizeClass(["hero__background", { active: unref(illuminateLogo) }])
+      }, null, 2);
     };
   }
 });
-const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-4bfc6192"]]);
+const heroBackground = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-f51d8c89"]]);
+const rebot = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='150'%20height='150'%20viewBox='0%200%20150%20150'%3e%3cdefs%3e%3c!--%20头部主体渐变：模拟光从左上照射%20--%3e%3cradialGradient%20id='robot-head-grad'%20cx='35%25'%20cy='35%25'%20r='65%25'%3e%3c!--%20近光侧偏亮紫%20--%3e%3cstop%20offset='0%25'%20stop-color='%237E61FF'/%3e%3c!--%20中间过渡%20--%3e%3cstop%20offset='60%25'%20stop-color='%23502AFF'/%3e%3c!--%20暗部%20--%3e%3cstop%20offset='100%25'%20stop-color='%23301366'/%3e%3c/radialGradient%3e%3c!--%20高光小圈%20--%3e%3cradialGradient%20id='robot-head-highlight'%20cx='40%25'%20cy='40%25'%20r='25%25'%3e%3cstop%20offset='0%25'%20stop-color='%23FFFFFF'%20stop-opacity='0.8'/%3e%3cstop%20offset='100%25'%20stop-color='%23FFFFFF'%20stop-opacity='0'/%3e%3c/radialGradient%3e%3c!--%20眼球渐变（内层）%20--%3e%3cradialGradient%20id='robot-eye-grad'%20cx='50%25'%20cy='50%25'%20r='50%25'%3e%3cstop%20offset='0%25'%20stop-color='%2300FFEE'/%3e%3cstop%20offset='100%25'%20stop-color='%23005577'/%3e%3c/radialGradient%3e%3c!--%20眼睛高光%20--%3e%3cradialGradient%20id='robot-eye-highlight'%20cx='30%25'%20cy='30%25'%20r='30%25'%3e%3cstop%20offset='0%25'%20stop-color='%23FFFFFF'%20stop-opacity='0.9'/%3e%3cstop%20offset='100%25'%20stop-color='%23FFFFFF'%20stop-opacity='0'/%3e%3c/radialGradient%3e%3c!--%20整体投影%20--%3e%3cfilter%20id='drop-shadow'%20x='-50%25'%20y='-50%25'%20width='200%25'%20height='200%25'%3e%3cfeDropShadow%20dx='0'%20dy='5'%20stdDeviation='5'%20flood-color='%23000'%20flood-opacity='0.4'/%3e%3c/filter%3e%3c/defs%3e%3c!--%20机器人头部球形轮廓%20--%3e%3ccircle%20cx='75'%20cy='75'%20r='50'%20fill='url(%23robot-head-grad)'%20filter='url(%23drop-shadow)'%20/%3e%3c!--%20头部高光（偏左上）%20--%3e%3ccircle%20cx='75'%20cy='75'%20r='50'%20fill='url(%23robot-head-highlight)'%20/%3e%3c!--%20面罩/屏幕（前面一个略凹进的面）--%3e%3cellipse%20cx='75'%20cy='85'%20rx='30'%20ry='18'%20fill='%23001022'%20/%3e%3c!--%20左眼：在面罩内部%20--%3e%3cg%20transform='translate(58,77)'%3e%3cellipse%20cx='0'%20cy='0'%20rx='8'%20ry='10'%20fill='url(%23robot-eye-grad)'%20/%3e%3c!--%20眼睛高光%20--%3e%3ccircle%20cx='-2'%20cy='-3'%20r='4'%20fill='url(%23robot-eye-highlight)'%20/%3e%3c/g%3e%3c!--%20右眼%20--%3e%3cg%20transform='translate(92,77)'%3e%3cellipse%20cx='0'%20cy='0'%20rx='8'%20ry='10'%20fill='url(%23robot-eye-grad)'%20/%3e%3ccircle%20cx='-2'%20cy='-3'%20r='4'%20fill='url(%23robot-eye-highlight)'%20/%3e%3c/g%3e%3c!--%20头顶天线%20--%3e%3cline%20x1='75'%20y1='25'%20x2='75'%20y2='10'%20stroke='%237E61FF'%20stroke-width='4'%20stroke-linecap='round'/%3e%3ccircle%20cx='75'%20cy='10'%20r='6'%20fill='%237E61FF'%20/%3e%3c/svg%3e";
+const _hoisted_1$1 = { class: "master-main-main" };
+const _hoisted_2$1 = ["src"];
+const _sfc_main$1 = /* @__PURE__ */ defineComponent({
+  __name: "masterMainmain",
+  setup(__props) {
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("div", _hoisted_1$1, [
+        createBaseVNode("img", {
+          src: unref(rebot),
+          class: "rebot",
+          alt: "robot"
+        }, null, 8, _hoisted_2$1),
+        _cache[0] || (_cache[0] = createBaseVNode("div", { class: "content-box" }, null, -1))
+      ]);
+    };
+  }
+});
+const masterMainmain = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-0fbb2ed7"]]);
+const _hoisted_1 = { class: "page-root" };
+const _hoisted_2 = { class: "section-master-top" };
+const _hoisted_3 = { class: "container" };
+const _hoisted_4 = { class: "section-master-main-top" };
+const _hoisted_5 = { class: "container" };
+const _hoisted_6 = { key: 0 };
+const _hoisted_7 = {
+  key: 1,
+  class: "placeholder-master-main-top"
+};
+const _hoisted_8 = { class: "section-hero-background" };
+const _hoisted_9 = { class: "section-master-main-main" };
+const _hoisted_10 = { class: "container" };
+const _sfc_main = /* @__PURE__ */ defineComponent({
+  __name: "index",
+  setup(__props) {
+    const showMasterMainTop = ref(false);
+    function onTypingComplete() {
+      showMasterMainTop.value = true;
+    }
+    return (_ctx, _cache) => {
+      return openBlock(), createElementBlock("main", _hoisted_1, [
+        createBaseVNode("section", _hoisted_2, [
+          createBaseVNode("div", _hoisted_3, [
+            createVNode(masterTop, { onTypingComplete })
+          ])
+        ]),
+        createBaseVNode("section", _hoisted_4, [
+          createBaseVNode("div", _hoisted_5, [
+            showMasterMainTop.value ? (openBlock(), createElementBlock("div", _hoisted_6, [
+              createVNode(masterMainTop)
+            ])) : (openBlock(), createElementBlock("div", _hoisted_7))
+          ])
+        ]),
+        createBaseVNode("section", _hoisted_8, [
+          createVNode(heroBackground)
+        ]),
+        createBaseVNode("section", _hoisted_9, [
+          createBaseVNode("div", _hoisted_10, [
+            createVNode(masterMainmain)
+          ])
+        ])
+      ]);
+    };
+  }
+});
+const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-efd30f78"]]);
 export {
   index as default
 };
