@@ -1,17 +1,17 @@
 /* empty css                   */
 import { u as useI18n } from "./i18n-DSBQIJSl.js";
-import { d as defineComponent, c as computed, r as ref, w as watch, o as onMounted, b as onUnmounted, k as createElementBlock, y as createBaseVNode, G as createCommentVNode, z as toDisplayString, j as createVNode, Y as ElButton, B as withCtx, m as openBlock, R as createTextVNode, u as unref, Z as normalizeStyle, M as normalizeClass, _ as createStaticVNode, F as Fragment, L as renderList, $ as mergeProps } from "./vendor-bF0BNnCD.js";
-import { _ as _export_sfc } from "./index-CymdJVI9.js";
+import { d as defineComponent, c as computed, r as ref, w as watch, o as onMounted, b as onUnmounted, k as createElementBlock, y as createBaseVNode, G as createCommentVNode, z as toDisplayString, u as unref, j as createVNode, Y as ElButton, B as withCtx, m as openBlock, R as createTextVNode, Z as normalizeStyle, M as normalizeClass, _ as createStaticVNode, F as Fragment, L as renderList, $ as mergeProps } from "./vendor-bF0BNnCD.js";
+import { _ as _export_sfc } from "./index-CdBYxx-D.js";
 import "./locales-BFy5bjh_.js";
 const _hoisted_1$6 = { class: "master-top" };
 const _hoisted_2$5 = { class: "lines-wrapper" };
-const _hoisted_3$3 = { class: "line" };
-const _hoisted_4$3 = { class: "line" };
-const _hoisted_5$3 = {
+const _hoisted_3$4 = { class: "line" };
+const _hoisted_4$4 = { class: "line" };
+const _hoisted_5$4 = {
   key: 0,
   class: "buttons"
 };
-const _hoisted_6$3 = { class: "description" };
+const _hoisted_6$4 = { class: "description" };
 const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   __name: "masterTop",
   emits: ["typing-complete"],
@@ -69,11 +69,11 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
       const _component_el_button = ElButton;
       return openBlock(), createElementBlock("div", _hoisted_1$6, [
         createBaseVNode("div", _hoisted_2$5, [
-          createBaseVNode("div", _hoisted_3$3, toDisplayString(contentA.value), 1),
-          createBaseVNode("div", _hoisted_4$3, toDisplayString(contentB.value), 1)
+          createBaseVNode("div", _hoisted_3$4, toDisplayString(unref(contentA)), 1),
+          createBaseVNode("div", _hoisted_4$4, toDisplayString(unref(contentB)), 1)
         ]),
-        showButtons.value ? (openBlock(), createElementBlock("div", _hoisted_5$3, [
-          createBaseVNode("div", _hoisted_6$3, toDisplayString(currentContentC.value), 1),
+        unref(showButtons) ? (openBlock(), createElementBlock("div", _hoisted_5$4, [
+          createBaseVNode("div", _hoisted_6$4, toDisplayString(unref(currentContentC)), 1),
           createVNode(_component_el_button, {
             class: "btn",
             size: "large"
@@ -97,7 +97,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const masterTop = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-7d52ee09"]]);
+const masterTop = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-9a06c6e2"]]);
 function _assertThisInitialized(self) {
   if (self === void 0) {
     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -4119,13 +4119,13 @@ var gsapWithCSS = gsap.registerPlugin(CSSPlugin) || gsap;
 gsapWithCSS.core.Tween;
 const _hoisted_1$5 = ["d", "stroke", "mask"];
 const _hoisted_2$4 = ["cx", "cy", "r", "fill"];
-const _hoisted_3$2 = ["x", "y"];
-const _hoisted_4$2 = ["id"];
-const _hoisted_5$2 = ["d"];
-const _hoisted_6$2 = ["cx", "cy", "r"];
-const _hoisted_7$2 = ["id", "cx", "cy", "r"];
-const _hoisted_8$1 = ["stop-color"];
-const _hoisted_9$1 = ["stop-color"];
+const _hoisted_3$3 = ["x", "y"];
+const _hoisted_4$3 = ["id"];
+const _hoisted_5$3 = ["d"];
+const _hoisted_6$3 = ["cx", "cy", "r"];
+const _hoisted_7$3 = ["id", "cx", "cy", "r"];
+const _hoisted_8$2 = ["stop-color"];
+const _hoisted_9$2 = ["stop-color"];
 const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "SvgNodes",
   props: {
@@ -4205,7 +4205,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
           "text-anchor": "middle",
           "alignment-baseline": "hanging",
           class: normalizeClass(["label", { "label--visible": props.labelVisible }])
-        }, toDisplayString(props.label), 11, _hoisted_3$2)) : createCommentVNode("", true),
+        }, toDisplayString(props.label), 11, _hoisted_3$3)) : createCommentVNode("", true),
         createBaseVNode("defs", null, [
           createBaseVNode("mask", {
             id: `glow_mask_${unref(pathId)}`
@@ -4213,14 +4213,14 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
             createBaseVNode("path", {
               d: props.path,
               fill: "black"
-            }, null, 8, _hoisted_5$2),
+            }, null, 8, _hoisted_5$3),
             createBaseVNode("circle", {
               cx: unref(dotPosition).x,
               cy: unref(dotPosition).y,
               r: unref(gradientWidth) * unref(gradientWidthScaleFactor),
               fill: "white"
-            }, null, 8, _hoisted_6$2)
-          ], 8, _hoisted_4$2),
+            }, null, 8, _hoisted_6$3)
+          ], 8, _hoisted_4$3),
           createBaseVNode("radialGradient", {
             id: `glow_gradient_${unref(pathId)}`,
             cx: unref(dotPosition).x,
@@ -4232,13 +4232,13 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
               offset: "0%",
               "stop-color": props.glowColor,
               "stop-opacity": 1
-            }, null, 8, _hoisted_8$1),
+            }, null, 8, _hoisted_8$2),
             createBaseVNode("stop", {
               offset: "100%",
               "stop-color": props.glowColor,
               "stop-opacity": "0"
-            }, null, 8, _hoisted_9$1)
-          ], 8, _hoisted_7$2)
+            }, null, 8, _hoisted_9$2)
+          ], 8, _hoisted_7$3)
         ])
       ]);
     };
@@ -6579,16 +6579,13 @@ function requireScrollTrigger() {
   return ScrollTrigger$1.exports;
 }
 var ScrollTriggerExports = /* @__PURE__ */ requireScrollTrigger();
-const _hoisted_1$2 = {
-  key: 0,
-  class: "master-main-top"
-};
+const _hoisted_1$2 = { class: "master-main-top" };
 const _hoisted_2$2 = { class: "svg-section" };
-const _hoisted_3$1 = { class: "svg-inputs-wrapper" };
-const _hoisted_4$1 = { class: "svg-outputs-wrapper" };
-const _hoisted_5$1 = { class: "chip" };
-const _hoisted_6$1 = { class: "chip__background" };
-const _hoisted_7$1 = ["src"];
+const _hoisted_3$2 = { class: "svg-inputs-wrapper" };
+const _hoisted_4$2 = { class: "svg-outputs-wrapper" };
+const _hoisted_5$2 = { class: "chip" };
+const _hoisted_6$2 = { class: "chip__background" };
+const _hoisted_7$2 = ["src"];
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "masterMainTop",
   setup(__props) {
@@ -6647,29 +6644,29 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
       timeline2 == null ? void 0 : timeline2.kill();
     });
     return (_ctx, _cache) => {
-      return unref(showLine) ? (openBlock(), createElementBlock("div", _hoisted_1$2, [
+      return openBlock(), createElementBlock("div", _hoisted_1$2, [
         createBaseVNode("div", _hoisted_2$2, [
-          createBaseVNode("div", _hoisted_3$1, [
+          createBaseVNode("div", _hoisted_3$2, [
             createVNode(SvgInputs, { "input-lines": unref(inputLines) }, null, 8, ["input-lines"])
           ]),
-          createBaseVNode("div", _hoisted_4$1, [
+          createBaseVNode("div", _hoisted_4$2, [
             createVNode(SvgOutputs, { "output-lines": outputLines })
           ]),
-          createBaseVNode("div", _hoisted_5$1, [
-            createBaseVNode("div", _hoisted_6$1, [
+          createBaseVNode("div", _hoisted_5$2, [
+            createBaseVNode("div", _hoisted_6$2, [
               createBaseVNode("img", {
                 src: unref(logo),
                 class: normalizeClass(["chip__logo", { uwu: unref(isUwu) }]),
                 alt: "logo"
-              }, null, 10, _hoisted_7$1)
+              }, null, 10, _hoisted_7$2)
             ])
           ])
         ])
-      ])) : createCommentVNode("", true);
+      ]);
     };
   }
 });
-const masterMainTop = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-90db490f"]]);
+const masterMainTop = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-c5a28bbc"]]);
 const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "index",
   setup(__props) {
@@ -6679,7 +6676,11 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     let timeline2;
     onMounted(() => {
       scrollTriggerInstance = ScrollTriggerExports.ScrollTrigger.create({
-        start: "center 100%",
+        trigger: ".hero__background",
+        start: "top 80%",
+        // 当元素顶部到达视口80%位置时触发
+        end: "bottom top",
+        // 当元素底部到达视口顶部时结束
         once: true,
         onEnter: () => {
           timeline2 = gsapWithCSS.timeline({
@@ -6689,7 +6690,10 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
               timeline2 == null ? void 0 : timeline2.kill();
             }
           });
-          timeline2.to(illuminateLogo, { value: true, duration: 2 });
+          timeline2.to(illuminateLogo, {
+            value: true,
+            duration: 2
+          });
         }
       });
     });
@@ -6704,26 +6708,118 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const heroBackground = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-f51d8c89"]]);
+const heroBackground = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-0cc85b2b"]]);
 const rebot = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='150'%20height='150'%20viewBox='0%200%20150%20150'%3e%3cdefs%3e%3c!--%20头部主体渐变：模拟光从左上照射%20--%3e%3cradialGradient%20id='robot-head-grad'%20cx='35%25'%20cy='35%25'%20r='65%25'%3e%3c!--%20近光侧偏亮紫%20--%3e%3cstop%20offset='0%25'%20stop-color='%237E61FF'/%3e%3c!--%20中间过渡%20--%3e%3cstop%20offset='60%25'%20stop-color='%23502AFF'/%3e%3c!--%20暗部%20--%3e%3cstop%20offset='100%25'%20stop-color='%23301366'/%3e%3c/radialGradient%3e%3c!--%20高光小圈%20--%3e%3cradialGradient%20id='robot-head-highlight'%20cx='40%25'%20cy='40%25'%20r='25%25'%3e%3cstop%20offset='0%25'%20stop-color='%23FFFFFF'%20stop-opacity='0.8'/%3e%3cstop%20offset='100%25'%20stop-color='%23FFFFFF'%20stop-opacity='0'/%3e%3c/radialGradient%3e%3c!--%20眼球渐变（内层）%20--%3e%3cradialGradient%20id='robot-eye-grad'%20cx='50%25'%20cy='50%25'%20r='50%25'%3e%3cstop%20offset='0%25'%20stop-color='%2300FFEE'/%3e%3cstop%20offset='100%25'%20stop-color='%23005577'/%3e%3c/radialGradient%3e%3c!--%20眼睛高光%20--%3e%3cradialGradient%20id='robot-eye-highlight'%20cx='30%25'%20cy='30%25'%20r='30%25'%3e%3cstop%20offset='0%25'%20stop-color='%23FFFFFF'%20stop-opacity='0.9'/%3e%3cstop%20offset='100%25'%20stop-color='%23FFFFFF'%20stop-opacity='0'/%3e%3c/radialGradient%3e%3c!--%20整体投影%20--%3e%3cfilter%20id='drop-shadow'%20x='-50%25'%20y='-50%25'%20width='200%25'%20height='200%25'%3e%3cfeDropShadow%20dx='0'%20dy='5'%20stdDeviation='5'%20flood-color='%23000'%20flood-opacity='0.4'/%3e%3c/filter%3e%3c/defs%3e%3c!--%20机器人头部球形轮廓%20--%3e%3ccircle%20cx='75'%20cy='75'%20r='50'%20fill='url(%23robot-head-grad)'%20filter='url(%23drop-shadow)'%20/%3e%3c!--%20头部高光（偏左上）%20--%3e%3ccircle%20cx='75'%20cy='75'%20r='50'%20fill='url(%23robot-head-highlight)'%20/%3e%3c!--%20面罩/屏幕（前面一个略凹进的面）--%3e%3cellipse%20cx='75'%20cy='85'%20rx='30'%20ry='18'%20fill='%23001022'%20/%3e%3c!--%20左眼：在面罩内部%20--%3e%3cg%20transform='translate(58,77)'%3e%3cellipse%20cx='0'%20cy='0'%20rx='8'%20ry='10'%20fill='url(%23robot-eye-grad)'%20/%3e%3c!--%20眼睛高光%20--%3e%3ccircle%20cx='-2'%20cy='-3'%20r='4'%20fill='url(%23robot-eye-highlight)'%20/%3e%3c/g%3e%3c!--%20右眼%20--%3e%3cg%20transform='translate(92,77)'%3e%3cellipse%20cx='0'%20cy='0'%20rx='8'%20ry='10'%20fill='url(%23robot-eye-grad)'%20/%3e%3ccircle%20cx='-2'%20cy='-3'%20r='4'%20fill='url(%23robot-eye-highlight)'%20/%3e%3c/g%3e%3c!--%20头顶天线%20--%3e%3cline%20x1='75'%20y1='25'%20x2='75'%20y2='10'%20stroke='%237E61FF'%20stroke-width='4'%20stroke-linecap='round'/%3e%3ccircle%20cx='75'%20cy='10'%20r='6'%20fill='%237E61FF'%20/%3e%3c/svg%3e";
 const _hoisted_1$1 = { class: "master-main-main" };
 const _hoisted_2$1 = ["src"];
+const _hoisted_3$1 = { class: "border-box" };
+const _hoisted_4$1 = { class: "content-box" };
+const _hoisted_5$1 = ["src"];
+const _hoisted_6$1 = { class: "borders-box" };
+const _hoisted_7$1 = { class: "contents-box" };
+const _hoisted_8$1 = { class: "bordersa-box" };
+const _hoisted_9$1 = { class: "zheng" };
+const _hoisted_10$1 = ["src"];
+const _hoisted_11 = ["src"];
+const _hoisted_12 = { class: "border-box" };
+const _hoisted_13 = { class: "content-box" };
+const _hoisted_14 = { class: "bordersa-box" };
+const _hoisted_15 = { class: "zheng" };
+const _hoisted_16 = ["src"];
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "masterMainmain",
   setup(__props) {
+    ref(true);
+    const robotImg = ref(null);
+    onMounted(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          } else {
+            entry.target.classList.remove("show");
+          }
+        });
+      }, {
+        threshold: 0.1
+        // 当10%的图片进入视口时触发
+      });
+      if (robotImg.value) {
+        observer.observe(robotImg.value);
+      }
+    });
     return (_ctx, _cache) => {
+      const _component_el_button = ElButton;
       return openBlock(), createElementBlock("div", _hoisted_1$1, [
         createBaseVNode("img", {
           src: unref(rebot),
           class: "rebot",
-          alt: "robot"
+          alt: "robot",
+          ref_key: "robotImg",
+          ref: robotImg
         }, null, 8, _hoisted_2$1),
-        _cache[0] || (_cache[0] = createBaseVNode("div", { class: "content-box" }, null, -1))
+        _cache[9] || (_cache[9] = createBaseVNode("div", { class: "rebot_title" }, "自定义式组件库", -1)),
+        _cache[10] || (_cache[10] = createBaseVNode("div", { class: "rebot_text" }, "自由编写代码,随意定义你想要的样式,减少逻辑代码,标签完成所有基本样式", -1)),
+        createBaseVNode("div", _hoisted_3$1, [
+          createBaseVNode("div", _hoisted_4$1, [
+            createVNode(_component_el_button, null, {
+              default: withCtx(() => _cache[0] || (_cache[0] = [
+                createTextVNode("111")
+              ])),
+              _: 1,
+              __: [0]
+            })
+          ])
+        ]),
+        createBaseVNode("img", { src: unref(rebot) }, null, 8, _hoisted_5$1),
+        _cache[11] || (_cache[11] = createBaseVNode("div", { class: "rebot_title" }, "自定义式组件库", -1)),
+        _cache[12] || (_cache[12] = createBaseVNode("div", { class: "rebot_text" }, "自由编写代码,随意定义你想要的样式,减少逻辑代码,标签完成所有基本样式", -1)),
+        createBaseVNode("div", _hoisted_6$1, [
+          createBaseVNode("div", _hoisted_7$1, [
+            createVNode(_component_el_button, null, {
+              default: withCtx(() => _cache[1] || (_cache[1] = [
+                createTextVNode("111")
+              ])),
+              _: 1,
+              __: [1]
+            })
+          ])
+        ]),
+        createBaseVNode("div", _hoisted_8$1, [
+          _cache[4] || (_cache[4] = createBaseVNode("div", { class: "as-title" }, "构建坚实的应用", -1)),
+          createBaseVNode("div", _hoisted_9$1, [
+            _cache[2] || (_cache[2] = createStaticVNode('<div class="group" data-v-39e2ebd3><div class="left-top" data-v-39e2ebd3>test</div><div class="left-bottom" data-v-39e2ebd3>test</div></div><div class="group" data-v-39e2ebd3><div class="right-top" data-v-39e2ebd3>test</div><div class="right-bottom" data-v-39e2ebd3>test</div></div>', 2)),
+            createBaseVNode("img", { src: unref(rebot) }, null, 8, _hoisted_10$1),
+            _cache[3] || (_cache[3] = createBaseVNode("div", { class: "contents-box" }, null, -1))
+          ])
+        ]),
+        createBaseVNode("img", { src: unref(rebot) }, null, 8, _hoisted_11),
+        _cache[13] || (_cache[13] = createBaseVNode("div", { class: "rebot_title" }, "自定义式组件库", -1)),
+        _cache[14] || (_cache[14] = createBaseVNode("div", { class: "rebot_text" }, "自由编写代码,随意定义你想要的样式,减少逻辑代码,标签完成所有基本样式", -1)),
+        createBaseVNode("div", _hoisted_12, [
+          createBaseVNode("div", _hoisted_13, [
+            createVNode(_component_el_button, null, {
+              default: withCtx(() => _cache[5] || (_cache[5] = [
+                createTextVNode("111")
+              ])),
+              _: 1,
+              __: [5]
+            })
+          ])
+        ]),
+        createBaseVNode("div", _hoisted_14, [
+          _cache[8] || (_cache[8] = createBaseVNode("div", { class: "as-title" }, "构建一个个小格子,里面放logo,不和上面的框一起", -1)),
+          createBaseVNode("div", _hoisted_15, [
+            _cache[6] || (_cache[6] = createStaticVNode('<div class="group" data-v-39e2ebd3><div class="left-top" data-v-39e2ebd3>test</div><div class="left-bottom" data-v-39e2ebd3>test</div></div><div class="group" data-v-39e2ebd3><div class="right-top" data-v-39e2ebd3>test</div><div class="right-bottom" data-v-39e2ebd3>test</div></div>', 2)),
+            createBaseVNode("img", { src: unref(rebot) }, null, 8, _hoisted_16),
+            _cache[7] || (_cache[7] = createBaseVNode("div", { class: "contents-box" }, null, -1))
+          ])
+        ])
       ]);
     };
   }
 });
-const masterMainmain = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-0fbb2ed7"]]);
+const masterMainmain = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-39e2ebd3"]]);
 const _hoisted_1 = { class: "page-root" };
 const _hoisted_2 = { class: "section-master-top" };
 const _hoisted_3 = { class: "container" };
@@ -6770,7 +6866,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-efd30f78"]]);
+const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-3c3f587c"]]);
 export {
   index as default
 };
