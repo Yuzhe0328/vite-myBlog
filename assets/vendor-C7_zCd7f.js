@@ -14217,10 +14217,10 @@ function initCloneArray(array4) {
   }
   return result;
 }
-var Uint8Array = root.Uint8Array;
+var Uint8Array$1 = root.Uint8Array;
 function cloneArrayBuffer(arrayBuffer) {
   var result = new arrayBuffer.constructor(arrayBuffer.byteLength);
-  new Uint8Array(result).set(new Uint8Array(arrayBuffer));
+  new Uint8Array$1(result).set(new Uint8Array$1(arrayBuffer));
   return result;
 }
 function cloneDataView(dataView, isDeep) {
@@ -14465,7 +14465,7 @@ function equalByTag(object4, other, tag, bitmask, customizer, equalFunc, stack2)
       object4 = object4.buffer;
       other = other.buffer;
     case arrayBufferTag:
-      if (object4.byteLength != other.byteLength || !equalFunc(new Uint8Array(object4), new Uint8Array(other))) {
+      if (object4.byteLength != other.byteLength || !equalFunc(new Uint8Array$1(object4), new Uint8Array$1(other))) {
         return false;
       }
       return true;
