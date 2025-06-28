@@ -2,10 +2,10 @@
 /* 通用容器：水平居中，左右留白 */
 .container {
   width: 100%;
-  max-width: 1540px; /* 根据设计稿宽度，可调整 */
+  max-width: 1405px; /* 根据设计稿宽度，可调整 */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px; /* 可根据设计稿调整左右内边距 */
+  padding-left: 0px; /* 可根据设计稿调整左右内边距 */
   padding-right: 16px;
 }
 
@@ -356,7 +356,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(16, 16, 16, 0.1);
+  background: rgba(44, 44, 44, 0.8);
   border-radius: 4px;
 }
 

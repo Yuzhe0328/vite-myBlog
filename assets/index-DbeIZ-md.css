@@ -2,10 +2,10 @@
 /* 通用容器：水平居中，左右留白 */
 .container[data-v-384795f5] {
   width: 100%;
-  max-width: 1540px; /* 根据设计稿宽度，可调整 */
+  max-width: 1405px; /* 根据设计稿宽度，可调整 */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px; /* 可根据设计稿调整左右内边距 */
+  padding-left: 0px; /* 可根据设计稿调整左右内边距 */
   padding-right: 16px;
 }
 
@@ -43,10 +43,10 @@
 /* 通用容器：水平居中，左右留白 */
 .container[data-v-137dade3] {
   width: 100%;
-  max-width: 1540px; /* 根据设计稿宽度，可调整 */
+  max-width: 1405px; /* 根据设计稿宽度，可调整 */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px; /* 可根据设计稿调整左右内边距 */
+  padding-left: 0px; /* 可根据设计稿调整左右内边距 */
   padding-right: 16px;
 }
 
@@ -147,10 +147,10 @@
 /* 通用容器：水平居中，左右留白 */
 .container {
   width: 100%;
-  max-width: 1540px; /* 根据设计稿宽度，可调整 */
+  max-width: 1405px; /* 根据设计稿宽度，可调整 */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px; /* 可根据设计稿调整左右内边距 */
+  padding-left: 0px; /* 可根据设计稿调整左右内边距 */
   padding-right: 16px;
 }
 
@@ -215,10 +215,10 @@
 /* 通用容器：水平居中，左右留白 */
 .container[data-v-ace38a28] {
   width: 100%;
-  max-width: 1540px; /* 根据设计稿宽度，可调整 */
+  max-width: 1405px; /* 根据设计稿宽度，可调整 */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px; /* 可根据设计稿调整左右内边距 */
+  padding-left: 0px; /* 可根据设计稿调整左右内边距 */
   padding-right: 16px;
 }
 
@@ -255,10 +255,10 @@
 /* 通用容器：水平居中，左右留白 */
 .container {
   width: 100%;
-  max-width: 1540px; /* 根据设计稿宽度，可调整 */
+  max-width: 1405px; /* 根据设计稿宽度，可调整 */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px; /* 可根据设计稿调整左右内边距 */
+  padding-left: 0px; /* 可根据设计稿调整左右内边距 */
   padding-right: 16px;
 }
 

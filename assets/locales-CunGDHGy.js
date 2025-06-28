@@ -1,4 +1,4 @@
-import { c as createI18n } from "./i18n-DbHLWidU.js";
+import { c as createI18n } from "./i18n-DNJ5Tj2P.js";
 const zh = {
   top: {
     project: "项目概览",

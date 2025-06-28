@@ -1,9 +1,9 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/index-B9RRoRuh.js","assets/i18n-DbHLWidU.js","assets/vendor-C7_zCd7f.js","assets/index-CdQ4317e.js","assets/locales-BABSQJdb.js","assets/index-BDLyJdJF.css","assets/el-button-DPSIWn2t.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/index-C95_suYJ.js","assets/i18n-DNJ5Tj2P.js","assets/vendor-IpMyBuif.js","assets/index-CkZnojYR.js","assets/locales-CunGDHGy.js","assets/index-88h24Z2O.css","assets/el-button-DPSIWn2t.css"])))=>i.map(i=>d[i]);
 /* empty css                   */
-import { u as useI18n } from "./i18n-DbHLWidU.js";
-import { d as defineComponent, c as computed, r as ref, w as watch, o as onMounted, b as onUnmounted, k as createElementBlock, y as createBaseVNode, G as createCommentVNode, z as toDisplayString, u as unref, j as createVNode$1, Y as ElButton, B as withCtx, m as openBlock, R as createTextVNode, Z as normalizeStyle$1, M as normalizeClass, _ as createStaticVNode, F as Fragment, L as renderList, $ as mergeProps } from "./vendor-C7_zCd7f.js";
-import { _ as _export_sfc, a as __vitePreload } from "./index-CdQ4317e.js";
-const _hoisted_1$6 = { class: "master-top" };
+import { u as useI18n } from "./i18n-DNJ5Tj2P.js";
+import { d as defineComponent, c as computed, r as ref, w as watch, o as onMounted, b as onUnmounted, k as createElementBlock, y as createBaseVNode, G as createCommentVNode, z as toDisplayString, u as unref, j as createVNode$1, Y as ElButton, B as withCtx, m as openBlock, R as createTextVNode, Z as normalizeStyle$1, M as normalizeClass, _ as createStaticVNode, F as Fragment, L as renderList, $ as mergeProps, a0 as getDefaultExportFromCjs, N as createBlock, a1 as resolveDynamicComponent } from "./vendor-IpMyBuif.js";
+import { _ as _export_sfc, a as __vitePreload } from "./index-CkZnojYR.js";
+const _hoisted_1$8 = { class: "master-top" };
 const _hoisted_2$5 = { class: "lines-wrapper" };
 const _hoisted_3$4 = { class: "line" };
 const _hoisted_4$4 = { class: "line" };
@@ -12,7 +12,7 @@ const _hoisted_5$4 = {
   class: "buttons"
 };
 const _hoisted_6$4 = { class: "description" };
-const _sfc_main$8 = /* @__PURE__ */ defineComponent({
+const _sfc_main$a = /* @__PURE__ */ defineComponent({
   __name: "masterTop",
   emits: ["typing-complete"],
   setup(__props, { emit: __emit }) {
@@ -67,7 +67,7 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
     onUnmounted(() => clearInterval(timer));
     return (_ctx, _cache) => {
       const _component_el_button = ElButton;
-      return openBlock(), createElementBlock("div", _hoisted_1$6, [
+      return openBlock(), createElementBlock("div", _hoisted_1$8, [
         createBaseVNode("div", _hoisted_2$5, [
           createBaseVNode("div", _hoisted_3$4, toDisplayString(unref(contentA)), 1),
           createBaseVNode("div", _hoisted_4$4, toDisplayString(unref(contentB)), 1)
@@ -97,7 +97,7 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const masterTop = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-9a06c6e2"]]);
+const masterTop = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-77df4e70"]]);
 function _assertThisInitialized(self2) {
   if (self2 === void 0) {
     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -4117,7 +4117,7 @@ _forEachName("x,y,z,top,right,bottom,left,width,height,fontSize,padding,margin,p
 gsap.registerPlugin(CSSPlugin);
 var gsapWithCSS = gsap.registerPlugin(CSSPlugin) || gsap;
 gsapWithCSS.core.Tween;
-const _hoisted_1$5 = ["d", "stroke", "mask"];
+const _hoisted_1$7 = ["d", "stroke", "mask"];
 const _hoisted_2$4 = ["cx", "cy", "r", "fill"];
 const _hoisted_3$3 = ["x", "y"];
 const _hoisted_4$3 = ["id"];
@@ -4126,7 +4126,7 @@ const _hoisted_6$3 = ["cx", "cy", "r"];
 const _hoisted_7$3 = ["id", "cx", "cy", "r"];
 const _hoisted_8$2 = ["stop-color"];
 const _hoisted_9$2 = ["stop-color"];
-const _sfc_main$7 = /* @__PURE__ */ defineComponent({
+const _sfc_main$9 = /* @__PURE__ */ defineComponent({
   __name: "SvgNodes",
   props: {
     path: {},
@@ -4183,7 +4183,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
           "stroke-width": "1.2",
           mask: `url(#glow_mask_${unref(pathId)})`,
           class: "svg-path"
-        }, null, 8, _hoisted_1$5),
+        }, null, 8, _hoisted_1$7),
         props.dotColor ? (openBlock(), createElementBlock("circle", {
           cx: unref(dotPosition).x,
           cy: unref(dotPosition).y,
@@ -4244,8 +4244,8 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const SvgNode = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-69dc75f5"]]);
-const _hoisted_1$4 = {
+const SvgNode = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-69dc75f5"]]);
+const _hoisted_1$6 = {
   xmlns: "http://www.w3.org/2000/svg",
   width: "785",
   height: "644",
@@ -4254,7 +4254,7 @@ const _hoisted_1$4 = {
   class: "input-lines"
 };
 const _hoisted_2$3 = ["d"];
-const _sfc_main$6 = /* @__PURE__ */ defineComponent({
+const _sfc_main$8 = /* @__PURE__ */ defineComponent({
   __name: "SvgInputs",
   props: {
     inputLines: {
@@ -4264,7 +4264,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("svg", _hoisted_1$4, [
+      return openBlock(), createElementBlock("svg", _hoisted_1$6, [
         (openBlock(true), createElementBlock(Fragment, null, renderList(__props.inputLines, (inputLine) => {
           return openBlock(), createElementBlock("g", {
             key: inputLine.value.path
@@ -4283,9 +4283,9 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const SvgInputs = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-9832e4b4"]]);
-const _hoisted_1$3 = ["height"];
-const _sfc_main$5 = /* @__PURE__ */ defineComponent({
+const SvgInputs = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-9832e4b4"]]);
+const _hoisted_1$5 = ["height"];
+const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   __name: "SvgOutputs",
   props: {
     outputLines: {
@@ -4345,22 +4345,22 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
             })
           ])
         ], -1))
-      ], 8, _hoisted_1$3);
+      ], 8, _hoisted_1$5);
     };
   }
 });
-const SvgOutputs = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-e06aa744"]]);
+const SvgOutputs = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-e06aa744"]]);
 const logo = "/vite-myBlog/assets/logo-DTDX0-Gp.png";
-var ScrollTrigger$1 = { exports: {} };
-var ScrollTrigger = ScrollTrigger$1.exports;
+var ScrollTrigger$2 = { exports: {} };
+var ScrollTrigger$1 = ScrollTrigger$2.exports;
 var hasRequiredScrollTrigger;
 function requireScrollTrigger() {
-  if (hasRequiredScrollTrigger) return ScrollTrigger$1.exports;
+  if (hasRequiredScrollTrigger) return ScrollTrigger$2.exports;
   hasRequiredScrollTrigger = 1;
   (function(module, exports) {
     (function(global, factory) {
       factory(exports);
-    })(ScrollTrigger, function(exports2) {
+    })(ScrollTrigger$1, function(exports2) {
       function _defineProperties(target, props) {
         for (var i = 0; i < props.length; i++) {
           var descriptor = props[i];
@@ -6575,18 +6575,19 @@ function requireScrollTrigger() {
         delete window.default;
       }
     });
-  })(ScrollTrigger$1, ScrollTrigger$1.exports);
-  return ScrollTrigger$1.exports;
+  })(ScrollTrigger$2, ScrollTrigger$2.exports);
+  return ScrollTrigger$2.exports;
 }
 var ScrollTriggerExports = /* @__PURE__ */ requireScrollTrigger();
-const _hoisted_1$2 = { class: "master-main-top" };
+const ScrollTrigger = /* @__PURE__ */ getDefaultExportFromCjs(ScrollTriggerExports);
+const _hoisted_1$4 = { class: "master-main-top" };
 const _hoisted_2$2 = { class: "svg-section" };
 const _hoisted_3$2 = { class: "svg-inputs-wrapper" };
 const _hoisted_4$2 = { class: "svg-outputs-wrapper" };
 const _hoisted_5$2 = { class: "chip" };
 const _hoisted_6$2 = { class: "chip__background" };
 const _hoisted_7$2 = ["src"];
-const _sfc_main$4 = /* @__PURE__ */ defineComponent({
+const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "masterMainTop",
   setup(__props) {
     gsapWithCSS.registerPlugin(ScrollTriggerExports.ScrollTrigger);
@@ -6644,7 +6645,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
       timeline2 == null ? void 0 : timeline2.kill();
     });
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("div", _hoisted_1$2, [
+      return openBlock(), createElementBlock("div", _hoisted_1$4, [
         createBaseVNode("div", _hoisted_2$2, [
           createBaseVNode("div", _hoisted_3$2, [
             createVNode$1(SvgInputs, { "input-lines": unref(inputLines) }, null, 8, ["input-lines"])
@@ -6666,8 +6667,8 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const masterMainTop = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-c5a28bbc"]]);
-const _sfc_main$3 = /* @__PURE__ */ defineComponent({
+const masterMainTop = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-c5a28bbc"]]);
+const _sfc_main$5 = /* @__PURE__ */ defineComponent({
   __name: "index",
   setup(__props) {
     gsapWithCSS.registerPlugin(ScrollTriggerExports.ScrollTrigger);
@@ -6708,7 +6709,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const heroBackground = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-0cc85b2b"]]);
+const heroBackground = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-cf64618c"]]);
 const rebot = "data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='150'%20height='150'%20viewBox='0%200%20150%20150'%3e%3cdefs%3e%3c!--%20头部主体渐变：模拟光从左上照射%20--%3e%3cradialGradient%20id='robot-head-grad'%20cx='35%25'%20cy='35%25'%20r='65%25'%3e%3c!--%20近光侧偏亮紫%20--%3e%3cstop%20offset='0%25'%20stop-color='%237E61FF'/%3e%3c!--%20中间过渡%20--%3e%3cstop%20offset='60%25'%20stop-color='%23502AFF'/%3e%3c!--%20暗部%20--%3e%3cstop%20offset='100%25'%20stop-color='%23301366'/%3e%3c/radialGradient%3e%3c!--%20高光小圈%20--%3e%3cradialGradient%20id='robot-head-highlight'%20cx='40%25'%20cy='40%25'%20r='25%25'%3e%3cstop%20offset='0%25'%20stop-color='%23FFFFFF'%20stop-opacity='0.8'/%3e%3cstop%20offset='100%25'%20stop-color='%23FFFFFF'%20stop-opacity='0'/%3e%3c/radialGradient%3e%3c!--%20眼球渐变（内层）%20--%3e%3cradialGradient%20id='robot-eye-grad'%20cx='50%25'%20cy='50%25'%20r='50%25'%3e%3cstop%20offset='0%25'%20stop-color='%2300FFEE'/%3e%3cstop%20offset='100%25'%20stop-color='%23005577'/%3e%3c/radialGradient%3e%3c!--%20眼睛高光%20--%3e%3cradialGradient%20id='robot-eye-highlight'%20cx='30%25'%20cy='30%25'%20r='30%25'%3e%3cstop%20offset='0%25'%20stop-color='%23FFFFFF'%20stop-opacity='0.9'/%3e%3cstop%20offset='100%25'%20stop-color='%23FFFFFF'%20stop-opacity='0'/%3e%3c/radialGradient%3e%3c!--%20整体投影%20--%3e%3cfilter%20id='drop-shadow'%20x='-50%25'%20y='-50%25'%20width='200%25'%20height='200%25'%3e%3cfeDropShadow%20dx='0'%20dy='5'%20stdDeviation='5'%20flood-color='%23000'%20flood-opacity='0.4'/%3e%3c/filter%3e%3c/defs%3e%3c!--%20机器人头部球形轮廓%20--%3e%3ccircle%20cx='75'%20cy='75'%20r='50'%20fill='url(%23robot-head-grad)'%20filter='url(%23drop-shadow)'%20/%3e%3c!--%20头部高光（偏左上）%20--%3e%3ccircle%20cx='75'%20cy='75'%20r='50'%20fill='url(%23robot-head-highlight)'%20/%3e%3c!--%20面罩/屏幕（前面一个略凹进的面）--%3e%3cellipse%20cx='75'%20cy='85'%20rx='30'%20ry='18'%20fill='%23001022'%20/%3e%3c!--%20左眼：在面罩内部%20--%3e%3cg%20transform='translate(58,77)'%3e%3cellipse%20cx='0'%20cy='0'%20rx='8'%20ry='10'%20fill='url(%23robot-eye-grad)'%20/%3e%3c!--%20眼睛高光%20--%3e%3ccircle%20cx='-2'%20cy='-3'%20r='4'%20fill='url(%23robot-eye-highlight)'%20/%3e%3c/g%3e%3c!--%20右眼%20--%3e%3cg%20transform='translate(92,77)'%3e%3cellipse%20cx='0'%20cy='0'%20rx='8'%20ry='10'%20fill='url(%23robot-eye-grad)'%20/%3e%3ccircle%20cx='-2'%20cy='-3'%20r='4'%20fill='url(%23robot-eye-highlight)'%20/%3e%3c/g%3e%3c!--%20头顶天线%20--%3e%3cline%20x1='75'%20y1='25'%20x2='75'%20y2='10'%20stroke='%237E61FF'%20stroke-width='4'%20stroke-linecap='round'/%3e%3ccircle%20cx='75'%20cy='10'%20r='6'%20fill='%237E61FF'%20/%3e%3c/svg%3e";
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -79055,7 +79056,7 @@ const worldMapData = {
   crs,
   features
 };
-const _sfc_main$2 = /* @__PURE__ */ defineComponent({
+const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   __name: "ComponentEarth",
   setup(__props) {
     let moduleEchartsGlLoaded = false;
@@ -79442,7 +79443,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
       if (typeof window !== "undefined") {
         if (!moduleEchartsGlLoaded && !window.__echarts_gl_loaded__) {
           try {
-            await __vitePreload(() => import("./index-B9RRoRuh.js"), true ? __vite__mapDeps([0,1,2,3,4,5,6]) : void 0);
+            await __vitePreload(() => import("./index-C95_suYJ.js"), true ? __vite__mapDeps([0,1,2,3,4,5,6]) : void 0);
             moduleEchartsGlLoaded = true;
             window.__echarts_gl_loaded__ = true;
           } catch (e2) {
@@ -79471,8 +79472,40 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ComponentEarth = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-fb6b6968"]]);
-const _hoisted_1$1 = { class: "master-main-main" };
+const ComponentEarth = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-fb6b6968"]]);
+const _hoisted_1$3 = ["src", "alt"];
+const _sfc_main$3 = /* @__PURE__ */ defineComponent({
+  __name: "index",
+  props: {
+    framework: { default: () => ({
+      visible: ref(true)
+    }) }
+  },
+  setup(__props) {
+    const props = __props;
+    return (_ctx, _cache) => {
+      return openBlock(), createBlock(resolveDynamicComponent(props.framework.url ? "a" : "div"), {
+        href: props.framework.url ? props.framework.url : void 0,
+        target: "_blank",
+        rel: "noopener",
+        class: normalizeClass(["framework-card", { active: props.framework.visible.value === true }]),
+        style: normalizeStyle$1({ "--glow-color": props.framework.color })
+      }, {
+        default: withCtx(() => [
+          props.framework.logo ? (openBlock(), createElementBlock("img", {
+            key: 0,
+            src: props.framework.logo,
+            alt: props.framework.name
+          }, null, 8, _hoisted_1$3)) : createCommentVNode("", true)
+        ]),
+        _: 1
+      }, 8, ["href", "style", "class"]);
+    };
+  }
+});
+const FrameworkCard = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-8c90763c"]]);
+const logoVitest = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20aria-hidden='true'%20role='img'%20class='iconify%20iconify--logos'%20width='31.88'%20height='32'%20preserveAspectRatio='xMidYMid%20meet'%20viewBox='0%200%20256%20257'%3e%3cdefs%3e%3clinearGradient%20id='IconifyId1813088fe1fbc01fb466'%20x1='-.828%25'%20x2='57.636%25'%20y1='7.652%25'%20y2='78.411%25'%3e%3cstop%20offset='0%25'%20stop-color='%2341D1FF'%3e%3c/stop%3e%3cstop%20offset='100%25'%20stop-color='%23BD34FE'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient%20id='IconifyId1813088fe1fbc01fb467'%20x1='43.376%25'%20x2='50.316%25'%20y1='2.242%25'%20y2='89.03%25'%3e%3cstop%20offset='0%25'%20stop-color='%23FFEA83'%3e%3c/stop%3e%3cstop%20offset='8.333%25'%20stop-color='%23FFDD35'%3e%3c/stop%3e%3cstop%20offset='100%25'%20stop-color='%23FFA800'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3cpath%20fill='url(%23IconifyId1813088fe1fbc01fb466)'%20d='M255.153%2037.938L134.897%20252.976c-2.483%204.44-8.862%204.466-11.382.048L.875%2037.958c-2.746-4.814%201.371-10.646%206.827-9.67l120.385%2021.517a6.537%206.537%200%200%200%202.322-.004l117.867-21.483c5.438-.991%209.574%204.796%206.877%209.62Z'%3e%3c/path%3e%3cpath%20fill='url(%23IconifyId1813088fe1fbc01fb467)'%20d='M185.432.063L96.44%2017.501a3.268%203.268%200%200%200-2.634%203.014l-5.474%2092.456a3.268%203.268%200%200%200%203.997%203.378l24.777-5.718c2.318-.535%204.413%201.507%203.936%203.838l-7.361%2036.047c-.495%202.426%201.782%204.5%204.151%203.78l15.304-4.649c2.372-.72%204.652%201.36%204.15%203.788l-11.698%2056.621c-.732%203.542%203.979%205.473%205.943%202.437l1.313-2.028l72.516-144.72c1.215-2.423-.88-5.186-3.54-4.672l-25.505%204.922c-2.396.462-4.435-1.77-3.759-4.114l16.646-57.705c.677-2.35-1.37-4.583-3.769-4.113Z'%3e%3c/path%3e%3c/svg%3e";
+const _hoisted_1$2 = { class: "master-main-main" };
 const _hoisted_2$1 = { class: "components" };
 const _hoisted_3$1 = ["src"];
 const _hoisted_4$1 = { class: "border-box" };
@@ -79482,12 +79515,146 @@ const _hoisted_7$1 = { class: "card-icon" };
 const _hoisted_8$1 = { class: "card-title" };
 const _hoisted_9$1 = { class: "datalineaction" };
 const _hoisted_10$1 = { class: "dataline-wrap" };
-const _hoisted_11 = { class: "map-area" };
-const _sfc_main$1 = /* @__PURE__ */ defineComponent({
+const _hoisted_11$1 = { class: "map-area" };
+const _hoisted_12 = {
+  class: "frameworks-section",
+  id: "frameworks-section"
+};
+const _hoisted_13 = { class: "framework-container" };
+const _hoisted_14 = { class: "footer" };
+const _hoisted_15 = { class: "buttons" };
+const _hoisted_16 = { class: "buttons" };
+const _hoisted_17 = { class: "section-hero-background" };
+const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "masterMainmain",
   setup(__props) {
+    gsapWithCSS.registerPlugin(ScrollTrigger);
     const robotImg = ref(null);
+    const { t } = useI18n({ useScope: "global" });
+    const screenWidth = ref(1920);
+    let resizeTimeout = null;
+    let timeline2 = null;
+    const frameworks = [
+      {
+        name: "Vitest",
+        logo: logoVitest,
+        color: "#fac52b",
+        url: "https://vitest.dev",
+        visible: ref(true)
+      },
+      {
+        name: "Vitest",
+        logo: logoVitest,
+        color: "#fac52b",
+        url: "https://vitest.dev",
+        visible: ref(true)
+      },
+      {
+        name: "Vitest",
+        logo: logoVitest,
+        color: "#fac52b",
+        url: "https://vitest.dev",
+        visible: ref(true)
+      },
+      {
+        name: "Vitest",
+        logo: logoVitest,
+        color: "#fac52b",
+        url: "https://vitest.dev",
+        visible: ref(true)
+      },
+      {
+        name: "Vitest",
+        logo: logoVitest,
+        color: "#fac52b",
+        url: "https://vitest.dev",
+        visible: ref(true)
+      },
+      {
+        name: "Vitest",
+        logo: logoVitest,
+        color: "#fac52b",
+        url: "https://vitest.dev",
+        visible: ref(true)
+      },
+      {
+        name: "Vitest",
+        logo: logoVitest,
+        color: "#fac52b",
+        url: "https://vitest.dev",
+        visible: ref(true)
+      },
+      {
+        name: "Vitest",
+        logo: logoVitest,
+        color: "#fac52b",
+        url: "https://vitest.dev",
+        visible: ref(true)
+      },
+      {
+        name: "Vitest",
+        logo: logoVitest,
+        color: "#fac52b",
+        url: "https://vitest.dev",
+        visible: ref(true)
+      },
+      {
+        name: "Vitest",
+        logo: logoVitest,
+        color: "#fac52b",
+        url: "https://vitest.dev",
+        visible: ref(true)
+      },
+      {
+        name: "Vitest",
+        logo: logoVitest,
+        color: "#fac52b",
+        url: "https://vitest.dev",
+        visible: ref(true)
+      },
+      {
+        name: "Vitest",
+        logo: logoVitest,
+        color: "#fac52b",
+        url: "https://vitest.dev",
+        visible: ref(true)
+      },
+      {
+        name: "Vitest",
+        logo: logoVitest,
+        color: "#fac52b",
+        url: "https://vitest.dev",
+        visible: ref(true)
+      },
+      {
+        name: "Vitest",
+        logo: logoVitest,
+        color: "#fac52b",
+        url: "https://vitest.dev",
+        visible: ref(true)
+      }
+    ];
+    const handleResize = () => {
+      screenWidth.value = window.innerWidth;
+    };
+    const throttleResizeHandler = () => {
+      if (resizeTimeout === null) {
+        resizeTimeout = setTimeout(() => {
+          handleResize();
+          resizeTimeout = null;
+        }, 100);
+      }
+    };
     onMounted(() => {
+      handleResize();
+      window.addEventListener("resize", throttleResizeHandler);
+      timeline2 = gsapWithCSS.timeline({
+        scrollTrigger: {
+          trigger: "#frameworks-section",
+          start: "top 70%",
+          once: true
+        }
+      });
       const io = new IntersectionObserver(
         (entries) => entries.forEach((e2) => {
           e2.target.classList.toggle("show", e2.isIntersecting);
@@ -79496,9 +79663,71 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       );
       if (robotImg.value) io.observe(robotImg.value);
     });
+    onUnmounted(() => {
+      window.removeEventListener("resize", throttleResizeHandler);
+      if (resizeTimeout) {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = null;
+      }
+      if (timeline2) {
+        timeline2.kill();
+        timeline2 = null;
+      }
+    });
+    const numBlocksReRow = computed(() => {
+      return Math.floor(screenWidth.value / (160 - 6));
+    });
+    const paddeBlockPerSide = computed(() => {
+      if (screenWidth.value < 840) {
+        return 0;
+      }
+      if (screenWidth.value < 1200) {
+        return 1;
+      }
+      if (screenWidth.value < 1600) {
+        return 2;
+      }
+      return Math.max(Math.floor((screenWidth.value - 840) / 200), 0);
+    });
+    const numFrameworksPerRow = computed(
+      () => Math.max(numBlocksReRow.value - paddeBlockPerSide.value * 2, 1)
+    );
+    const numRows = computed(() => {
+      return Math.ceil(frameworks.length / numFrameworksPerRow.value);
+    });
+    const centerIndexs = computed(() => {
+      const arr = [];
+      for (let i = 0; i < numRows.value; i++) {
+        if (i === 0) {
+          arr.push({
+            start: paddeBlockPerSide.value + 1,
+            end: numBlocksReRow.value - paddeBlockPerSide.value
+            // 少1
+          });
+        } else if (i < numRows.value - 1 || frameworks.length % numFrameworksPerRow.value === 0) {
+          arr.push({
+            start: paddeBlockPerSide.value + 1,
+            end: numBlocksReRow.value - paddeBlockPerSide.value + 1
+          });
+        } else {
+          const rest = frameworks.length % numFrameworksPerRow.value;
+          const start2 = paddeBlockPerSide.value + Math.floor((numFrameworksPerRow.value - rest) / 2) + 1;
+          arr.push({
+            start: start2,
+            end: start2 + rest
+          });
+        }
+      }
+      return arr;
+    });
+    const rowStyle = computed(() => {
+      return {
+        transform: `translate3d(var(--row-offset), 0, 0)`
+      };
+    });
     return (_ctx, _cache) => {
       const _component_el_button = ElButton;
-      return openBlock(), createElementBlock("div", _hoisted_1$1, [
+      return openBlock(), createElementBlock("div", _hoisted_1$2, [
         createBaseVNode("section", _hoisted_2$1, [
           createBaseVNode("img", {
             src: unref(rebot),
@@ -79539,13 +79768,13 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
               ]);
             }), 64))
           ]),
-          _cache[5] || (_cache[5] = createStaticVNode('<section class="features-section" data-v-23b63ec6><h2 class="section-title" data-v-23b63ec6>构建坚实的应用</h2><div class="features-grid" data-v-23b63ec6><div class="feature" data-v-23b63ec6><div class="feature-icon" data-v-23b63ec6>🔥</div><h3 class="feature-title" data-v-23b63ec6>高性能</h3><p class="feature-text" data-v-23b63ec6>使用最优渲染策略，保证应用流畅。</p></div><div class="feature" data-v-23b63ec6><div class="feature-icon" data-v-23b63ec6>⚙️</div><h3 class="feature-title" data-v-23b63ec6>易扩展</h3><p class="feature-text" data-v-23b63ec6>组件化设计，随时插拔，易于维护。</p></div><div class="feature" data-v-23b63ec6><div class="feature-icon" data-v-23b63ec6>🔒</div><h3 class="feature-title" data-v-23b63ec6>安全可靠</h3><p class="feature-text" data-v-23b63ec6>默认防 XSS/CSRF，开箱即用的安全方案。</p></div><div class="feature" data-v-23b63ec6><div class="feature-icon" data-v-23b63ec6>🎨</div><h3 class="feature-title" data-v-23b63ec6>风格统一</h3><p class="feature-text" data-v-23b63ec6>主题化机制，自定义品牌配色。</p></div></div></section>', 1))
+          _cache[5] || (_cache[5] = createStaticVNode('<section class="features-section" data-v-88ac3230><h2 class="section-title" data-v-88ac3230>构建坚实的应用</h2><div class="features-grid" data-v-88ac3230><div class="feature" data-v-88ac3230><div class="feature-icon" data-v-88ac3230>🔥</div><h3 class="feature-title" data-v-88ac3230>高性能</h3><p class="feature-text" data-v-88ac3230>使用最优渲染策略，保证应用流畅。</p></div><div class="feature" data-v-88ac3230><div class="feature-icon" data-v-88ac3230>⚙️</div><h3 class="feature-title" data-v-88ac3230>易扩展</h3><p class="feature-text" data-v-88ac3230>组件化设计，随时插拔，易于维护。</p></div><div class="feature" data-v-88ac3230><div class="feature-icon" data-v-88ac3230>🔒</div><h3 class="feature-title" data-v-88ac3230>安全可靠</h3><p class="feature-text" data-v-88ac3230>默认防 XSS/CSRF，开箱即用的安全方案。</p></div><div class="feature" data-v-88ac3230><div class="feature-icon" data-v-88ac3230>🎨</div><h3 class="feature-title" data-v-88ac3230>风格统一</h3><p class="feature-text" data-v-88ac3230>主题化机制，自定义品牌配色。</p></div></div></section>', 1))
         ]),
         createBaseVNode("section", _hoisted_9$1, [
           _cache[7] || (_cache[7] = createBaseVNode("div", { class: "icon" }, "🌍", -1)),
           _cache[8] || (_cache[8] = createBaseVNode("h2", { class: "title" }, "全球地图", -1)),
           createBaseVNode("div", _hoisted_10$1, [
-            createBaseVNode("div", _hoisted_11, [
+            createBaseVNode("div", _hoisted_11$1, [
               createVNode$1(ComponentEarth, { class: "earth" })
             ]),
             _cache[6] || (_cache[6] = createBaseVNode("div", { class: "dataline-content" }, [
@@ -79562,12 +79791,90 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
             ], -1))
           ])
         ]),
-        _cache[9] || (_cache[9] = createStaticVNode('<section class="docs" data-v-23b63ec6><h2 class="title" data-v-23b63ec6>文档中心</h2><div class="text-area" data-v-23b63ec6><ul class="list" data-v-23b63ec6><li data-v-23b63ec6>centos</li><li data-v-23b63ec6>Ubunut</li><li data-v-23b63ec6>debian</li><li data-v-23b63ec6>docker</li><li data-v-23b63ec6>kubernetes</li><li data-v-23b63ec6>Mysql</li><li data-v-23b63ec6>redis</li><li data-v-23b63ec6>SqlServer</li><li data-v-23b63ec6>Jenkins</li><li data-v-23b63ec6>GitLab</li></ul></div></section>', 1))
+        createBaseVNode("section", _hoisted_12, [
+          _cache[9] || (_cache[9] = createBaseVNode("h2", { class: "title" }, "文档中心", -1)),
+          _cache[10] || (_cache[10] = createBaseVNode("div", { class: "text" }, "多种文档方向, 即可在线阅览, 覆盖了运维，网络，硬件等方向", -1)),
+          createBaseVNode("div", _hoisted_13, [
+            createBaseVNode("div", {
+              class: "framework-row",
+              style: normalizeStyle$1(unref(rowStyle))
+            }, [
+              (openBlock(true), createElementBlock(Fragment, null, renderList(unref(numBlocksReRow) + 2, (_) => {
+                return openBlock(), createBlock(FrameworkCard);
+              }), 256))
+            ], 4),
+            (openBlock(true), createElementBlock(Fragment, null, renderList(unref(numRows), (rowIndex) => {
+              return openBlock(), createElementBlock("div", {
+                class: "framework-row",
+                style: normalizeStyle$1(unref(rowStyle))
+              }, [
+                (openBlock(true), createElementBlock(Fragment, null, renderList(unref(numBlocksReRow) + 2, (columnIndex) => {
+                  return openBlock(), createElementBlock(Fragment, null, [
+                    columnIndex - 1 >= unref(centerIndexs)[rowIndex - 1].start && columnIndex - 1 < unref(centerIndexs)[rowIndex - 1].end ? (openBlock(), createBlock(FrameworkCard, {
+                      key: 0,
+                      framework: frameworks[(rowIndex - 1) * unref(numFrameworksPerRow) + (columnIndex - 1) - unref(centerIndexs)[rowIndex - 1].start]
+                    }, null, 8, ["framework"])) : (openBlock(), createBlock(FrameworkCard, { key: 1 }))
+                  ], 64);
+                }), 256))
+              ], 4);
+            }), 256)),
+            createBaseVNode("div", {
+              class: "framework-row",
+              style: normalizeStyle$1(unref(rowStyle))
+            }, [
+              (openBlock(true), createElementBlock(Fragment, null, renderList(unref(numBlocksReRow) + 2, (_) => {
+                return openBlock(), createBlock(FrameworkCard);
+              }), 256))
+            ], 4)
+          ])
+        ]),
+        createBaseVNode("section", _hoisted_14, [
+          createBaseVNode("div", _hoisted_15, [
+            _cache[11] || (_cache[11] = createBaseVNode("div", { class: "lines-wrapper" }, [
+              createBaseVNode("p", { class: "line" }, "开发者通过代码编织出视觉与交互的诗意之美。"),
+              createBaseVNode("p", { class: "line" }, "指将设计理念与代码结合，创造出令人惊叹的用户界面的魔法过程。")
+            ], -1)),
+            createBaseVNode("div", _hoisted_16, [
+              createVNode$1(_component_el_button, {
+                class: "btn",
+                size: "large"
+              }, {
+                default: withCtx(() => [
+                  createTextVNode(toDisplayString(unref(t)("main.docs")), 1)
+                ]),
+                _: 1
+              }),
+              createVNode$1(_component_el_button, {
+                class: "btn-secondary",
+                size: "large"
+              }, {
+                default: withCtx(() => [
+                  createTextVNode(toDisplayString(unref(t)("main.more")), 1)
+                ]),
+                _: 1
+              })
+            ])
+          ]),
+          createBaseVNode("section", _hoisted_17, [
+            createVNode$1(heroBackground)
+          ])
+        ])
       ]);
     };
   }
 });
-const masterMainmain = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-23b63ec6"]]);
+const masterMainmain = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-88ac3230"]]);
+const _sfc_main$1 = {};
+const _hoisted_1$1 = { class: "footer-main" };
+function _sfc_render(_ctx, _cache) {
+  return openBlock(), createElementBlock("div", _hoisted_1$1, _cache[0] || (_cache[0] = [
+    createBaseVNode("div", { class: "text" }, [
+      createBaseVNode("p", { class: "text-container" }, "Released under the MIT License. (083ff96d)"),
+      createBaseVNode("p", { class: "text-container" }, "Copyright © 2019-present VoidZero Inc. & Vite Contributors")
+    ], -1)
+  ]));
+}
+const footerMain = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render], ["__scopeId", "data-v-d66b795f"]]);
 const _hoisted_1 = { class: "page-root" };
 const _hoisted_2 = { class: "section-master-top" };
 const _hoisted_3 = { class: "container" };
@@ -79581,6 +79888,7 @@ const _hoisted_7 = {
 const _hoisted_8 = { class: "section-hero-background" };
 const _hoisted_9 = { class: "section-master-main-main" };
 const _hoisted_10 = { class: "container" };
+const _hoisted_11 = { class: "footer" };
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "index",
   setup(__props) {
@@ -79609,12 +79917,15 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           createBaseVNode("div", _hoisted_10, [
             createVNode$1(masterMainmain)
           ])
+        ]),
+        createBaseVNode("section", _hoisted_11, [
+          createVNode$1(footerMain)
         ])
       ]);
     };
   }
 });
-const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-a008248a"]]);
+const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-211ba1f3"]]);
 const index$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: index
