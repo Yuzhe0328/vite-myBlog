@@ -1,0 +1,240 @@
+@use '@/styles/variables.module.scss' as *;
+
+/* 整体 dropdown 弹出容器 */
+.mega-dropdown {
+    width: $dropdown-max-width;
+    max-height: $dropdown-max-height;
+    overflow: hidden;
+    border: none;
+    background-color: $top-bg-color;
+    border-radius: 4px;
+    padding: 0 !important;
+
+    .el-popper__arrow {
+        display: none;
+    }
+
+    /* flex 布局：左右并排 */
+    .mega-menu {
+        display: flex;
+        max-height: $dropdown-max-height;
+        height: $dropdown-max-height;
+        background-color: $top-bg-color;
+        border-radius: 4px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        color: $index-text-color;
+
+        /* 左侧菜单 */
+        .menu-lefts {
+            flex: 0 0 auto;
+            width: 30%;
+            max-width: 40%;
+            min-width: 160px;
+            background-color: $index-bg-color;
+            border-right: 1px solid $border-color;
+            display: flex;
+            flex-direction: column;
+
+            /* 标题区域 */
+            .menu-title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 16px;
+                font-size: 16px;
+                font-weight: 600;
+                color: $index-text-color;
+                border-bottom: 1px solid $border-color;
+                flex: 0 0 auto;
+            }
+
+            .menu-title-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 8px;
+                color: $input-focus-color;
+            }
+
+            /* 列表区域 */
+            .menu-list {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex: 1 1 auto;
+                overflow-y: auto;
+            }
+
+            /* 左侧导航项：BEM 命名 */
+            .docs-nav-item {
+                display: flex;
+                align-items: center;
+                padding: 10px 16px;
+                font-size: 14px;
+                color: $index-text-color;
+                cursor: pointer;
+                border-radius: 6px;
+                margin-bottom: 10px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                transition: background-color 0.2s, color 0.2s;
+
+                &__icon {
+                    margin-right: 8px;
+                    color: $icon-default-color;
+                }
+
+                &__text {
+                    flex: 1;
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: $border-color;
+                    color: $input-focus-color;
+                    outline: none;
+
+                    .docs-nav-item__icon {
+                        color: $input-focus-color;
+                    }
+                }
+            }
+
+            /* 激活状态 */
+            .docs-nav-item--active {
+                background-color: $active-bg-color;
+                color: $input-focus-color;
+                border-left: 4px solid $input-focus-color;
+
+                .docs-nav-item__icon {
+                    color: $input-focus-color;
+                }
+            }
+
+            /* 左侧滚动条美化（Webkit） */
+            .menu-list::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            .menu-list::-webkit-scrollbar-thumb {
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 3px;
+            }
+
+            .menu-list::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            /* Firefox 滚动条 */
+            .menu-list {
+                scrollbar-width: thin;
+                scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+            }
+        }
+
+        /* 右侧内容区域 */
+        .menu-right {
+            // flex: 1 1 auto;
+            // display: flex;
+            // flex-direction: column;
+            background-color: $index-bg-color;
+            overflow: hidden;
+
+            .detail-container {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .detail-header {
+                display: flex;
+                align-items: center;
+                padding: 12px 16px;
+                font-size: 18px;
+                font-weight: bold;
+                color: $index-text-color;
+                border-bottom: 1px solid $border-color;
+                background-color: $index-bg-color;
+                flex: 0 0 auto;
+            }
+
+            .detail-header-icon {
+                margin-right: 8px;
+                color: $input-focus-color;
+            }
+
+            .detail-body {
+                padding: 12px 16px;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                gap: 20px;
+                flex: 1 1 auto;
+                overflow-y: auto;
+            }
+
+            /* 滚动条美化 */
+            .detail-body::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            .detail-body::-webkit-scrollbar-thumb {
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 3px;
+            }
+
+            .detail-body::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            .detail-body {
+                scrollbar-width: thin;
+                scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+            }
+
+            /* 子项卡片 */
+            .child-card {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                background-color: $child-card-bg-color;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.2s, transform 0.1s;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                .child-icon {
+                    margin-right: 8px;
+                    // color: $icon-default-color;
+                }
+
+                .child-text {
+                    flex: 1;
+                    color: $index-text-color;
+                }
+
+                &:hover,
+                &:focus {
+                    background-color: $child-card-hover-bg;
+                    outline: none;
+                    transform: translateY(-2px);
+
+                    .child-icon {
+                        color: $input-focus-color;
+                    }
+                }
+            }
+
+            /* “暂无内容”提示 */
+            .no-content {
+                padding: 12px;
+                color: $index-text-secondary-color;
+                font-size: 14px;
+            }
+        }
+    }
+}

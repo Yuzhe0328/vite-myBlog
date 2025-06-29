@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <!-- 头部主体渐变：模拟光从左上照射 -->
+    <radialGradient id="robot-head-grad" cx="35%" cy="35%" r="65%">
+      <!-- 近光侧偏亮紫 -->
+      <stop offset="0%" stop-color="#7E61FF"/>
+      <!-- 中间过渡 -->
+      <stop offset="60%" stop-color="#502AFF"/>
+      <!-- 暗部 -->
+      <stop offset="100%" stop-color="#301366"/>
+    </radialGradient>
+    <!-- 高光小圈 -->
+    <radialGradient id="robot-head-highlight" cx="40%" cy="40%" r="25%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <!-- 眼球渐变（内层） -->
+    <radialGradient id="robot-eye-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FFEE"/>
+      <stop offset="100%" stop-color="#005577"/>
+    </radialGradient>
+    <!-- 眼睛高光 -->
+    <radialGradient id="robot-eye-highlight" cx="30%" cy="30%" r="30%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <!-- 整体投影 -->
+    <filter id="drop-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- 机器人头部球形轮廓 -->
+  <circle cx="75" cy="75" r="50"
+          fill="url(#robot-head-grad)" filter="url(#drop-shadow)" />
+
+  <!-- 头部高光（偏左上） -->
+  <circle cx="75" cy="75" r="50" fill="url(#robot-head-highlight)" />
+
+  <!-- 面罩/屏幕（前面一个略凹进的面）-->
+  <ellipse cx="75" cy="85" rx="30" ry="18"
+           fill="#001022" />
+
+  <!-- 左眼：在面罩内部 -->
+  <g transform="translate(58,77)">
+    <ellipse cx="0" cy="0" rx="8" ry="10" fill="url(#robot-eye-grad)" />
+    <!-- 眼睛高光 -->
+    <circle cx="-2" cy="-3" r="4" fill="url(#robot-eye-highlight)" />
+  </g>
+  <!-- 右眼 -->
+  <g transform="translate(92,77)">
+    <ellipse cx="0" cy="0" rx="8" ry="10" fill="url(#robot-eye-grad)" />
+    <circle cx="-2" cy="-3" r="4" fill="url(#robot-eye-highlight)" />
+  </g>
+
+  <!-- 头顶天线 -->
+  <line x1="75" y1="25" x2="75" y2="10"
+        stroke="#7E61FF" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="75" cy="10" r="6" fill="#7E61FF" />
+</svg>

@@ -1,0 +1,138 @@
+@use '@/styles/variables.module.scss' as *;
+
+.mega-dropdown {
+  width: $dropdown-max-width;
+  height: $auto-fill-height;
+  overflow: $scrollbar-none;
+  max-height: $dropdown-max-height;
+  border: $border-none;
+
+  .el-popper__arrow {
+    display: $dropdown-triangle-none
+  }
+
+  .mega-menu {
+    display: flex;
+    height: $height-default;
+    overflow: $scrollbar-none;
+
+    .menu-left {
+      width: 30%;
+      background-color: $top-bg-color;
+      padding: 25px;
+      overflow: $scrollbar-none;
+
+      .menu-title {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 600;
+        color: $index-text-color;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $border-color;
+      }
+
+      .menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu-item-left {
+        display: flex;
+        align-items: center;
+        padding: 10px 12px;
+        font-size: 14px;
+        color: $index-text-color;
+        cursor: pointer;
+        border-radius: 6px;
+        margin-bottom: 4px;
+      }
+
+      .menu-item-left:hover,
+      .menu-item-left.active {
+        background-color: $border-color;
+        color: $input-focus-color;
+      }
+    }
+
+    .menu-right {
+      width: 70%;
+      background-color: $index-bg-color;
+      overflow: $scrollbar-none;
+
+      .detail-wrapper {
+        height: 100%;
+      }
+
+      .project-card {
+        border: none;
+        border-radius: 10px;
+        background-color: $no-background-color;
+        color: $index-text-color;
+
+        .project-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 5px 12px rgba(0, 0, 0, 0.7);
+        }
+
+        .card-header {
+          padding: 10px 10px;
+          border-bottom: 1px solid $border-color;
+        }
+
+        .card-title {
+          font-size: 18px;
+          font-weight: 600;
+          color: $index-text-color;
+        }
+
+        .card-body {
+          padding: 20px;
+        }
+
+        .card-desc {
+          font-size: 14px;
+          color: $index-text-secondary-color;
+          line-height: 1.6;
+          margin-bottom: 15px;
+        }
+
+        .card-meta {
+          font-size: 12px;
+          color: $index-text-secondary-color;
+          margin-bottom: 15px;
+        }
+
+        .card-features {
+          list-style: none;
+          padding: 0;
+          margin: 0 0 15px 0;
+        }
+
+        .card-tags,
+        .card-tech {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          margin-top: 15px;
+        }
+
+        .tag-item {
+          background-color: $border-color;
+          color: $input-focus-color;
+          border: none;
+          font-size: 12px;
+          padding: 4px 8px;
+          border-radius: 4px;
+        }
+
+        .el-tag--info {
+          background-color: $border-color !important;
+          border: none !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@use '@/styles/TopNavbarStyle/topNavbarDocs.scss' as *;
+@use '@/styles/TopNavbarStyle/topNavbarProject.scss' as *;
+@use '@/styles/variables.module.scss' as *;
+@use '@/styles/IndexMainStyle/index.scss' as *;
+@use "sass:color";
+
+/* 临时强制禁用所有焦点样式 */
+* {
+  margin: 0;
+  padding: 0;
+  caret-color: transparent !important;
+  // overflow-x: hidden !important;
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+html,
+body {
+  // background-color: $index-bg-color;
+  background: #0d1117;
+}
+
+.container {
+  width: 100%;
+  max-width: 1405px; /* 根据设计稿宽度，可调整 */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;  /* 可根据设计稿调整左右内边距 */
+  padding-right: 16px;
+}
+
+@mixin responsive-font($min, $max) {
+  font-size: clamp($min, 2vw, $max);
+}
+
+/* 滚动条样式 (全局生效) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(#2c2c2c, 0.8);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  $thumb-color: color.adjust($index-bg-color, $lightness: 20%);
+  background: rgba($thumb-color, 0.6);
+  border-radius: 4px;
+
+  &:hover {
+    $hover-color: color.adjust($index-bg-color, $lightness: 30%);
+    background: rgba($hover-color, 0.8);
+  }
+}

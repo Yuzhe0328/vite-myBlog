@@ -1,0 +1,138 @@
+@use "@/styles/variables.module.scss" as *;
+
+.master-main-top {
+  width: $width-default;
+  /* 如果父 index.vue 已经用 .container 限制宽度并居中，这里就不需重复 max-width */
+  padding: $padding20;
+  /* 保证在滚动时，svg-section 保持可见 */
+  animation: slideDown 1s ease-out forwards;
+
+  /* 小屏优化 */
+  @media (max-width: 768px) {
+    padding: $padding150;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: $transform50;
+  }
+
+  to {
+    opacity: 1;
+    transform: $transform0;
+  }
+}
+
+.svg-section {
+  position: relative;
+  width: $width-default;
+  /* 给一个最小高度，确保内部元素能有足够空间展示并能控制 top 定位 */
+  min-height: $small-four-height;
+  margin: $margin0auto;
+  /* 可视需要用 flex 布局将内部组件居中或堆叠，但若用绝对定位，也应保证 min-height 足够 */
+}
+
+/* SvgInputs 居中或铺满容器 */
+.svg-inputs-wrapper {
+  position: absolute;
+  top: -85%;
+  left: -3%;
+  transform: $translateX-50;
+  /* 如果 SvgInputs 内部尺寸可自适应，此处无需 hardcode 宽高 */
+  /* 也可给 padding-top 让它距离顶部有间距 */
+}
+
+/* SvgOutputs 叠加在 SvgInputs 之下，或偏移一定距离 */
+.svg-outputs-wrapper {
+  position: absolute;
+  top: -11%;
+  /* 根据设计调整：表示在容器顶部往下 300px 显示输出动画 */
+  left: -5%;
+  transform: $translateX-50;
+  /* 小屏时可减小 top 值 */
+}
+
+/* chip 区域叠加到容器中心或某个位置 */
+.chip {
+  position: absolute;
+  /* 以 svg-section 容器中心为基准 */
+  top: -4%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.85);
+  width: $width134;
+  height: $height134;
+  border-radius: $border-radius10px;
+  overflow: hidden;
+  transition: all 0.6s ease-out;
+
+  .chip__background {
+    position: absolute;
+    inset: 0;
+    width: $width-default;
+    height: $height-default;
+    z-index: 1001;
+    opacity: 0.4;
+    transition: background 1.5s ease-out, opacity 1s ease;
+    background: radial-gradient(circle at right center,
+        rgba(86, 50, 119, 0.6) 0%,
+        rgba(74, 55, 140, 0.5) 50%,
+        rgba(65, 114, 194, 0.3) 100%);
+
+    &.layered {
+      background:
+        radial-gradient(circle at 70% 30%,
+          rgba(255, 105, 180, 0.3) 0%,
+          transparent 40%),
+        radial-gradient(circle at 30% 70%,
+          rgba(100, 200, 255, 0.4) 0%,
+          transparent 50%),
+        radial-gradient(circle at center,
+          rgba(50, 100, 255, 0.6) 0%,
+          rgba(20, 30, 48, 0.8) 100%);
+      opacity: 0.8;
+
+      .chip__logo {
+        opacity: 1;
+      }
+    }
+
+    @media (min-width: 768px) {
+      opacity: 0.1;
+    }
+
+    .chip__logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.9);
+      width: $width150;
+      opacity: 0.2;
+      filter: $grayscale100;
+      transition: all 0.2s ease;
+      z-index: 3;
+    }
+  }
+}
+
+/* 小屏响应式，调整 min-height、top 值、chip 大小等 */
+@media (max-width: 768px) {
+  .svg-section {
+    min-height: $small-three-height;
+  }
+
+  .svg-outputs-wrapper {
+    top: 200px;
+  }
+
+  .chip {
+    width: $width-default-px;
+    height: $height-default-px;
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+
+  .chip__logo {
+    width: $width-default-px;
+  }
+}

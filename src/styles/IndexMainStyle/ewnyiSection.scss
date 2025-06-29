@@ -1,0 +1,52 @@
+@use '@/styles/variables.module.scss' as *;
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $margin0auto;
+    height: auto;
+    // min-height: 50%;
+    // max-width: 100vw;
+    overflow: hidden;
+
+    .lines-wrapper {
+        height: calc(2 * 3.1em);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-top: $margin-top20;
+    }
+
+    .line {
+        font-size: $computed-font-size;
+        line-height: $yi-er-height;
+        font-weight: $font-weight-bold;
+        background: $color-gradient;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: nowrap;
+        /* 禁止换行 */
+        margin: $margin0250;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: $margin-top1;
+        
+        .btn {
+            background: $button-bg-color-top-left;
+            backdrop-filter: $backdrop-filter5px;
+            border: $button-border-color-top;
+            color: $index-text-color;
+        }
+    
+        .btn-secondary {
+            background: $button-bg-color-top-right;
+            border: $button-border-color-top;
+            color: $index-text-color;
+        }
+    }
+}

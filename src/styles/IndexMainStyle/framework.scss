@@ -1,0 +1,64 @@
+@use '@/styles/variables.module.scss' as *;
+.framework-card {
+  width: $width96;
+  height: $height96;
+  border-radius: $border-radius12px;
+  border: $framework-one-border-color;
+  background: $framework-one-background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 3px; */
+  --glow-color: $default-rgba;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  user-select: none;
+  
+  img {
+    user-select: none;
+    filter: drop-shadow(0 0 0.8rem color-mix(in srgb, var(--glow-color) 40%, transparent));
+  }
+
+  &.active {
+    opacity: 1;
+  }
+
+
+}
+
+.framework-card:not(:has(img)) {
+  transform: scale(1) translate3d(0, 0, 0);
+  transition: transform 3s ease;
+
+  &:hover {
+    transform: scale(0.9) translate3d(0, 0, 0);
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+.framework-card:has(img) {
+  cursor: pointer;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    background-color: var(--glow-color);
+    filter: $blur18;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 3s ease;
+    will-change: opacity;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 1;
+      transition: opacity 0.2s ease;
+    }
+  }
+}

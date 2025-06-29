@@ -1,0 +1,289 @@
+@use '@/styles/variables.module.scss' as *;
+
+@mixin glow-frame($radius) {
+  position: relative;
+  background: $color-gradient-deg135;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: inherit;
+    filter: $blur-filter;
+    opacity: 0.7;
+    z-index: 0;
+  }
+}
+
+.master-main-main {
+  .components {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $padding20;
+    margin-top: $margin-top100;
+
+    .rebot {
+      width: $width160;
+      margin-bottom: $margin-bottom15;
+      opacity: 0;
+      transform: $transform20;
+      transition: opacity 0.8s ease, transform 0.8s ease;
+
+      &.show {
+        opacity: 1;
+        transform: $transform0;
+      }
+    }
+
+    .rebot_title {
+      font-size: $font-size225;
+      font-weight: bold;
+      margin-top: $margin-top-20;
+      color: $index-text-color;
+    }
+
+    .rebot_text {
+      max-width: $max-width600;
+      text-align: center;
+      line-height: $yi-liu-height;
+      font-size: $font-size1rem;
+      margin-bottom: $margin-bottom2;
+      color: $index-text-8b9;
+    }
+
+    .border-box {
+      @include glow-frame(24px);
+      width: $width85;
+      height: $height600;
+      margin-bottom: $margin-bottom4;
+      padding: $padding15;
+      // box-sizing: border-box;
+      border-radius: $border-radius16px;
+
+      .content-box {
+        position: relative;
+        width: $width-default;
+        height: $height-default;
+        border-radius: $border-radius16px;
+        background: $top-bg-color;
+        overflow: hidden;
+        z-index: 1;
+        box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .card-grid {
+      display: flex;
+      gap: $gap2;
+      justify-content: center;
+      margin-bottom: $margin-bottom4;
+
+      .card {
+        background: $button-bg-color-top-right;
+        border-radius: $border-radius12px;
+        padding: $padding15;
+        text-align: center;
+        width: $width240;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+
+        .card-icon {
+          font-size: $font-size2rem;
+          margin-bottom: $margin-bottom05;
+        }
+
+        .card-title {
+          font-size: $font-size125rem;
+          margin-bottom: $margin-bottom05;
+          color: $index-text-color;
+        }
+
+        .card-desc {
+          font-size: $font-size09;
+          margin-bottom: $margin-bottom;
+          color: $index-text-8b9;
+        }
+      }
+    }
+
+    .features-section {
+      margin-top: $margin-top50;
+      width: $width-default;
+
+      .section-title {
+        font-size: $font-size2rem;
+        color: $index-text-color;
+        text-align: center;
+        margin-bottom: $margin-bottom2;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: $gap15;
+      }
+
+      .feature {
+        background: $button-bg-color-top-right;
+        border-radius: $border-radius8px;
+        padding: $gap15;
+        text-align: center;
+        box-shadow: $box-shadow026;
+
+        .feature-icon {
+          font-size: $font-size175rem;
+          margin-bottom: $margin-bottom05;
+        }
+
+        .feature-title {
+          font-size: $font-size125rem;
+          margin-bottom: $margin-bottom05;
+          color: $index-text-color;
+        }
+
+        .feature-text {
+          font-size: $font-size09;
+          color: $index-text-8b9;
+        }
+      }
+    }
+  }
+
+  .datalineaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $padding20;
+    margin: $margin0auto;
+    margin-top: $width-default-px;
+
+    .icon {
+      font-size: $font-size96px;
+      width: $width160;
+      margin-bottom: $margin-bottom15;
+      margin-left: $margin-left20;
+      opacity: 1
+    }
+
+    .title {
+      font-size: $font-size225;
+      font-weight: bold;
+      margin-top: $margin-top-20;
+      color: $index-text-color;
+    }
+
+    .dataline-wrap {
+      margin: $margin0auto;
+      margin-top: $margin-top2;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      gap: $gap100;
+
+      .map-area {
+        flex: 1;
+        display: flex;
+        width: $max-width600;
+        height: $height600;
+        margin-right: $margin-right40;
+
+        .earth {
+          width: $width-default;
+          max-width: $max-width500;
+          animation: float 5s ease-in-out infinite;
+          border-radius: $border-radius16px;
+        }
+      }
+
+      .dataline-content {
+        display: flex;
+        align-items: center;
+
+        .text-area {
+          flex: 1;
+          color: $index-text-color;
+
+          .features {
+            list-style: none;
+            padding: $padding0;
+            display: grid;
+            grid-template-columns: repeat(1, 2fr);
+            gap: $gap1;
+            margin-right: $margin-right150;
+
+            li {
+              background: $button-bg-color-top-right;
+              padding: $padding115;
+              border-radius: $border-radius12px;
+              backdrop-filter: $backdrop-filter6px;
+              box-shadow: $box-shadow0420;
+              transition: transform 0.3s;
+
+              &:hover {
+                transform: $transform6;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: $transform0;
+    }
+
+    50% {
+      transform: $transform20;
+    }
+  }
+
+  @keyframes pop {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @media(max-width:992px) {
+    .datalineaction .dataline-content {
+      flex-direction: column;
+      text-align: center;
+
+      .text-area,
+      .map-area {
+        width: $width-default;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .map-area {
+        margin-top: $margin-top2;
+      }
+    }
+  }
+
+  .el-button {
+    border-radius: $boder-radius6px;
+    font-weight: $font-weight-bold500;
+  }
+
+  .show {
+    opacity: 1 !important;
+    transform: $transform0 !important;
+  }
+}

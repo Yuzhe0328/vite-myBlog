@@ -1,0 +1,273 @@
+// 颜色变量
+// 鼠标选中后的背景颜色
+$active-bg-color: #272727;
+// 边框 / 鼠标聚焦文本后的颜色 / 标签背景颜色
+$border-color: #374151;
+// Main top button background-color-left
+$button-bg-color-top-left: rgba(104, 109, 224, 0.3);
+// Main top button background-color-right
+$button-bg-color-top-right: rgba(255, 255, 255, 0.1);
+// Main top button border color
+$button-border-color-top: 1px solid rgba(255, 255, 255, 0.2);
+// 卡片背景颜色
+$card-bg-color: #cccccc;
+// 卡片meta背景颜色
+$card-meta-bg-color: #999;
+// 子卡片背景颜色
+$child-card-bg-color: #1a1a1a;
+// 子卡片鼠标触碰后的背景颜色
+$child-card-hover-bg: #2a2a2a;
+// 颜色渐变 to top 999到fff
+$color-gradient: linear-gradient(to top, #999, #fff);
+// 颜色渐变 135deg
+$color-gradient-deg135: linear-gradient(135deg, rgba(142, 177, 255, 0.8), rgba(177, 255, 207, 0.8));
+// default rgba
+$default-rgba: rgba(0, 0, 0, 0);
+// 下拉菜单辅助颜色
+$dropdown-bg-color: #171717;
+// Main top three text font-size color
+$font-size-6c-color: #6c6666;
+// framework background-color
+$framework-background-color: rgba(38, 38, 38, 0.15);
+// framework background
+$framework-one-background-color: #181818;
+// framework this one border-color
+$framework-one-border-color: 1px solid rgba(38, 38, 38, 0.7);
+// icon默认颜色
+$icon-default-color: #909399;
+// 首页/index背景颜色变量
+$index-bg-color: #101010;
+// 文字颜色8b949e
+$index-text-8b9: #8b949e;
+// 文字主要颜色
+$index-text-color: #fff;
+// 文字触碰后的颜色
+$index-text-hover-color: #8f99ff;
+// 文字次要颜色
+$index-text-secondary-color: #d1d5db;
+// input聚焦后的颜色
+$input-focus-color: #409EFF;
+// 滚动条颜色
+$scrollbar-color: #191919;
+// tag-item背景颜色
+$tag-item-bg-color: #1e1e1e;
+// 顶部导航颜色
+$top-bg-color: #0D1117;
+
+// 尺寸变量
+// 自动填充高度
+$auto-fill-height: auto;
+// 去掉边框
+$border-none: none !important;
+// 下拉框最大高度
+$dropdown-max-height: 410px;
+// 下拉框最大宽度
+$dropdown-max-width: calc(100% - 5px);
+// 去掉/隐藏dropdown三角
+$dropdown-triangle-none: none;
+// 高度80px
+$height80: 80px;
+// 高度96px
+$height96: 96px;
+// 高度134px
+$height134: 134px;
+// 高度600px
+$height600: 600px;
+// 默认高度
+$height-default: 100%;
+// 默认px高度
+$height-default-px: 100px;
+// input最大长度
+$input-max-length: 180px;
+// 最大宽度500px
+$max-width500: 500px;
+// 最大宽度600px
+$max-width600: 600px;
+// 无背景颜色
+$no-background-color: transparent;
+// 禁止滚动条
+$scrollbar-none: hidden;
+// 最小高度180
+$small-eight-height: 180px;
+// 最小高度300
+$small-three-height: 300px;
+// 最小高度400
+$small-four-height: 400px;
+// 最小高度500
+$small-five-height: 500px;
+// 宽度85%
+$width85: 85%;
+// 宽度96px
+$width96: 96px;
+// 宽度134px
+$width134: 134px;
+// 宽度150px
+$width150: 150px;
+// 宽度160px
+$width160: 160px;
+// 宽度240px
+$width240: 240px;
+// 默认宽度
+$width-default: 100%;
+// 默认px宽度
+$width-default-px: 100px;
+
+// 间距变量
+// margin0auto
+$margin0auto: 0 auto;
+// margin 0.25rem 0
+$margin0250: 0.25rem 0;
+// margin-bottom 0.5
+$margin-bottom05: 0.5rem;
+// margin-top: 0.5rem
+$margin-top-05: 0.5rem;
+// margin bottom 1
+$margin-bottom: 1rem;
+// margin-top: 1rem
+$margin-top1: 1rem;
+// margin bottom 1.5
+$margin-bottom15: 1.5rem;
+// margin bottom 2
+$margin-bottom2: 2rem;
+// margin-top 2rem
+$margin-top2: 2rem;
+// margin-bottom 4
+$margin-bottom4: 4rem;
+// margin-top: 20rem (注意：20rem可能过大)
+$margin-top20: 20rem;
+// margin-left 20px
+$margin-left20: 20px;
+// margin-bottom: 24px
+$margin-bottom24: 24px;
+// margin-right 40px
+$margin-right40: 40px;
+// margin-top 50px
+$margin-top50: 50px;
+// margin-right 150px
+$margin-right150: 150px;
+// margin-top20 (注意：负值可能有特殊用途)
+$margin-top-20: -20px;
+// margin top -100px (注意：负值可能有特殊用途)
+$margin-top100: -100px;
+// padding 0
+$padding0: 0;
+// padding下0.75
+$padding-zero-bottom: 0.75rem;
+// padding上0.75
+$padding-zero-top: 0.75rem;
+// padding下1rem
+$padding-ten-bottom: 1rem;
+// padding 1rem 1.5rem
+$padding115: 1rem 1.5rem;
+// padding 15
+$padding15: 1.5rem;
+// padding150
+$padding150: 1.5rem 0;
+// padding20rem
+$padding20: 2rem 0;
+// padding上10rem
+$padding-ten-top: 10rem;
+
+// 计算变量
+// 计算字体大小2
+$computed-font-size2: clamp(1.25rem, 2vw, 2rem);
+// 计算字体大小
+$computed-font-size: clamp(2.3rem, 2vw, 3rem);
+// 计算高度 2 * 3.1
+$computed-height-two: calc(2 * 3.1rem);
+
+// 行高变量
+// line-height: 1.2
+$yi-er-height: 1.2;
+// line-height: 1.6
+$yi-liu-height: 1.6;
+
+// 字体变量
+// 字体0.9rem
+$font-size09: 0.9rem;
+// 字体1rem
+$font-size1rem: 1rem;
+// 字体1.25rem
+$font-size125rem: 1.25rem;
+// 字体1.75rem
+$font-size175rem: 1.75rem;
+// 字体2rem
+$font-size2rem: 2rem;
+// 字体2.25
+$font-size225: 2.25rem;
+// 字体96px
+$font-size96px: 96px;
+// 字体粗500
+$font-weight-bold500: 500;
+// 字体粗700
+$font-weight-bold: 700;
+
+// 间隙变量
+// 间隙0.5rem
+$gap05: 0.5rem;
+// 间隙0.75rem
+$gap075: 0.75rem;
+// 间隙1rem
+$gap1: 1rem;
+// 间隙1.5rem
+$gap15: 1.5rem;
+// 间隙2rem
+$gap2: 2rem;
+// 间隙100px
+$gap100: 100px;
+
+// 变换变量
+// transformY0
+$transform0: translateY(0);
+// transform6
+$transform6: translateY(-6px);
+// transformY 20px
+$transform20: translateY(20px);
+// transformY -50px
+$transform50: translateY(-50px);
+// translateX-50
+$translateX-50: translateX(-50%);
+
+// 边框半径变量
+// border-radius6px (注意：拼写应为border)
+$boder-radius6px: 6px;
+// border-radius8px
+$border-radius8px: 8px;
+// border-radius10px
+$border-radius10px: 10px;
+// border-radius12px
+$border-radius12px: 12px;
+// border-radius16px
+$border-radius16px: 16px;
+
+// 阴影变量
+// 阴影 0 2px 6px
+$box-shadow026: 0 2px 6px rgba(0, 0, 0, 0.5);
+// 阴影 0 4px 20px
+$box-shadow0420: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+// 网格变量
+// 网格自动列宽96px
+$grid-auto-columns96px: 96px;
+// 网格间隙24px
+$grid-gap24px: 24px;
+
+// 其他变量
+// backdrop-filter5px
+$backdrop-filter5px: blur(5px);
+// backdrop-filter6px
+$backdrop-filter6px: blur(6px);
+// filter 18px
+$blur18: blur(18px);
+// row-offset12
+$row-offset12px: 12px;
+// row-offset24px
+$row-offset24px: 24px;
+// row-offset24-
+$row-offset24-px: -24px;
+// row-offset36px
+$row-offset36px: 36px;
+// filter blur
+$blur-filter: blur(80px);
+// filter grayscale100%
+$grayscale100: grayscale(100%);
