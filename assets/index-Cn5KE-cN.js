@@ -1,6 +1,6 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/index-xhYLVbv5.js","assets/vendor-IpMyBuif.js","assets/i18n-DNJ5Tj2P.js","assets/locales-CunGDHGy.js","assets/index-CvF8AJda.css","assets/el-button-DPSIWn2t.css","assets/index-CcoXS2e7.js","assets/index-BBR6y9Cy.css","assets/index-Cyr0vVGJ.js","assets/index-BpuQVvYm.js","assets/index-CVL_e4S7.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/index-BfbEqx-B.js","assets/vendor-IpMyBuif.js","assets/i18n-DNJ5Tj2P.js","assets/locales-ONFHvJa4.js","assets/index-e5jk9Asf.css","assets/el-button-DPSIWn2t.css","assets/index-R8qZDKmq.js","assets/index-BCVXw5SC.css","assets/index-Buz-SdKy.js","assets/index-D9G_q4tY.js","assets/index-D5pjt6Kw.js"])))=>i.map(i=>d[i]);
 import { k as createElementBlock, j as createVNode, l as resolveComponent, m as openBlock, s as shallowRef, d as defineComponent, u as unref, n as shallowReactive, p as reactive, a as inject, c as computed, h, q as provide, r as ref, w as watch, t as nextTick, v as createApp, E as ElementPlusIconVue, x as installer } from "./vendor-IpMyBuif.js";
-import { s as setupI18n } from "./locales-CunGDHGy.js";
+import { s as setupI18n } from "./locales-ONFHvJa4.js";
 (function polyfill() {
   const relList = document.createElement("link").relList;
   if (relList && relList.supports && relList.supports("modulepreload")) {
@@ -470,6 +470,12 @@ function createWebHistory(base) {
     get: () => historyNavigation.state.value
   });
   return routerHistory;
+}
+function createWebHashHistory(base) {
+  base = location.host ? base || location.pathname + location.search : "";
+  if (!base.includes("#"))
+    base += "#";
+  return createWebHistory(base);
 }
 function isRouteLocation(route) {
   return typeof route === "string" || route && typeof route === "object";
@@ -1990,33 +1996,33 @@ const __vitePreload = function preload(baseModule, deps, importerUrl) {
 const constantRouter = [
   {
     path: "/",
-    component: () => __vitePreload(() => import("./index-xhYLVbv5.js"), true ? __vite__mapDeps([0,1,2,3,4,5]) : void 0),
+    component: () => __vitePreload(() => import("./index-BfbEqx-B.js"), true ? __vite__mapDeps([0,1,2,3,4,5]) : void 0),
     children: [
       {
         path: "",
         name: "home",
-        component: () => __vitePreload(() => import("./index-CcoXS2e7.js").then((n) => n.ai), true ? __vite__mapDeps([6,2,1,7,5]) : void 0)
+        component: () => __vitePreload(() => import("./index-R8qZDKmq.js").then((n) => n.ai), true ? __vite__mapDeps([6,2,1,7,5]) : void 0)
       },
       {
         path: "article",
         name: "article",
-        component: () => __vitePreload(() => import("./index-Cyr0vVGJ.js"), true ? __vite__mapDeps([8,1,3,2]) : void 0)
+        component: () => __vitePreload(() => import("./index-Buz-SdKy.js"), true ? __vite__mapDeps([8,1,3,2]) : void 0)
       },
       {
         path: "about",
         name: "about",
-        component: () => __vitePreload(() => import("./index-BpuQVvYm.js"), true ? __vite__mapDeps([9,1,3,2]) : void 0)
+        component: () => __vitePreload(() => import("./index-D9G_q4tY.js"), true ? __vite__mapDeps([9,1,3,2]) : void 0)
       },
       {
         path: "/:pathMatch(.*)*",
-        component: () => __vitePreload(() => import("./index-CVL_e4S7.js"), true ? __vite__mapDeps([10,1,3,2]) : void 0)
+        component: () => __vitePreload(() => import("./index-D5pjt6Kw.js"), true ? __vite__mapDeps([10,1,3,2]) : void 0)
         // ✅
       }
     ]
   }
 ];
 const router = createRouter({
-  history: createWebHistory("/vite-myBlog/"),
+  history: createWebHashHistory("/vite-myBlog/"),
   routes: constantRouter
 });
 const app = createApp(App);

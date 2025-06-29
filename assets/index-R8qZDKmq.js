@@ -1,20 +1,19 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/index-DDfnCtkw.js","assets/i18n-DNJ5Tj2P.js","assets/vendor-IpMyBuif.js","assets/index-sQiCAAjD.js","assets/locales-CunGDHGy.js","assets/index-mmlRx3Uc.css","assets/el-button-DPSIWn2t.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/index-BUy1xAe_.js","assets/i18n-DNJ5Tj2P.js","assets/vendor-IpMyBuif.js","assets/index-Cn5KE-cN.js","assets/locales-ONFHvJa4.js","assets/index-DTlRfgeT.css","assets/el-button-DPSIWn2t.css"])))=>i.map(i=>d[i]);
 /* empty css                   */
 import { u as useI18n } from "./i18n-DNJ5Tj2P.js";
 import { d as defineComponent, c as computed, r as ref, w as watch, o as onMounted, b as onUnmounted, k as createElementBlock, y as createBaseVNode, G as createCommentVNode, z as toDisplayString, u as unref, j as createVNode$1, Y as ElButton, B as withCtx, m as openBlock, R as createTextVNode, Z as normalizeStyle$1, M as normalizeClass, _ as createStaticVNode, F as Fragment, L as renderList, $ as mergeProps, a0 as getDefaultExportFromCjs, N as createBlock, a1 as resolveDynamicComponent } from "./vendor-IpMyBuif.js";
-import { _ as _export_sfc, a as __vitePreload } from "./index-sQiCAAjD.js";
+import { _ as _export_sfc, a as __vitePreload } from "./index-Cn5KE-cN.js";
 const _hoisted_1$a = { class: "master-top" };
 const _hoisted_2$7 = { class: "lines-wrapper" };
-const _hoisted_3$4 = { class: "line" };
-const _hoisted_4$4 = { class: "line" };
-const _hoisted_5$4 = {
+const _hoisted_3$6 = { class: "line" };
+const _hoisted_4$6 = { class: "line" };
+const _hoisted_5$5 = {
   key: 0,
   class: "buttons"
 };
 const _hoisted_6$4 = { class: "description" };
 const _sfc_main$c = /* @__PURE__ */ defineComponent({
-  __name: "masterTop",
-  emits: ["typing-complete"],
+  __name: "heroSection",
   setup(__props, { emit: __emit }) {
     const emit = __emit;
     const { t, locale } = useI18n({ useScope: "global" });
@@ -69,10 +68,10 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
       const _component_el_button = ElButton;
       return openBlock(), createElementBlock("div", _hoisted_1$a, [
         createBaseVNode("div", _hoisted_2$7, [
-          createBaseVNode("div", _hoisted_3$4, toDisplayString(unref(contentA)), 1),
-          createBaseVNode("div", _hoisted_4$4, toDisplayString(unref(contentB)), 1)
+          createBaseVNode("div", _hoisted_3$6, toDisplayString(unref(contentA)), 1),
+          createBaseVNode("div", _hoisted_4$6, toDisplayString(unref(contentB)), 1)
         ]),
-        unref(showButtons) ? (openBlock(), createElementBlock("div", _hoisted_5$4, [
+        unref(showButtons) ? (openBlock(), createElementBlock("div", _hoisted_5$5, [
           createBaseVNode("div", _hoisted_6$4, toDisplayString(unref(currentContentC)), 1),
           createVNode$1(_component_el_button, {
             class: "btn",
@@ -97,7 +96,6 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const masterTop = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["__scopeId", "data-v-bd6ce3f8"]]);
 function _assertThisInitialized(self2) {
   if (self2 === void 0) {
     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -4119,9 +4117,9 @@ var gsapWithCSS = gsap.registerPlugin(CSSPlugin) || gsap;
 gsapWithCSS.core.Tween;
 const _hoisted_1$9 = ["d", "stroke", "mask"];
 const _hoisted_2$6 = ["cx", "cy", "r", "fill"];
-const _hoisted_3$3 = ["x", "y"];
-const _hoisted_4$3 = ["id"];
-const _hoisted_5$3 = ["d"];
+const _hoisted_3$5 = ["x", "y"];
+const _hoisted_4$5 = ["id"];
+const _hoisted_5$4 = ["d"];
 const _hoisted_6$3 = ["cx", "cy", "r"];
 const _hoisted_7$3 = ["id", "cx", "cy", "r"];
 const _hoisted_8$2 = ["stop-color"];
@@ -4205,7 +4203,7 @@ const _sfc_main$b = /* @__PURE__ */ defineComponent({
           "text-anchor": "middle",
           "alignment-baseline": "hanging",
           class: normalizeClass(["label", { "label--visible": props.labelVisible }])
-        }, toDisplayString(props.label), 11, _hoisted_3$3)) : createCommentVNode("", true),
+        }, toDisplayString(props.label), 11, _hoisted_3$5)) : createCommentVNode("", true),
         createBaseVNode("defs", null, [
           createBaseVNode("mask", {
             id: `glow_mask_${unref(pathId)}`
@@ -4213,14 +4211,14 @@ const _sfc_main$b = /* @__PURE__ */ defineComponent({
             createBaseVNode("path", {
               d: props.path,
               fill: "black"
-            }, null, 8, _hoisted_5$3),
+            }, null, 8, _hoisted_5$4),
             createBaseVNode("circle", {
               cx: unref(dotPosition).x,
               cy: unref(dotPosition).y,
               r: unref(gradientWidth) * unref(gradientWidthScaleFactor),
               fill: "white"
             }, null, 8, _hoisted_6$3)
-          ], 8, _hoisted_4$3),
+          ], 8, _hoisted_4$5),
           createBaseVNode("radialGradient", {
             id: `glow_gradient_${unref(pathId)}`,
             cx: unref(dotPosition).x,
@@ -6582,13 +6580,13 @@ var ScrollTriggerExports = /* @__PURE__ */ requireScrollTrigger();
 const ScrollTrigger = /* @__PURE__ */ getDefaultExportFromCjs(ScrollTriggerExports);
 const _hoisted_1$6 = { class: "master-main-top" };
 const _hoisted_2$4 = { class: "svg-section" };
-const _hoisted_3$2 = { class: "svg-inputs-wrapper" };
-const _hoisted_4$2 = { class: "svg-outputs-wrapper" };
-const _hoisted_5$2 = { class: "chip" };
+const _hoisted_3$4 = { class: "svg-inputs-wrapper" };
+const _hoisted_4$4 = { class: "svg-outputs-wrapper" };
+const _hoisted_5$3 = { class: "chip" };
 const _hoisted_6$2 = { class: "chip__background" };
 const _hoisted_7$2 = ["src"];
 const _sfc_main$8 = /* @__PURE__ */ defineComponent({
-  __name: "masterMainTop",
+  __name: "featureSection",
   setup(__props) {
     gsapWithCSS.registerPlugin(ScrollTriggerExports.ScrollTrigger);
     const showLine = ref(false);
@@ -6647,13 +6645,13 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$6, [
         createBaseVNode("div", _hoisted_2$4, [
-          createBaseVNode("div", _hoisted_3$2, [
+          createBaseVNode("div", _hoisted_3$4, [
             createVNode$1(SvgInputs, { "input-lines": unref(inputLines) }, null, 8, ["input-lines"])
           ]),
-          createBaseVNode("div", _hoisted_4$2, [
+          createBaseVNode("div", _hoisted_4$4, [
             createVNode$1(SvgOutputs, { "output-lines": outputLines })
           ]),
-          createBaseVNode("div", _hoisted_5$2, [
+          createBaseVNode("div", _hoisted_5$3, [
             createBaseVNode("div", _hoisted_6$2, [
               createBaseVNode("img", {
                 src: unref(logo),
@@ -6667,7 +6665,6 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const masterMainTop = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-c5a28bbc"]]);
 const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   __name: "index",
   setup(__props) {
@@ -79443,7 +79440,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
       if (typeof window !== "undefined") {
         if (!moduleEchartsGlLoaded && !window.__echarts_gl_loaded__) {
           try {
-            await __vitePreload(() => import("./index-DDfnCtkw.js"), true ? __vite__mapDeps([0,1,2,3,4,5,6]) : void 0);
+            await __vitePreload(() => import("./index-BUy1xAe_.js"), true ? __vite__mapDeps([0,1,2,3,4,5,6]) : void 0);
             moduleEchartsGlLoaded = true;
             window.__echarts_gl_loaded__ = true;
           } catch (e2) {
@@ -79472,22 +79469,44 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const ComponentEarth = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-fb6b6968"]]);
+const ComponentEarth = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["__scopeId", "data-v-e89af577"]]);
 const _hoisted_1$5 = { class: "master-main-main" };
 const _hoisted_2$3 = { class: "components" };
-const _hoisted_3$1 = ["src"];
-const _hoisted_4$1 = { class: "border-box" };
-const _hoisted_5$1 = { class: "content-box" };
-const _hoisted_6$1 = { class: "card-grid" };
-const _hoisted_7$1 = { class: "card-icon" };
-const _hoisted_8$1 = { class: "card-title" };
-const _hoisted_9$1 = { class: "datalineaction" };
-const _hoisted_10$1 = { class: "dataline-wrap" };
-const _hoisted_11$1 = { class: "map-area" };
+const _hoisted_3$3 = ["src"];
+const _hoisted_4$3 = { class: "rebot_title" };
+const _hoisted_5$2 = { class: "rebot_text" };
+const _hoisted_6$1 = { class: "border-box" };
+const _hoisted_7$1 = { class: "content-box" };
+const _hoisted_8$1 = { class: "card-grid" };
+const _hoisted_9$1 = { class: "card-icon" };
+const _hoisted_10$1 = { class: "card-desc" };
+const _hoisted_11$1 = { class: "features-section" };
+const _hoisted_12 = { class: "section-title" };
+const _hoisted_13 = { class: "features-grid" };
+const _hoisted_14 = { class: "feature" };
+const _hoisted_15 = { class: "feature-title" };
+const _hoisted_16 = { class: "feature-text" };
+const _hoisted_17 = { class: "feature" };
+const _hoisted_18 = { class: "feature-title" };
+const _hoisted_19 = { class: "feature-text" };
+const _hoisted_20 = { class: "feature" };
+const _hoisted_21 = { class: "feature-title" };
+const _hoisted_22 = { class: "feature-text" };
+const _hoisted_23 = { class: "feature" };
+const _hoisted_24 = { class: "feature-title" };
+const _hoisted_25 = { class: "feature-text" };
+const _hoisted_26 = { class: "datalineaction" };
+const _hoisted_27 = { class: "title" };
+const _hoisted_28 = { class: "dataline-wrap" };
+const _hoisted_29 = { class: "map-area" };
+const _hoisted_30 = { class: "dataline-content" };
+const _hoisted_31 = { class: "text-area" };
+const _hoisted_32 = { class: "features" };
 const _sfc_main$5 = /* @__PURE__ */ defineComponent({
-  __name: "masterMainmain",
+  __name: "masterSection",
   setup(__props) {
     gsapWithCSS.registerPlugin(ScrollTrigger);
+    const { t } = useI18n({ useScope: "global" });
     const robotImg = ref(null);
     const screenWidth = ref(1920);
     const handleResize = () => {
@@ -79515,11 +79534,11 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
             alt: "robot",
             ref_key: "robotImg",
             ref: robotImg
-          }, null, 8, _hoisted_3$1),
-          _cache[3] || (_cache[3] = createBaseVNode("div", { class: "rebot_title" }, "自定义式组件库", -1)),
-          _cache[4] || (_cache[4] = createBaseVNode("div", { class: "rebot_text" }, "自由编写代码，随意定义你想要的样式，减少逻辑代码，标签完成所有基本样式", -1)),
-          createBaseVNode("div", _hoisted_4$1, [
-            createBaseVNode("div", _hoisted_5$1, [
+          }, null, 8, _hoisted_3$3),
+          createBaseVNode("div", _hoisted_4$3, toDisplayString(unref(t)("masterSection.rebot_title")), 1),
+          createBaseVNode("div", _hoisted_5$2, toDisplayString(unref(t)("masterSection.rebot_text")), 1),
+          createBaseVNode("div", _hoisted_6$1, [
+            createBaseVNode("div", _hoisted_7$1, [
               createVNode$1(_component_el_button, null, {
                 default: withCtx(() => _cache[0] || (_cache[0] = [
                   createTextVNode("111")
@@ -79529,53 +79548,74 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
               })
             ])
           ]),
-          createBaseVNode("section", _hoisted_6$1, [
-            (openBlock(), createElementBlock(Fragment, null, renderList(3, (item, idx) => {
+          createBaseVNode("section", _hoisted_8$1, [
+            (openBlock(), createElementBlock(Fragment, null, renderList(3, (idx) => {
               return createBaseVNode("div", {
                 key: idx,
                 class: "card"
               }, [
-                createBaseVNode("div", _hoisted_7$1, toDisplayString(["🚀", "💡", "🔧"][idx]), 1),
-                createBaseVNode("h3", _hoisted_8$1, "功能 " + toDisplayString(idx + 1), 1),
-                _cache[2] || (_cache[2] = createBaseVNode("p", { class: "card-desc" }, "简洁易用的 API，快速上手，提升开发效率。", -1)),
+                createBaseVNode("div", _hoisted_9$1, toDisplayString(["🚀", "💡", "🔧"][idx - 1]), 1),
+                createBaseVNode("p", _hoisted_10$1, toDisplayString(unref(t)("masterSection.card_title")), 1),
                 createVNode$1(_component_el_button, { size: "small" }, {
-                  default: withCtx(() => _cache[1] || (_cache[1] = [
-                    createTextVNode("了解详情")
-                  ])),
-                  _: 1,
-                  __: [1]
+                  default: withCtx(() => [
+                    createTextVNode(toDisplayString(unref(t)("masterSection.small")), 1)
+                  ]),
+                  _: 1
                 })
               ]);
             }), 64))
           ]),
-          _cache[5] || (_cache[5] = createStaticVNode('<section class="features-section" data-v-4365b20a><h2 class="section-title" data-v-4365b20a>构建坚实的应用</h2><div class="features-grid" data-v-4365b20a><div class="feature" data-v-4365b20a><div class="feature-icon" data-v-4365b20a>🔥</div><h3 class="feature-title" data-v-4365b20a>高性能</h3><p class="feature-text" data-v-4365b20a>使用最优渲染策略，保证应用流畅。</p></div><div class="feature" data-v-4365b20a><div class="feature-icon" data-v-4365b20a>⚙️</div><h3 class="feature-title" data-v-4365b20a>易扩展</h3><p class="feature-text" data-v-4365b20a>组件化设计，随时插拔，易于维护。</p></div><div class="feature" data-v-4365b20a><div class="feature-icon" data-v-4365b20a>🔒</div><h3 class="feature-title" data-v-4365b20a>安全可靠</h3><p class="feature-text" data-v-4365b20a>默认防 XSS/CSRF，开箱即用的安全方案。</p></div><div class="feature" data-v-4365b20a><div class="feature-icon" data-v-4365b20a>🎨</div><h3 class="feature-title" data-v-4365b20a>风格统一</h3><p class="feature-text" data-v-4365b20a>主题化机制，自定义品牌配色。</p></div></div></section>', 1))
+          createBaseVNode("section", _hoisted_11$1, [
+            createBaseVNode("h2", _hoisted_12, toDisplayString(unref(t)("masterSection.section_title")), 1),
+            createBaseVNode("div", _hoisted_13, [
+              createBaseVNode("div", _hoisted_14, [
+                _cache[1] || (_cache[1] = createBaseVNode("div", { class: "feature-icon" }, "🔥", -1)),
+                createBaseVNode("h3", _hoisted_15, toDisplayString(unref(t)("masterSection.feature_title")), 1),
+                createBaseVNode("p", _hoisted_16, toDisplayString(unref(t)("masterSection.feature_text")), 1)
+              ]),
+              createBaseVNode("div", _hoisted_17, [
+                _cache[2] || (_cache[2] = createBaseVNode("div", { class: "feature-icon" }, "⚙️", -1)),
+                createBaseVNode("h3", _hoisted_18, toDisplayString(unref(t)("masterSection.feature_title_yi")), 1),
+                createBaseVNode("p", _hoisted_19, toDisplayString(unref(t)("masterSection.feature_text_yi")), 1)
+              ]),
+              createBaseVNode("div", _hoisted_20, [
+                _cache[3] || (_cache[3] = createBaseVNode("div", { class: "feature-icon" }, "🔒", -1)),
+                createBaseVNode("h3", _hoisted_21, toDisplayString(unref(t)("masterSection.feature_title_er")), 1),
+                createBaseVNode("p", _hoisted_22, toDisplayString(unref(t)("masterSection.feature_text_er")), 1)
+              ]),
+              createBaseVNode("div", _hoisted_23, [
+                _cache[4] || (_cache[4] = createBaseVNode("div", { class: "feature-icon" }, "🎨", -1)),
+                createBaseVNode("h3", _hoisted_24, toDisplayString(unref(t)("masterSection.feature_title_san")), 1),
+                createBaseVNode("p", _hoisted_25, toDisplayString(unref(t)("masterSection.feature_text_san")), 1)
+              ])
+            ])
+          ])
         ]),
-        createBaseVNode("section", _hoisted_9$1, [
-          _cache[7] || (_cache[7] = createBaseVNode("div", { class: "icon" }, "🌍", -1)),
-          _cache[8] || (_cache[8] = createBaseVNode("h2", { class: "title" }, "全球地图", -1)),
-          createBaseVNode("div", _hoisted_10$1, [
-            createBaseVNode("div", _hoisted_11$1, [
+        createBaseVNode("section", _hoisted_26, [
+          _cache[5] || (_cache[5] = createBaseVNode("div", { class: "icon" }, "🌍", -1)),
+          createBaseVNode("h2", _hoisted_27, toDisplayString(unref(t)("masterSection.title_earth")), 1),
+          createBaseVNode("div", _hoisted_28, [
+            createBaseVNode("div", _hoisted_29, [
               createVNode$1(ComponentEarth, { class: "earth" })
             ]),
-            _cache[6] || (_cache[6] = createBaseVNode("div", { class: "dataline-content" }, [
-              createBaseVNode("div", { class: "text-area" }, [
-                createBaseVNode("ul", { class: "features" }, [
-                  createBaseVNode("li", null, "2D/3D 视图自由切换"),
-                  createBaseVNode("li", null, "省/市/县 精准定位"),
-                  createBaseVNode("li", null, "世界 & 中国 双版地图"),
-                  createBaseVNode("li", null, "高精度模板 一键下载"),
-                  createBaseVNode("li", null, "高度对齐标准精度/维度"),
-                  createBaseVNode("li", null, "支持各个国家地图下载")
+            createBaseVNode("div", _hoisted_30, [
+              createBaseVNode("div", _hoisted_31, [
+                createBaseVNode("ul", _hoisted_32, [
+                  createBaseVNode("li", null, toDisplayString(unref(t)("masterSection.features_li_yi")), 1),
+                  createBaseVNode("li", null, toDisplayString(unref(t)("masterSection.features_li_er")), 1),
+                  createBaseVNode("li", null, toDisplayString(unref(t)("masterSection.features_li_san")), 1),
+                  createBaseVNode("li", null, toDisplayString(unref(t)("masterSection.features_li_si")), 1),
+                  createBaseVNode("li", null, toDisplayString(unref(t)("masterSection.features_li_wu")), 1),
+                  createBaseVNode("li", null, toDisplayString(unref(t)("masterSection.features_li_liu")), 1)
                 ])
               ])
-            ], -1))
+            ])
           ])
         ])
       ]);
     };
   }
 });
-const masterMainmain = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-4365b20a"]]);
 const _sfc_main$4 = {};
 const _hoisted_1$4 = { class: "footer-main" };
 function _sfc_render(_ctx, _cache) {
@@ -79586,7 +79626,7 @@ function _sfc_render(_ctx, _cache) {
     ], -1)
   ]));
 }
-const footerMain = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render], ["__scopeId", "data-v-d66b795f"]]);
+const footerMain = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render], ["__scopeId", "data-v-0be5d7c5"]]);
 const _hoisted_1$3 = ["src", "alt"];
 const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "index",
@@ -79617,159 +79657,161 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const Framework = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-ff41794a"]]);
 const vite = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20aria-hidden='true'%20role='img'%20class='iconify%20iconify--logos'%20width='31.88'%20height='32'%20preserveAspectRatio='xMidYMid%20meet'%20viewBox='0%200%20256%20257'%3e%3cdefs%3e%3clinearGradient%20id='IconifyId1813088fe1fbc01fb466'%20x1='-.828%25'%20x2='57.636%25'%20y1='7.652%25'%20y2='78.411%25'%3e%3cstop%20offset='0%25'%20stop-color='%2341D1FF'%3e%3c/stop%3e%3cstop%20offset='100%25'%20stop-color='%23BD34FE'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient%20id='IconifyId1813088fe1fbc01fb467'%20x1='43.376%25'%20x2='50.316%25'%20y1='2.242%25'%20y2='89.03%25'%3e%3cstop%20offset='0%25'%20stop-color='%23FFEA83'%3e%3c/stop%3e%3cstop%20offset='8.333%25'%20stop-color='%23FFDD35'%3e%3c/stop%3e%3cstop%20offset='100%25'%20stop-color='%23FFA800'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3cpath%20fill='url(%23IconifyId1813088fe1fbc01fb466)'%20d='M255.153%2037.938L134.897%20252.976c-2.483%204.44-8.862%204.466-11.382.048L.875%2037.958c-2.746-4.814%201.371-10.646%206.827-9.67l120.385%2021.517a6.537%206.537%200%200%200%202.322-.004l117.867-21.483c5.438-.991%209.574%204.796%206.877%209.62Z'%3e%3c/path%3e%3cpath%20fill='url(%23IconifyId1813088fe1fbc01fb467)'%20d='M185.432.063L96.44%2017.501a3.268%203.268%200%200%200-2.634%203.014l-5.474%2092.456a3.268%203.268%200%200%200%203.997%203.378l24.777-5.718c2.318-.535%204.413%201.507%203.936%203.838l-7.361%2036.047c-.495%202.426%201.782%204.5%204.151%203.78l15.304-4.649c2.372-.72%204.652%201.36%204.15%203.788l-11.698%2056.621c-.732%203.542%203.979%205.473%205.943%202.437l1.313-2.028l72.516-144.72c1.215-2.423-.88-5.186-3.54-4.672l-25.505%204.922c-2.396.462-4.435-1.77-3.759-4.114l16.646-57.705c.677-2.35-1.37-4.583-3.769-4.113Z'%3e%3c/path%3e%3c/svg%3e";
+const frameworks = [
+  {
+    name: "Vitest",
+    logo: vite,
+    color: "#fac52b",
+    url: "https://vitest.dev/",
+    visible: ref(false)
+  },
+  {
+    name: "React",
+    logo: vite,
+    color: "#00d6fd",
+    url: "https://react.dev/",
+    visible: ref(false)
+  },
+  {
+    name: "Angular",
+    logo: vite,
+    color: "#e03237",
+    url: "https://angular.dev/",
+    visible: ref(false)
+  },
+  {
+    name: "Vue",
+    logo: vite,
+    color: "#40b782",
+    url: "https://vuejs.org/",
+    visible: ref(false)
+  },
+  {
+    name: "Solid",
+    logo: vite,
+    color: "#75b2df",
+    url: "https://www.solidjs.com/",
+    visible: ref(false)
+  },
+  {
+    name: "Svelte",
+    logo: vite,
+    color: "#fd3e00",
+    url: "https://svelte.dev/",
+    visible: ref(false)
+  },
+  {
+    name: "Preact",
+    logo: vite,
+    color: "#673ab8",
+    url: "https://preactjs.com/",
+    visible: ref(false)
+  },
+  {
+    name: "Astro",
+    logo: vite,
+    color: "#FFFFFF",
+    url: "https://astro.build",
+    visible: ref(false)
+  },
+  {
+    name: "Remix",
+    logo: vite,
+    color: "#3991fd",
+    url: "https://remix.run/",
+    visible: ref(false)
+  },
+  {
+    name: "Nuxt",
+    logo: vite,
+    color: "#00da81",
+    url: "https://nuxt.com",
+    visible: ref(false)
+  },
+  {
+    name: "Qwik",
+    logo: vite,
+    color: "#18b5f4",
+    url: "https://qwik.dev/",
+    visible: ref(false)
+  },
+  {
+    name: "Redwood",
+    logo: vite,
+    color: "#be4622",
+    url: "https://redwoodjs.com/",
+    visible: ref(false)
+  },
+  {
+    name: "Analog",
+    logo: vite,
+    color: "#c10f2e",
+    url: "https://analogjs.org/",
+    visible: ref(false)
+  },
+  {
+    name: "Playwright",
+    logo: vite,
+    color: "#d45247",
+    url: "https://playwright.dev/",
+    visible: ref(false)
+  },
+  {
+    name: "Storybook",
+    logo: vite,
+    color: "#fd4684",
+    url: "https://storybook.js.org/",
+    visible: ref(false)
+  },
+  {
+    name: "Marko",
+    logo: vite,
+    color: "#de2a87",
+    url: "https://markojs.com/",
+    visible: ref(false)
+  },
+  {
+    name: "Laravel",
+    logo: vite,
+    color: "#eb4432",
+    url: "https://laravel.com/",
+    visible: ref(false)
+  },
+  {
+    name: "AdonisJS",
+    logo: vite,
+    color: "#5a45ff",
+    url: "https://adonisjs.com/",
+    visible: ref(false)
+  },
+  {
+    name: "EmberJS",
+    logo: vite,
+    color: "#e04e39",
+    url: "https://emberjs.com/",
+    visible: ref(false)
+  },
+  {
+    name: "Hono",
+    logo: vite,
+    color: "#ff5c13",
+    url: "https://hono.dev/",
+    visible: ref(false)
+  }
+];
 const _hoisted_1$2 = {
   class: "frameworks-section",
   id: "frameworks-section"
 };
-const _hoisted_2$2 = { class: "frameworks-container" };
+const _hoisted_2$2 = { class: "rebot_title" };
+const _hoisted_3$2 = { class: "rebot_text" };
+const _hoisted_4$2 = { class: "frameworks-container" };
 const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "frameworkSection",
   setup(__props) {
     gsapWithCSS.registerPlugin(ScrollTriggerExports.ScrollTrigger);
-    const frameworks = [
-      {
-        name: "Vitest",
-        logo: vite,
-        color: "#fac52b",
-        url: "https://vitest.dev/",
-        visible: ref(false)
-      },
-      {
-        name: "React",
-        logo: vite,
-        color: "#00d6fd",
-        url: "https://react.dev/",
-        visible: ref(false)
-      },
-      {
-        name: "Angular",
-        logo: vite,
-        color: "#e03237",
-        url: "https://angular.dev/",
-        visible: ref(false)
-      },
-      {
-        name: "Vue",
-        logo: vite,
-        color: "#40b782",
-        url: "https://vuejs.org/",
-        visible: ref(false)
-      },
-      {
-        name: "Solid",
-        logo: vite,
-        color: "#75b2df",
-        url: "https://www.solidjs.com/",
-        visible: ref(false)
-      },
-      {
-        name: "Svelte",
-        logo: vite,
-        color: "#fd3e00",
-        url: "https://svelte.dev/",
-        visible: ref(false)
-      },
-      {
-        name: "Preact",
-        logo: vite,
-        color: "#673ab8",
-        url: "https://preactjs.com/",
-        visible: ref(false)
-      },
-      {
-        name: "Astro",
-        logo: vite,
-        color: "#FFFFFF",
-        url: "https://astro.build",
-        visible: ref(false)
-      },
-      {
-        name: "Remix",
-        logo: vite,
-        color: "#3991fd",
-        url: "https://remix.run/",
-        visible: ref(false)
-      },
-      {
-        name: "Nuxt",
-        logo: vite,
-        color: "#00da81",
-        url: "https://nuxt.com",
-        visible: ref(false)
-      },
-      {
-        name: "Qwik",
-        logo: vite,
-        color: "#18b5f4",
-        url: "https://qwik.dev/",
-        visible: ref(false)
-      },
-      {
-        name: "Redwood",
-        logo: vite,
-        color: "#be4622",
-        url: "https://redwoodjs.com/",
-        visible: ref(false)
-      },
-      {
-        name: "Analog",
-        logo: vite,
-        color: "#c10f2e",
-        url: "https://analogjs.org/",
-        visible: ref(false)
-      },
-      {
-        name: "Playwright",
-        logo: vite,
-        color: "#d45247",
-        url: "https://playwright.dev/",
-        visible: ref(false)
-      },
-      {
-        name: "Storybook",
-        logo: vite,
-        color: "#fd4684",
-        url: "https://storybook.js.org/",
-        visible: ref(false)
-      },
-      {
-        name: "Marko",
-        logo: vite,
-        color: "#de2a87",
-        url: "https://markojs.com/",
-        visible: ref(false)
-      },
-      {
-        name: "Laravel",
-        logo: vite,
-        color: "#eb4432",
-        url: "https://laravel.com/",
-        visible: ref(false)
-      },
-      {
-        name: "AdonisJS",
-        logo: vite,
-        color: "#5a45ff",
-        url: "https://adonisjs.com/",
-        visible: ref(false)
-      },
-      {
-        name: "EmberJS",
-        logo: vite,
-        color: "#e04e39",
-        url: "https://emberjs.com/",
-        visible: ref(false)
-      },
-      {
-        name: "Hono",
-        logo: vite,
-        color: "#ff5c13",
-        url: "https://hono.dev/",
-        visible: ref(false)
-      }
-    ];
+    const { t } = useI18n({ useScope: "global" });
     const screenWidth = ref(1920);
     let resizeTimeout = null;
     let timeline2 = null;
@@ -79855,15 +79897,15 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     });
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("section", _hoisted_1$2, [
-        _cache[0] || (_cache[0] = createBaseVNode("div", { class: "rebot_title" }, "自定义式组件库", -1)),
-        _cache[1] || (_cache[1] = createBaseVNode("div", { class: "rebot_text" }, "自由编写代码，随意定义你想要的样式，减少逻辑代码，标签完成所有基本样式", -1)),
-        createBaseVNode("div", _hoisted_2$2, [
+        createBaseVNode("div", _hoisted_2$2, toDisplayString(unref(t)("docscenter.docs_title")), 1),
+        createBaseVNode("div", _hoisted_3$2, toDisplayString(unref(t)("docscenter.docs_text")), 1),
+        createBaseVNode("div", _hoisted_4$2, [
           createBaseVNode("div", {
             class: "framework-row",
             style: normalizeStyle$1(unref(rowStyle))
           }, [
             (openBlock(true), createElementBlock(Fragment, null, renderList(unref(numBlocksPerRow) + 2, (_) => {
-              return openBlock(), createBlock(Framework);
+              return openBlock(), createBlock(_sfc_main$3);
             }), 256))
           ], 4),
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(numRows), (rowIndex) => {
@@ -79873,10 +79915,10 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
             }, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(unref(numBlocksPerRow) + 2, (columnIndex) => {
                 return openBlock(), createElementBlock(Fragment, null, [
-                  columnIndex - 1 >= unref(centerIndexes)[rowIndex].start && columnIndex - 1 < unref(centerIndexes)[rowIndex].end ? (openBlock(), createBlock(Framework, {
+                  columnIndex - 1 >= unref(centerIndexes)[rowIndex].start && columnIndex - 1 < unref(centerIndexes)[rowIndex].end ? (openBlock(), createBlock(_sfc_main$3, {
                     key: 0,
-                    framework: frameworks[(rowIndex - 1) * unref(numFrameworksPerRow) + (columnIndex - 1) - unref(centerIndexes)[rowIndex].start]
-                  }, null, 8, ["framework"])) : (openBlock(), createBlock(Framework, { key: 1 }))
+                    framework: unref(frameworks)[(rowIndex - 1) * unref(numFrameworksPerRow) + (columnIndex - 1) - unref(centerIndexes)[rowIndex].start]
+                  }, null, 8, ["framework"])) : (openBlock(), createBlock(_sfc_main$3, { key: 1 }))
                 ], 64);
               }), 256))
             ], 4);
@@ -79886,7 +79928,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
             style: normalizeStyle$1(unref(rowStyle))
           }, [
             (openBlock(true), createElementBlock(Fragment, null, renderList(unref(numBlocksPerRow) + 2, (_) => {
-              return openBlock(), createBlock(Framework);
+              return openBlock(), createBlock(_sfc_main$3);
             }), 256))
           ], 4)
         ])
@@ -79894,21 +79936,23 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const frameworkSection = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-56b13d4e"]]);
 const _hoisted_1$1 = { class: "footer" };
-const _hoisted_2$1 = { class: "buttons" };
+const _hoisted_2$1 = { class: "lines-wrapper" };
+const _hoisted_3$1 = { class: "line" };
+const _hoisted_4$1 = { class: "line" };
+const _hoisted_5$1 = { class: "buttons" };
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
-  __name: "footers",
+  __name: "ewnyiSection",
   setup(__props) {
     const { t } = useI18n({ useScope: "global" });
     return (_ctx, _cache) => {
       const _component_el_button = ElButton;
       return openBlock(), createElementBlock("section", _hoisted_1$1, [
-        _cache[0] || (_cache[0] = createBaseVNode("div", { class: "lines-wrapper" }, [
-          createBaseVNode("p", { class: "line" }, "开发者通过代码编织出视觉与交互的诗意之美"),
-          createBaseVNode("p", { class: "line" }, "指将设计理念与代码结合创造出令人惊叹的用户界面的魔法过程")
-        ], -1)),
         createBaseVNode("div", _hoisted_2$1, [
+          createBaseVNode("p", _hoisted_3$1, toDisplayString(unref(t)("ewnyiSection.lineone")), 1),
+          createBaseVNode("p", _hoisted_4$1, toDisplayString(unref(t)("ewnyiSection.linetwo")), 1)
+        ]),
+        createBaseVNode("div", _hoisted_5$1, [
           createVNode$1(_component_el_button, {
             class: "btn",
             size: "large"
@@ -79932,7 +79976,6 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const footers = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-5c6fee00"]]);
 const _hoisted_1 = { class: "page-root" };
 const _hoisted_2 = { class: "section-master-top" };
 const _hoisted_3 = { class: "container" };
@@ -79958,13 +80001,13 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       return openBlock(), createElementBlock("main", _hoisted_1, [
         createBaseVNode("section", _hoisted_2, [
           createBaseVNode("div", _hoisted_3, [
-            createVNode$1(masterTop, { onTypingComplete })
+            createVNode$1(_sfc_main$c, { onTypingComplete })
           ])
         ]),
         createBaseVNode("section", _hoisted_4, [
           createBaseVNode("div", _hoisted_5, [
             unref(showMasterMainTop) ? (openBlock(), createElementBlock("div", _hoisted_6, [
-              createVNode$1(masterMainTop)
+              createVNode$1(_sfc_main$8)
             ])) : (openBlock(), createElementBlock("div", _hoisted_7))
           ])
         ]),
@@ -79973,14 +80016,14 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         ]),
         createBaseVNode("section", _hoisted_9, [
           createBaseVNode("div", _hoisted_10, [
-            createVNode$1(masterMainmain)
+            createVNode$1(_sfc_main$5)
           ])
         ]),
         createBaseVNode("section", null, [
-          createVNode$1(frameworkSection)
+          createVNode$1(_sfc_main$2)
         ]),
         createBaseVNode("section", null, [
-          createVNode$1(footers)
+          createVNode$1(_sfc_main$1)
         ]),
         createBaseVNode("section", _hoisted_11, [
           createVNode$1(footerMain)
@@ -79989,7 +80032,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-1cef1716"]]);
+const index = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-182736b5"]]);
 const index$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: index

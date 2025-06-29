@@ -227,6 +227,36 @@ const zh = {
     titleC: "DevOps到云计算 持续集成/持续发布 一键式快速构建应用网站 赋能下一代Web应用发展",
     docs: "查阅文档",
     more: "了解更多"
+  },
+  masterSection: {
+    rebot_title: "自定义组件库",
+    rebot_text: "自由编写代码，随意定义你想要的样式，减少逻辑代码，标签完成所有基本样式",
+    card_title: "简洁易用的 API，快速上手，提升开发效率。",
+    small: "了解详情",
+    section_title: "构建坚实的应用",
+    feature_title: "高性能",
+    feature_text: "使用最优渲染策略，保证应用流畅。",
+    feature_title_yi: "易扩展",
+    feature_text_yi: "组件化设计，随时插拔，易于维护。",
+    feature_title_er: "安全可靠",
+    feature_text_er: "默认防 XSS/CSRF，开箱即用的安全方案。",
+    feature_title_san: "风格统一",
+    feature_text_san: "主题化机制，自定义品牌配色。",
+    title_earth: "全球地图",
+    features_li_yi: "2D/3D 视图自由切换",
+    features_li_er: "省/市/县 精准定位",
+    features_li_san: "世界 & 中国 双版地图",
+    features_li_si: "高精度模板 一键下载",
+    features_li_wu: "高度对齐标准精度/维度",
+    features_li_liu: "支持各个国家地图下载"
+  },
+  docscenter: {
+    docs_title: "文档中心在线查阅",
+    docs_text: "覆盖了硬件运维网络云计算等多个方向文档"
+  },
+  ewnyiSection: {
+    lineone: "开发者通过代码编织出视觉与交互的诗意之美",
+    linetwo: "指将设计理念与代码结合创造出令人惊叹的用户界面的魔法过程"
   }
 };
 const en = {
@@ -457,6 +487,36 @@ const en = {
     titleC: "From DevOps to Cloud Computing, CI/CD Pipeline, One-Click Rapid Application Development, Empowering Next-Gen Web Applications",
     docs: "docs",
     more: "more"
+  },
+  masterSection: {
+    rebot_title: "Custom Component Library",
+    rebot_text: "Freely write code, define any style you want, reduce logic code, and complete all basic styles with tags.",
+    card_title: "Simple and easy-to-use API, quick to learn, and improves development efficiency.",
+    small: "Learn more",
+    section_title: "Build Solid Applications",
+    feature_title: "High Performance",
+    feature_text: "Uses optimal rendering strategies to ensure smooth application performance.",
+    feature_title_yi: "Easy to Extend",
+    feature_text_yi: "Modular design, plug-and-play, easy to maintain.",
+    feature_title_er: "Secure & Reliable",
+    feature_text_er: "Built-in XSS/CSRF protection, out-of-the-box security solution.",
+    feature_title_san: "Consistent Styling",
+    feature_text_san: "Theming mechanism for custom brand colors.",
+    title_earth: "Global Map",
+    features_li_yi: "Seamless 2D/3D view switching",
+    features_li_er: "Precise province/city/county positioning",
+    features_li_san: "World & China dual-version maps",
+    features_li_si: "High-precision templates with one-click download",
+    features_li_wu: "Fully aligned with standard precision/dimensions",
+    features_li_liu: "Supports downloading maps for various countries"
+  },
+  docscenter: {
+    docs_title: "Online Documentation Center",
+    docs_text: "Covers documentation in multiple fields including hardware, operations, networking, and cloud computing."
+  },
+  ewnyiSection: {
+    lineone: "Developers weave the poetic beauty of visuals and interactions through code",
+    linetwo: "Refers to the magical process of combining design concepts with code to create stunning user interfaces."
   }
 };
 const kr = {
@@ -686,6 +746,36 @@ const kr = {
     titleC: "DevOps부터 클라우드 컴퓨팅, CI/CD 파이프라인, 원클릭 빠른 애플리케이션 개발, 차세대 웹 애플리케이션의 혁신",
     docs: "문서",
     more: "더보기"
+  },
+  masterSection: {
+    rebot_title: "커스텀 컴포넌트 라이브러리",
+    rebot_text: "자유롭게 코드를 작성하고 원하는 스타일을 정의하며, 로직 코드를 줄이고 태그로 모든 기본 스타일을 완성할 수 있습니다.",
+    card_title: "간편하고 사용하기 쉬운 API로 빠르게 익히고 개발 효율성을 높이세요.",
+    small: "자세히 알아보기",
+    section_title: "견고한 애플리케이션 구축",
+    feature_title: "고성능",
+    feature_text: "최적의 렌더링 전략을 사용하여 애플리케이션의 원활한 성능을 보장합니다.",
+    feature_title_yi: "확장성 용이",
+    feature_text_yi: "모듈식 설계로 플러그 앤 플레이 방식이며 유지보수가 쉽습니다.",
+    feature_title_er: "안전하고 신뢰할 수 있음",
+    feature_text_er: "기본 제공 XSS/CSRF 방어 기능으로 즉시 사용 가능한 보안 솔루션입니다.",
+    feature_title_san: "통일된 스타일",
+    feature_text_san: "브랜드 컬러를 커스터마이징할 수 있는 테마 메커니즘.",
+    title_earth: "글로벌 맵",
+    features_li_yi: "2D/3D 뷰 간 자유로운 전환",
+    features_li_er: "정확한 시/도/군 위치 지정",
+    features_li_san: "세계 & 중국 이중 버전 맵",
+    features_li_si: "고정밀 템플릿 원클릭 다운로드",
+    features_li_wu: "표준 정밀도/차원과 완벽하게 일치",
+    features_li_liu: "다양한 국가의 맵 다운로드 지원"
+  },
+  docscenter: {
+    docs_title: "온라인 문서 센터",
+    docs_text: "하드웨어, 운영, 네트워킹 및 클라우드 컴퓨팅을 포함한 다양한 분야의 문서를 다룹니다."
+  },
+  ewnyiSection: {
+    lineone: "개발자는 코드를 통해 시각적 요소와 상호작용의 시적인 아름다움을 엮어냅니다",
+    linetwo: "디자인개념과코드를 결합하여놀라운 사용자인터페이스를창조하는마법 같은과정을 의미합니다"
   }
 };
 const messages = { zh, en, kr };

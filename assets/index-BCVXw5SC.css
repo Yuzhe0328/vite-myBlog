@@ -1,0 +1,182 @@
+
+.svg-path[data-v-69dc75f5] {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+.label {
+&[data-v-69dc75f5] {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  display: none;
+  will-change: opacity;
+  }
+@media (min-width: 1180px) {
+    &[data-v-69dc75f5] {
+    display: block;
+    }
+}
+&.label--visible[data-v-69dc75f5] {
+    opacity: 1;
+}
+}
+.circle-dot[data-v-69dc75f5] {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  --dot-color: white;
+@media (min-width: 768px) {
+    filter: drop-shadow(0 0 3px var(--dot-color));
+}
+}
+
+.input-lines {
+&[data-v-9832e4b4] {
+  position: absolute;
+  top: 63%;
+  transform: translate3d(0, 0, 0);
+}
+&[data-v-9832e4b4] .circle-dot {
+    display: none;
+@media (min-width: 768px) {
+      display: block;
+}
+}
+}
+
+.output-line[data-v-e06aa744] {
+  position: absolute;
+  top: 20px;
+  left: 785px;
+  transform: translate3d(0, 0, 0);
+}
+.hero__background[data-v-cf64618c] {
+  position: absolute;
+  inset: -70% -20px -70% -20px;
+  z-index: 10;
+  opacity: 0.4;
+  transition: opacity 5s ease;
+  background: radial-gradient(circle at right center, rgb(86, 50, 119) 0%, rgb(74, 55, 140) 30%, rgb(65, 114, 194) 55%, rgba(50, 81, 115, 0.5) 100%);
+  mask-image: radial-gradient(ellipse 300% 30% at center center, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+@media (min-width: 1024px) {
+.hero__background[data-v-cf64618c] {
+    background: radial-gradient(circle at right center, rgba(75, 41, 105, 0.5) 0%, rgb(86, 50, 119) 25%, rgb(74, 55, 140) 40%, rgb(64, 102, 168) 65%, rgba(50, 81, 115, 0.5) 100%);
+    mask-image: radial-gradient(ellipse 150% 30% at center center, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+}
+@media (min-width: 1500px) {
+.hero__background[data-v-cf64618c] {
+    background: radial-gradient(circle at right center, rgba(75, 41, 105, 0.5) 0%, rgb(86, 50, 119) 25%, rgb(74, 55, 140) 45%, rgb(64, 102, 168) 65%, rgba(50, 81, 115, 0.5) 100%);
+    mask-image: radial-gradient(ellipse 80% 40% at center center, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+}
+@media (min-width: 1800px) {
+.hero__background[data-v-cf64618c] {
+    background: radial-gradient(circle at right center, rgba(75, 41, 105, 0.5) 0%, rgb(86, 50, 119) 25%, rgb(74, 55, 140) 50%, rgb(64, 102, 168) 70%, rgba(50, 81, 115, 0.5) 100%);
+    mask-image: radial-gradient(ellipse 80% 40% at center center, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+}
+}
+@media (min-width: 768px) {
+.hero__background[data-v-cf64618c] {
+    opacity: 0.1;
+}
+}
+.hero__background.active[data-v-cf64618c] {
+  opacity: 0.4;
+}
+@media (min-width: 768px) {
+.hero__background.active[data-v-cf64618c] {
+    opacity: 0.7;
+}
+}
+.chart-container[data-v-e89af577] {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* 可根据父容器布局调整 */
+}
+.footer-main[data-v-0be5d7c5] {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  background-color: #000000;
+  color: #6a6566;
+  width: 100%;
+  min-height: 20vh;
+}
+.footer-main .text[data-v-0be5d7c5] {
+  height: 6.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.footer-main .text-container[data-v-0be5d7c5] {
+  font-size: 15px;
+  line-height: 1.5;
+  background: linear-gradient(to top, #999, #fff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  margin: 0.25rem 0;
+}
+@media (max-width < 768px) {
+.footer-main[data-v-0be5d7c5] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+}.page-root[data-v-182736b5] {
+  overflow-x: hidden;
+  margin: 0 auto;
+  position: relative;
+  background-color: #0D1117;
+  /* 占位区域高度应与 masterMainTop 最小高度相同，以保证页面布局在动画期间位置稳定 */
+}
+.page-root[data-v-182736b5]::before, .page-root[data-v-182736b5]::after {
+  display: none !important;
+}
+.page-root .section-master-top[data-v-182736b5] {
+  padding: 2rem 0;
+}
+.page-root .section-master-main-top[data-v-182736b5] {
+  padding: 2rem 0;
+}
+.page-root .placeholder-master-main-top[data-v-182736b5] {
+  height: 60vh;
+  margin: 0 auto;
+  /* 根据 masterMainTop 实际内容高度预留 */
+}
+.page-root .section-hero-background[data-v-182736b5] {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: visible;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.page-root .section-master-main-main[data-v-182736b5] {
+  position: relative;
+  padding: 2rem 0;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+.page-root .section-master-top[data-v-182736b5],
+  .page-root .section-master-main-top[data-v-182736b5],
+  .page-root .section-master-main-main[data-v-182736b5] {
+    padding: 1.5rem 0;
+}
+.page-root .placeholder-master-main-top[data-v-182736b5] {
+    min-height: 200px;
+}
+.page-root .section-hero-background[data-v-182736b5] {
+    width: 95%;
+}
+}
+.page-root .footer[data-v-182736b5] {
+  position: relative;
+  margin: 0 auto;
+}
