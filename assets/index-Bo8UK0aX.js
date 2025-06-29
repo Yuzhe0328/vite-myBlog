@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/index-D98KCF3o.js","assets/vendor-IpMyBuif.js","assets/i18n-DNJ5Tj2P.js","assets/locales-Bbbtjg_o.js","assets/index-e5jk9Asf.css","assets/el-button-DPSIWn2t.css","assets/index-CbE92vmV.js","assets/index-BCVXw5SC.css","assets/index-M8pZsLTw.js","assets/index-CcZ2dWEO.js","assets/index-BFRV5BGb.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/index-CqDR1KDK.js","assets/vendor-IpMyBuif.js","assets/i18n-DNJ5Tj2P.js","assets/locales-Bbbtjg_o.js","assets/index-e5jk9Asf.css","assets/el-button-DPSIWn2t.css","assets/index-DH-QxXaB.js","assets/index-BCVXw5SC.css","assets/index-srFK04dn.js","assets/index-CyK1shc5.js","assets/index-Djtv_XRN.js"])))=>i.map(i=>d[i]);
 import { k as createElementBlock, j as createVNode, l as resolveComponent, m as openBlock, s as shallowRef, d as defineComponent, u as unref, n as shallowReactive, p as reactive, a as inject, c as computed, h, q as provide, r as ref, w as watch, t as nextTick, v as createApp, E as ElementPlusIconVue, x as installer } from "./vendor-IpMyBuif.js";
 import { s as setupI18n } from "./locales-Bbbtjg_o.js";
 (function polyfill() {
@@ -1996,26 +1996,26 @@ const __vitePreload = function preload(baseModule, deps, importerUrl) {
 const constantRouter = [
   {
     path: "/",
-    component: () => __vitePreload(() => import("./index-D98KCF3o.js"), true ? __vite__mapDeps([0,1,2,3,4,5]) : void 0),
+    component: () => __vitePreload(() => import("./index-CqDR1KDK.js"), true ? __vite__mapDeps([0,1,2,3,4,5]) : void 0),
     children: [
       {
         path: "",
         name: "home",
-        component: () => __vitePreload(() => import("./index-CbE92vmV.js").then((n) => n.ai), true ? __vite__mapDeps([6,2,1,7,5]) : void 0)
+        component: () => __vitePreload(() => import("./index-DH-QxXaB.js").then((n) => n.ai), true ? __vite__mapDeps([6,2,1,7,5]) : void 0)
       },
       {
         path: "article",
         name: "article",
-        component: () => __vitePreload(() => import("./index-M8pZsLTw.js"), true ? __vite__mapDeps([8,1,3,2]) : void 0)
+        component: () => __vitePreload(() => import("./index-srFK04dn.js"), true ? __vite__mapDeps([8,1,3,2]) : void 0)
       },
       {
         path: "about",
         name: "about",
-        component: () => __vitePreload(() => import("./index-CcZ2dWEO.js"), true ? __vite__mapDeps([9,1,3,2]) : void 0)
+        component: () => __vitePreload(() => import("./index-CyK1shc5.js"), true ? __vite__mapDeps([9,1,3,2]) : void 0)
       },
       {
         path: "/:pathMatch(.*)*",
-        component: () => __vitePreload(() => import("./index-BFRV5BGb.js"), true ? __vite__mapDeps([10,1,3,2]) : void 0)
+        component: () => __vitePreload(() => import("./index-Djtv_XRN.js"), true ? __vite__mapDeps([10,1,3,2]) : void 0)
         // ✅
       }
     ]
