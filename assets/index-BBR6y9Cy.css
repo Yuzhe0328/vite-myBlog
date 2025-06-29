@@ -884,27 +884,28 @@ img[data-v-ff41794a] {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
-}.page-root[data-v-c7e8faca] {
+}.page-root[data-v-1cef1716] {
   overflow-x: hidden;
   margin: 0 auto;
   position: relative;
+  background-color: #0D1117;
   /* 占位区域高度应与 masterMainTop 最小高度相同，以保证页面布局在动画期间位置稳定 */
 }
-.page-root[data-v-c7e8faca]::before, .page-root[data-v-c7e8faca]::after {
+.page-root[data-v-1cef1716]::before, .page-root[data-v-1cef1716]::after {
   display: none !important;
 }
-.page-root .section-master-top[data-v-c7e8faca] {
+.page-root .section-master-top[data-v-1cef1716] {
   padding: 2rem 0;
 }
-.page-root .section-master-main-top[data-v-c7e8faca] {
+.page-root .section-master-main-top[data-v-1cef1716] {
   padding: 2rem 0;
 }
-.page-root .placeholder-master-main-top[data-v-c7e8faca] {
+.page-root .placeholder-master-main-top[data-v-1cef1716] {
   height: 60vh;
   margin: 0 auto;
   /* 根据 masterMainTop 实际内容高度预留 */
 }
-.page-root .section-hero-background[data-v-c7e8faca] {
+.page-root .section-hero-background[data-v-1cef1716] {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -913,25 +914,25 @@ img[data-v-ff41794a] {
   left: 50%;
   transform: translate(-50%);
 }
-.page-root .section-master-main-main[data-v-c7e8faca] {
+.page-root .section-master-main-main[data-v-1cef1716] {
   position: relative;
   padding: 2rem 0;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
-.page-root .section-master-top[data-v-c7e8faca],
-  .page-root .section-master-main-top[data-v-c7e8faca],
-  .page-root .section-master-main-main[data-v-c7e8faca] {
+.page-root .section-master-top[data-v-1cef1716],
+  .page-root .section-master-main-top[data-v-1cef1716],
+  .page-root .section-master-main-main[data-v-1cef1716] {
     padding: 1.5rem 0;
 }
-.page-root .placeholder-master-main-top[data-v-c7e8faca] {
+.page-root .placeholder-master-main-top[data-v-1cef1716] {
     min-height: 200px;
 }
-.page-root .section-hero-background[data-v-c7e8faca] {
+.page-root .section-hero-background[data-v-1cef1716] {
     width: 95%;
 }
 }
-.page-root .footer[data-v-c7e8faca] {
+.page-root .footer[data-v-1cef1716] {
   position: relative;
   margin: 0 auto;
 }
