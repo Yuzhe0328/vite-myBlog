@@ -22,7 +22,7 @@
   max-height: 410px;
   overflow: hidden;
   border: none;
-  background-color: #0f0f0f;
+  background-color: #0D1117;
   border-radius: 4px;
   padding: 0 !important;
   /* flex 布局：左右并排 */
@@ -34,7 +34,7 @@
   display: flex;
   max-height: 410px;
   height: 410px;
-  background-color: #0f0f0f;
+  background-color: #0D1117;
   border-radius: 4px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
   overflow: hidden;
@@ -234,7 +234,7 @@
 }
 .mega-dropdown .mega-menu .menu-left {
   width: 30%;
-  background-color: #0f0f0f;
+  background-color: #0D1117;
   padding: 25px;
   overflow: hidden;
 }

@@ -233,7 +233,7 @@
   display: flex;
   justify-content: space-between;
   height: 55px;
-  background: #0f0f0f;
+  background: #0D1117;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .top-container .right-nav[data-v-ace38a28] {
@@ -278,5 +278,5 @@
 }
 .main-container {
   flex: 1;
-  background-color: index-bg-color;
+  background-color: #101010;
 }
