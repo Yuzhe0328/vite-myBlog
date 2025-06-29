@@ -256,7 +256,7 @@ const zh = {
   },
   ewnyiSection: {
     lineone: "开发者通过代码编织出视觉与交互的诗意之美",
-    linetwo: "指将设计理念与代码结合创造出令人惊叹的用户界面的魔法过程"
+    linetwo: "将设计理念与代码结合创造出令人惊叹的用户界面的魔法过程"
   }
 };
 const en = {
@@ -516,7 +516,7 @@ const en = {
   },
   ewnyiSection: {
     lineone: "Developers weave the poetic beauty of visuals and interactions through code",
-    linetwo: "Refers to the magical process of combining design concepts with code to create stunning user interfaces."
+    linetwo: "The process combining design concepts with code create stunning user interfaces"
   }
 };
 const kr = {
