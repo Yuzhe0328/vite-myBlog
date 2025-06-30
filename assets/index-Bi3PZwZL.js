@@ -1,10 +1,10 @@
-import { u as useRouter, _ as _export_sfc } from "./index-Bo8UK0aX.js";
-import { d as defineComponent, k as createElementBlock, m as openBlock, y as createBaseVNode, u as unref, z as toDisplayString, r as ref, c as computed, j as createVNode, A as ElIcon, B as withCtx, C as Transition, t as nextTick, D as search_default, G as createCommentVNode, H as withModifiers, I as withDirectives, J as vModelText, i as isRef, K as vShow, F as Fragment, L as renderList, M as normalizeClass, N as createBlock, O as ElDropdown, P as ElCard, Q as ElTag, R as createTextVNode, S as document_default, U as withKeys, V as arrow_right_default, W as ElDropdownMenu, X as ElDropdownItem, o as onMounted, b as onUnmounted, l as resolveComponent } from "./vendor-IpMyBuif.js";
-/* empty css                   */
+import { u as useRouter, _ as _export_sfc } from "./index-cLTOc4Wt.js";
+import { d as defineComponent, k as createElementBlock, m as openBlock, y as createBaseVNode, u as unref, z as toDisplayString, r as ref, c as computed, j as createVNode, A as ElIcon, B as withCtx, C as Transition, t as nextTick, D as search_default, G as createCommentVNode, H as withModifiers, I as withDirectives, J as vModelText, i as isRef, K as vShow, F as Fragment, L as renderList, M as normalizeClass, N as createBlock, O as ElDropdown, P as ElCard, Q as ElTag, R as createTextVNode, S as document_default, U as withKeys, V as arrow_right_default, W as ElDropdownMenu, X as ElDropdownItem, l as resolveComponent, o as onMounted, b as onUnmounted } from "./vendor-IpMyBuif.js";
+import { l as logo$1 } from "./logo-bDsqYoth.js";
 import { u as useI18n } from "./i18n-DNJ5Tj2P.js";
 import "./locales-Bbbtjg_o.js";
-const _hoisted_1$8 = ["src"];
-const _sfc_main$8 = /* @__PURE__ */ defineComponent({
+const _hoisted_1$9 = ["src"];
+const _sfc_main$9 = /* @__PURE__ */ defineComponent({
   __name: "index",
   setup(__props) {
     const logo2 = new URL("/vite-myBlog/assets/logo-DTDX0-Gp.png", import.meta.url).href;
@@ -18,18 +18,18 @@ const _sfc_main$8 = /* @__PURE__ */ defineComponent({
         class: "logo-container",
         onClick: HomeIasd
       }, [
-        createBaseVNode("img", { src: unref(logo2) }, null, 8, _hoisted_1$8),
+        createBaseVNode("img", { src: unref(logo2) }, null, 8, _hoisted_1$9),
         createBaseVNode("h1", null, toDisplayString(unref(title)), 1)
       ]);
     };
   }
 });
-const logo = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-384795f5"]]);
-const _hoisted_1$7 = { class: "header-search-overlay-wrapper" };
-const _hoisted_2$4 = { class: "search-container" };
-const _hoisted_3$2 = { class: "suggestions-list" };
-const _hoisted_4$2 = ["onClick"];
-const _sfc_main$7 = /* @__PURE__ */ defineComponent({
+const logo = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["__scopeId", "data-v-384795f5"]]);
+const _hoisted_1$8 = { class: "header-search-overlay-wrapper" };
+const _hoisted_2$5 = { class: "search-container" };
+const _hoisted_3$3 = { class: "suggestions-list" };
+const _hoisted_4$3 = ["onClick"];
+const _sfc_main$8 = /* @__PURE__ */ defineComponent({
   __name: "index",
   setup(__props) {
     const suggestionsListRef = ref(false);
@@ -83,7 +83,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
     }
     return (_ctx, _cache) => {
       const _component_el_icon = ElIcon;
-      return openBlock(), createElementBlock("div", _hoisted_1$7, [
+      return openBlock(), createElementBlock("div", _hoisted_1$8, [
         createVNode(_component_el_icon, {
           class: "search-icon",
           onClick: openOverlay
@@ -100,7 +100,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
               class: "search-overlay",
               onClick: withModifiers(closeOverlay, ["self"])
             }, [
-              createBaseVNode("div", _hoisted_2$4, [
+              createBaseVNode("div", _hoisted_2$5, [
                 withDirectives(createBaseVNode("input", {
                   ref_key: "inputRef",
                   ref: inputRef,
@@ -112,13 +112,13 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
                 }, null, 512), [
                   [vModelText, unref(searchText)]
                 ]),
-                withDirectives(createBaseVNode("ul", _hoisted_3$2, [
+                withDirectives(createBaseVNode("ul", _hoisted_3$3, [
                   (openBlock(true), createElementBlock(Fragment, null, renderList(unref(filteredList), (item, idx) => {
                     return openBlock(), createElementBlock("li", {
                       key: idx,
                       class: normalizeClass({ "suggestion-item": true, "is-active": idx === unref(highlightedIndex) }),
                       onClick: ($event) => selectItem(item)
-                    }, toDisplayString(item.value), 11, _hoisted_4$2);
+                    }, toDisplayString(item.value), 11, _hoisted_4$3);
                   }), 128))
                 ], 512), [
                   [vShow, unref(suggestionsListRef) && unref(filteredList).length > 0]
@@ -132,7 +132,7 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const search = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["__scopeId", "data-v-137dade3"]]);
+const search = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-137dade3"]]);
 const projectList = ref([
   {
     name: "project.customLib.name",
@@ -198,12 +198,12 @@ const projectList = ref([
     updateTime: "2025-04-05"
   }
 ]);
-const _hoisted_1$6 = { class: "nav-item" };
-const _hoisted_2$3 = { class: "mega-menu" };
-const _hoisted_3$1 = { class: "menu-left" };
-const _hoisted_4$1 = { class: "menu-title" };
-const _hoisted_5$1 = { class: "menu-list" };
-const _hoisted_6$1 = ["onMouseenter", "onKeydown"];
+const _hoisted_1$7 = { class: "nav-item" };
+const _hoisted_2$4 = { class: "mega-menu" };
+const _hoisted_3$2 = { class: "menu-left" };
+const _hoisted_4$2 = { class: "menu-title" };
+const _hoisted_5$2 = { class: "menu-list" };
+const _hoisted_6$2 = ["onMouseenter", "onKeydown"];
 const _hoisted_7$1 = { class: "menu-item-text" };
 const _hoisted_8$1 = { class: "menu-right" };
 const _hoisted_9$1 = { class: "card-header" };
@@ -213,7 +213,7 @@ const _hoisted_12$1 = { class: "card-desc" };
 const _hoisted_13$1 = { class: "card-meta" };
 const _hoisted_14$1 = { class: "card-features" };
 const _hoisted_15 = { class: "card-tech" };
-const _sfc_main$6 = /* @__PURE__ */ defineComponent({
+const _sfc_main$7 = /* @__PURE__ */ defineComponent({
   __name: "projectView",
   setup(__props) {
     const { t } = useI18n();
@@ -239,10 +239,10 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
         "popper-class": "mega-dropdown"
       }, {
         dropdown: withCtx(() => [
-          createBaseVNode("div", _hoisted_2$3, [
-            createBaseVNode("div", _hoisted_3$1, [
-              createBaseVNode("div", _hoisted_4$1, toDisplayString(unref(t)("project.overviewTitle")), 1),
-              createBaseVNode("ul", _hoisted_5$1, [
+          createBaseVNode("div", _hoisted_2$4, [
+            createBaseVNode("div", _hoisted_3$2, [
+              createBaseVNode("div", _hoisted_4$2, toDisplayString(unref(t)("project.overviewTitle")), 1),
+              createBaseVNode("ul", _hoisted_5$2, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList(unref(projectList), (item, idx) => {
                   return openBlock(), createElementBlock("li", {
                     key: idx,
@@ -256,7 +256,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
                       "aria-hidden": "true"
                     }, null, 2),
                     createBaseVNode("span", _hoisted_7$1, toDisplayString(unref(t)(item.name)), 1)
-                  ], 42, _hoisted_6$1);
+                  ], 42, _hoisted_6$2);
                 }), 128))
               ])
             ]),
@@ -311,7 +311,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
           ])
         ]),
         default: withCtx(() => [
-          createBaseVNode("span", _hoisted_1$6, toDisplayString(unref(t)("top.project")), 1)
+          createBaseVNode("span", _hoisted_1$7, toDisplayString(unref(t)("top.project")), 1)
         ]),
         _: 1
       });
@@ -437,12 +437,12 @@ const docsList = ref([
     ]
   }
 ]);
-const _hoisted_1$5 = { class: "nav-item" };
-const _hoisted_2$2 = { class: "mega-menu" };
-const _hoisted_3 = { class: "menu-lefts" };
-const _hoisted_4 = { class: "menu-title" };
-const _hoisted_5 = { class: "menu-list" };
-const _hoisted_6 = ["onClick", "onMouseenter", "onKeydown"];
+const _hoisted_1$6 = { class: "nav-item" };
+const _hoisted_2$3 = { class: "mega-menu" };
+const _hoisted_3$1 = { class: "menu-lefts" };
+const _hoisted_4$1 = { class: "menu-title" };
+const _hoisted_5$1 = { class: "menu-list" };
+const _hoisted_6$1 = ["onClick", "onMouseenter", "onKeydown"];
 const _hoisted_7 = { class: "docs-nav-item__text" };
 const _hoisted_8 = { class: "menu-right" };
 const _hoisted_9 = { class: "detail-header" };
@@ -454,7 +454,7 @@ const _hoisted_14 = {
   key: 0,
   class: "no-content"
 };
-const _sfc_main$5 = /* @__PURE__ */ defineComponent({
+const _sfc_main$6 = /* @__PURE__ */ defineComponent({
   __name: "technicalDocs",
   setup(__props) {
     const { t } = useI18n({ useScope: "global" });
@@ -482,9 +482,9 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
         "popper-class": "mega-dropdown"
       }, {
         dropdown: withCtx(() => [
-          createBaseVNode("div", _hoisted_2$2, [
-            createBaseVNode("div", _hoisted_3, [
-              createBaseVNode("div", _hoisted_4, [
+          createBaseVNode("div", _hoisted_2$3, [
+            createBaseVNode("div", _hoisted_3$1, [
+              createBaseVNode("div", _hoisted_4$1, [
                 createVNode(_component_el_icon, { class: "menu-title-icon" }, {
                   default: withCtx(() => [
                     createVNode(unref(document_default))
@@ -493,7 +493,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
                 }),
                 createBaseVNode("span", null, toDisplayString(unref(t)("docs.overviewTitle")), 1)
               ]),
-              createBaseVNode("ul", _hoisted_5, [
+              createBaseVNode("ul", _hoisted_5$1, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList(unref(docsList), (item, idx) => {
                   return openBlock(), createElementBlock("li", {
                     key: idx,
@@ -510,7 +510,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
                       _: 1
                     }),
                     createBaseVNode("span", _hoisted_7, toDisplayString(unref(t)(item.name)), 1)
-                  ], 42, _hoisted_6);
+                  ], 42, _hoisted_6$1);
                 }), 128))
               ])
             ]),
@@ -558,16 +558,16 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
           ])
         ]),
         default: withCtx(() => [
-          createBaseVNode("span", _hoisted_1$5, toDisplayString(unref(t)("top.docs")), 1)
+          createBaseVNode("span", _hoisted_1$6, toDisplayString(unref(t)("top.docs")), 1)
         ]),
         _: 1
       });
     };
   }
 });
-const _hoisted_1$4 = { class: "top-bar" };
-const _hoisted_2$1 = { class: "language" };
-const _sfc_main$4 = /* @__PURE__ */ defineComponent({
+const _hoisted_1$5 = { class: "top-bar" };
+const _hoisted_2$2 = { class: "language" };
+const _sfc_main$5 = /* @__PURE__ */ defineComponent({
   __name: "index",
   setup(__props) {
     const router = useRouter();
@@ -583,9 +583,9 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
       const _component_el_dropdown_item = ElDropdownItem;
       const _component_el_dropdown_menu = ElDropdownMenu;
       const _component_el_dropdown = ElDropdown;
-      return openBlock(), createElementBlock("div", _hoisted_1$4, [
+      return openBlock(), createElementBlock("div", _hoisted_1$5, [
+        createVNode(_sfc_main$7),
         createVNode(_sfc_main$6),
-        createVNode(_sfc_main$5),
         createBaseVNode("span", { onClick: toArticle }, toDisplayString(unref(t)("top.article")), 1),
         createBaseVNode("span", { onClick: toAbout }, toDisplayString(unref(t)("top.about")), 1),
         createVNode(_component_el_dropdown, { "popper-class": "custom-dropdown" }, {
@@ -624,7 +624,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
             })
           ]),
           default: withCtx(() => [
-            createBaseVNode("span", _hoisted_2$1, toDisplayString(unref(t)("top.language")), 1)
+            createBaseVNode("span", _hoisted_2$2, toDisplayString(unref(t)("top.language")), 1)
           ]),
           _: 1
         })
@@ -632,14 +632,14 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _hoisted_1$3 = {
+const _hoisted_1$4 = {
   class: "github-icon",
   viewBox: "0 0 1024 1024",
   width: "30",
   height: "30",
   fill: "currentColor"
 };
-const _sfc_main$3 = /* @__PURE__ */ defineComponent({
+const _sfc_main$4 = /* @__PURE__ */ defineComponent({
   __name: "github",
   props: {
     size: {
@@ -649,7 +649,7 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      return openBlock(), createElementBlock("svg", _hoisted_1$3, _cache[0] || (_cache[0] = [
+      return openBlock(), createElementBlock("svg", _hoisted_1$4, _cache[0] || (_cache[0] = [
         createBaseVNode("a", {
           href: "https://github.com/your-repo",
           target: "_blank",
@@ -661,9 +661,9 @@ const _sfc_main$3 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const github = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-637c87de"]]);
-const _hoisted_1$2 = ["width", "height"];
-const _sfc_main$2 = /* @__PURE__ */ defineComponent({
+const github = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-637c87de"]]);
+const _hoisted_1$3 = ["width", "height"];
+const _sfc_main$3 = /* @__PURE__ */ defineComponent({
   __name: "gitee",
   props: {
     size: {
@@ -694,11 +694,133 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
             d: "M353.9 288c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h320v-96H416V384h192v64h-96v96h192c17.7 0 32-14.3 32-32V352c0-35.3-28.7-64-64-64H353.9z"
           })
         ], -1)
-      ]), 8, _hoisted_1$2);
+      ]), 8, _hoisted_1$3);
     };
   }
 });
-const gitee = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-aaaad78d"]]);
+const gitee = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-aaaad78d"]]);
+const menuIcon$1 = "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%20-5%2024%2024'%20color='%23ffffff'%20stroke='currentColor'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%20class='feather%20feather-menu'%3e%3cline%20x1='15'%20y1='12'%20x2='21'%20y2='12'%3e%3c/line%3e%3cline%20x1='3'%20y1='6'%20x2='21'%20y2='6'%3e%3c/line%3e%3cline%20x1='10'%20y1='18'%20x2='21'%20y2='18'%3e%3c/line%3e%3c/svg%3e";
+const _hoisted_1$2 = ["src"];
+const _hoisted_2$1 = { class: "mobile-drawer" };
+const _hoisted_3 = { class: "drawer-header" };
+const _hoisted_4 = { class: "drawer-menu" };
+const _hoisted_5 = { class: "drawer-lang-li" };
+const _hoisted_6 = { class: "language" };
+const _sfc_main$2 = /* @__PURE__ */ defineComponent({
+  __name: "index",
+  setup(__props) {
+    const router = useRouter();
+    const { t, locale } = useI18n({ useScope: "global" });
+    const drawer = ref(false);
+    const toArticle = () => {
+      drawer.value = false;
+      router.push("/article");
+    };
+    const toAbout = () => {
+      drawer.value = false;
+      router.push("/about");
+    };
+    function changeLang(lang) {
+      if (locale.value === lang) return;
+      drawer.value = false;
+      locale.value = lang;
+      localStorage.setItem("lang", lang);
+    }
+    return (_ctx, _cache) => {
+      const _component_Close = resolveComponent("Close");
+      const _component_el_icon = ElIcon;
+      const _component_el_dropdown_item = ElDropdownItem;
+      const _component_el_dropdown_menu = ElDropdownMenu;
+      const _component_el_dropdown = ElDropdown;
+      return openBlock(), createElementBlock("div", null, [
+        createBaseVNode("img", {
+          src: unref(menuIcon$1),
+          onClick: _cache[0] || (_cache[0] = ($event) => drawer.value = true)
+        }, null, 8, _hoisted_1$2),
+        createVNode(Transition, { name: "fade" }, {
+          default: withCtx(() => [
+            drawer.value ? (openBlock(), createElementBlock("div", {
+              key: 0,
+              class: "mobile-drawer-overlay",
+              onClick: _cache[5] || (_cache[5] = withModifiers(($event) => drawer.value = false, ["self"]))
+            }, [
+              createBaseVNode("nav", _hoisted_2$1, [
+                createBaseVNode("div", _hoisted_3, [
+                  _cache[6] || (_cache[6] = createBaseVNode("img", {
+                    src: logo$1,
+                    class: "logo",
+                    alt: "Logo"
+                  }, null, -1)),
+                  _cache[7] || (_cache[7] = createBaseVNode("span", { class: "title" }, "MengYue", -1)),
+                  createVNode(search),
+                  createVNode(_component_el_icon, {
+                    class: "close",
+                    onClick: _cache[1] || (_cache[1] = ($event) => drawer.value = false)
+                  }, {
+                    default: withCtx(() => [
+                      createVNode(_component_Close)
+                    ]),
+                    _: 1
+                  })
+                ]),
+                createBaseVNode("ul", _hoisted_4, [
+                  createBaseVNode("li", null, toDisplayString(unref(t)("top.project")), 1),
+                  createBaseVNode("li", null, toDisplayString(unref(t)("top.docs")), 1),
+                  createBaseVNode("li", { onClick: toArticle }, toDisplayString(unref(t)("top.article")), 1),
+                  createBaseVNode("li", { onClick: toAbout }, toDisplayString(unref(t)("top.about")), 1),
+                  createBaseVNode("li", _hoisted_5, [
+                    createVNode(_component_el_dropdown, { "popper-class": "custom-dropdown" }, {
+                      dropdown: withCtx(() => [
+                        createVNode(_component_el_dropdown_menu, null, {
+                          default: withCtx(() => [
+                            createVNode(_component_el_dropdown_item, {
+                              onClick: _cache[2] || (_cache[2] = ($event) => changeLang("zh"))
+                            }, {
+                              default: withCtx(() => _cache[8] || (_cache[8] = [
+                                createTextVNode("中文")
+                              ])),
+                              _: 1,
+                              __: [8]
+                            }),
+                            createVNode(_component_el_dropdown_item, {
+                              onClick: _cache[3] || (_cache[3] = ($event) => changeLang("en"))
+                            }, {
+                              default: withCtx(() => _cache[9] || (_cache[9] = [
+                                createTextVNode("English")
+                              ])),
+                              _: 1,
+                              __: [9]
+                            }),
+                            createVNode(_component_el_dropdown_item, {
+                              onClick: _cache[4] || (_cache[4] = ($event) => changeLang("kr"))
+                            }, {
+                              default: withCtx(() => _cache[10] || (_cache[10] = [
+                                createTextVNode("한구어")
+                              ])),
+                              _: 1,
+                              __: [10]
+                            })
+                          ]),
+                          _: 1
+                        })
+                      ]),
+                      default: withCtx(() => [
+                        createBaseVNode("span", _hoisted_6, toDisplayString(unref(t)("top.language")), 1)
+                      ]),
+                      _: 1
+                    })
+                  ])
+                ])
+              ])
+            ])) : createCommentVNode("", true)
+          ]),
+          _: 1
+        })
+      ]);
+    };
+  }
+});
+const menuIcon = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-aa82c55e"]]);
 const _hoisted_1$1 = { class: "right-nav" };
 const _sfc_main$1 = /* @__PURE__ */ defineComponent({
   __name: "index",
@@ -737,16 +859,17 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
       }, [
         unref(showLogo) ? (openBlock(), createBlock(logo, { key: 0 })) : createCommentVNode("", true),
         createBaseVNode("div", _hoisted_1$1, [
-          unref(rightWidth) ? (openBlock(), createBlock(_sfc_main$4, { key: 0 })) : createCommentVNode("", true),
+          unref(rightWidth) ? (openBlock(), createBlock(_sfc_main$5, { key: 0 })) : createCommentVNode("", true),
           createVNode(search, { class: "search-box" }),
           unref(showGithub) ? (openBlock(), createBlock(github, { key: 1 })) : createCommentVNode("", true),
-          unref(showGitee) ? (openBlock(), createBlock(gitee, { key: 2 })) : createCommentVNode("", true)
+          unref(showGitee) ? (openBlock(), createBlock(gitee, { key: 2 })) : createCommentVNode("", true),
+          createVNode(menuIcon)
         ])
       ], 2);
     };
   }
 });
-const TopBar = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-ace38a28"]]);
+const TopBar = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-4dd5eeb6"]]);
 const _hoisted_1 = { class: "layout-container" };
 const _hoisted_2 = { class: "main-container" };
 const _sfc_main = /* @__PURE__ */ defineComponent({
