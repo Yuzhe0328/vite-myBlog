@@ -15,15 +15,31 @@
     padding-top: $padding-zero-top;
     padding-bottom: $padding-zero-bottom;
   }
+
+  // 针对350*697的适配
+  @media (max-width: 360px) and (max-height: 710px) {
+    min-height: 350px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    justify-content: center;
+  }
 }
 
 .lines-wrapper {
-  height: $computed-height-two;
+  // height: $computed-height-two;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  // margin-top: $margintop10;
+
+  @media (max-width: 360px) and (max-height: 710px) {
+    min-width: 90vw;
+    max-width: 95vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .line {
@@ -35,6 +51,22 @@
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
   margin: $margin0250;
+
+  @media (max-width: 768px) {
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 360px) and (max-height: 710px) {
+    line-height: 1.6;
+    margin: 0.2em 0;
+    max-width: 98vw;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    text-align: center;
+  }
 }
 
 .buttons {
@@ -42,7 +74,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: $margin-top-05;
+  //   margin-top: $margin-top-05;    
   gap: $gap075;
   transform: $transform20;
   opacity: 0;
@@ -53,12 +85,29 @@
     backdrop-filter: $backdrop-filter5px;
     border: $button-border-color-top;
     color: $index-text-color;
+
+    @media (max-width: 360px) and (max-height: 710px) {
+      min-width: 30px;
+      font-size: 0.95rem;
+      padding: 0.5em 1.2em;
+    }
   }
 
   .btn-secondary {
     background: $button-bg-color-top-right;
     border: $button-border-color-top;
-    color:$index-text-color;
+    color: $index-text-color;
+
+    @media (max-width: 360px) and (max-height: 710px) {
+      min-width: 30px;
+      font-size: 0.95rem;
+      padding: 0.5em 1.2em;
+    }
+  }
+
+  @media (max-width: 360px) and (max-height: 710px) {
+    gap: 10px;
+    width: 100%;
   }
 }
 
@@ -79,23 +128,17 @@
   font-size: $font-size1rem;
   color: $font-size-6c-color;
   text-align: center;
-}
 
-@media (max-width: 768px) {
-  .lines-wrapper {
-    height: calc(2 * 1.1em);
-  }
-
-  .line {
-    font-size: $computed-font-size2;
-  }
-
-  .buttons {
-    margin-top: $margin-top1;
-    gap: $gap05;
-  }
-
-  .description {
+  @media (max-width: 768px) {
     font-size: $font-size09;
+  }
+
+  @media (max-width: 360px) and (max-height: 710px) {
+    width: 90vw;
+    margin: 0 auto;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    padding: 0 4vw;
+    text-align: center;
   }
 }

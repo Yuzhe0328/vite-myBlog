@@ -7,6 +7,7 @@
             <search class="search-box" />
             <github v-if="showGithub" />
             <gitee v-if="showGitee" />
+            <menu-icon />
         </div>
     </nav>
 </template>
@@ -17,6 +18,8 @@ import search from '@/layout/TopNav/search/index.vue'
 import rightNav from '@/layout/TopNav/rightNav/index.vue'
 import github from '@/components/githubIcon/github.vue'
 import gitee from '@/components/giteeIcon/gitee.vue'
+import menuIcon from '@/layout/TopNav/menu/index.vue'
+
 const rightWidth = ref(true)
 const showGithub = ref(true)
 const showGitee = ref(true)
@@ -59,6 +62,7 @@ onUnmounted(() => {
     height: 55px;
     background: $top-bg-color;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    // overflow: hidden;
 
     .right-nav {
         display: flex;

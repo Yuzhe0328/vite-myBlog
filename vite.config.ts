@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+// import svgLoader from 'vite-svg-loader';
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers' // 如使用 Element Plus
 
 // https://vite.dev/config/
@@ -19,6 +20,7 @@ export default defineConfig(({  }) => {
     base: '/vite-myBlog/',
     plugins: [
       vue(),
+      // svgLoader(),
       AutoImport({
         imports: ['vue', 'vue-router', 'pinia'],
         dts: 'src/auto-imports.d.ts', // 生成声明

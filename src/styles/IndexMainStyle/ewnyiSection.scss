@@ -1,4 +1,5 @@
 @use '@/styles/variables.module.scss' as *;
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -29,24 +30,41 @@
         white-space: nowrap;
         /* 禁止换行 */
         margin: $margin0250;
+
+        @media (max-width: 768px) {
+            white-space: normal;
+            word-break: break-word;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 360px) and (max-height: 710px) {
+            line-height: 1.6;
+            margin: 0.2em 0;
+            max-width: 98vw;
+            overflow-wrap: break-word;
+            word-break: break-all;
+            text-align: center;
+        }
     }
-    .buttons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: $margin-top1;
-        
-        .btn {
-            background: $button-bg-color-top-left;
-            backdrop-filter: $backdrop-filter5px;
-            border: $button-border-color-top;
-            color: $index-text-color;
-        }
-    
-        .btn-secondary {
-            background: $button-bg-color-top-right;
-            border: $button-border-color-top;
-            color: $index-text-color;
-        }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: $margin-top1;
+
+    .btn {
+        background: $button-bg-color-top-left;
+        backdrop-filter: $backdrop-filter5px;
+        border: $button-border-color-top;
+        color: $index-text-color;
+    }
+
+    .btn-secondary {
+        background: $button-bg-color-top-right;
+        border: $button-border-color-top;
+        color: $index-text-color;
     }
 }

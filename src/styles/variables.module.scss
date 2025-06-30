@@ -99,6 +99,8 @@ $small-five-height: 500px;
 $width85: 85%;
 // 宽度96px
 $width96: 96px;
+// 宽度120px
+$width120: 120px;
 // 宽度134px
 $width134: 134px;
 // 宽度150px
@@ -107,6 +109,8 @@ $width150: 150px;
 $width160: 160px;
 // 宽度240px
 $width240: 240px;
+// 宽度65%
+$width65: 65%;
 // 默认宽度
 $width-default: 100%;
 // 默认px宽度
@@ -117,6 +121,8 @@ $width-default-px: 100px;
 $margin0auto: 0 auto;
 // margin 0.25rem 0
 $margin0250: 0.25rem 0;
+// margin-bottom: 10px;
+$margin-bottom10: 10px;
 // margin-bottom 0.5
 $margin-bottom05: 0.5rem;
 // margin-top: 0.5rem
@@ -137,16 +143,24 @@ $margin-bottom4: 4rem;
 $margin-top20: 20rem;
 // margin-left 20px
 $margin-left20: 20px;
+// margin-left 25px
+$margin-left25: 25px;
 // margin-bottom: 24px
 $margin-bottom24: 24px;
 // margin-right 40px
 $margin-right40: 40px;
+// margin-top: 15px
+$margin-top15: 15px;
 // margin-top 50px
 $margin-top50: 50px;
+// marin-top 60px
+$margin-top60: 60px;
 // margin-right 150px
 $margin-right150: 150px;
 // margin-top20 (注意：负值可能有特殊用途)
 $margin-top-20: -20px;
+// margin top 100
+$margin-top-100: 100px;
 // margin top -100px (注意：负值可能有特殊用途)
 $margin-top100: -100px;
 // padding 0
@@ -183,6 +197,8 @@ $yi-er-height: 1.2;
 $yi-liu-height: 1.6;
 
 // 字体变量
+// 字体72px
+$font-size72px: 72px;
 // 字体0.9rem
 $font-size09: 0.9rem;
 // 字体1rem
@@ -213,6 +229,8 @@ $gap1: 1rem;
 $gap15: 1.5rem;
 // 间隙2rem
 $gap2: 2rem;
+// 间隙30px
+$gap30: 30px;
 // 间隙100px
 $gap100: 100px;
 

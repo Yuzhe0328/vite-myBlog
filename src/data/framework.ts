@@ -1,4 +1,3 @@
-import vite from '@/assets/vite.svg'
 import centos from '@/components/pxlogo/centoslogo.svg'
 import ubuntu from '@/components/pxlogo/ubuntulogo.svg'
 import debian from '@/components/pxlogo/debianlogo.svg'

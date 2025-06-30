@@ -42,6 +42,10 @@
       font-weight: bold;
       margin-top: $margin-top-20;
       color: $index-text-color;
+
+      @media (max-width: 768px) {
+        font-size: $font-size125rem;
+      }
     }
 
     .rebot_text {
@@ -59,7 +63,6 @@
       height: $height600;
       margin-bottom: $margin-bottom4;
       padding: $padding15;
-      // box-sizing: border-box;
       border-radius: $border-radius16px;
 
       .content-box {
@@ -108,6 +111,23 @@
           color: $index-text-8b9;
         }
       }
+
+      @media (max-width: 768px) {
+        flex-wrap: wrap;
+        gap: $gap1;
+
+        .card {
+          width: calc(50% - #{$gap1});
+          min-width: 160px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .card {
+          width: 100%;
+          flex: 1;
+        }
+      }
     }
 
     .features-section {
@@ -119,6 +139,10 @@
         color: $index-text-color;
         text-align: center;
         margin-bottom: $margin-bottom2;
+
+        @media (max-width: 768px) {
+          font-size: $font-size175rem;
+        }
       }
 
       .features-grid {
@@ -166,7 +190,7 @@
       width: $width160;
       margin-bottom: $margin-bottom15;
       margin-left: $margin-left20;
-      opacity: 1
+      opacity: 1;
     }
 
     .title {
@@ -187,13 +211,17 @@
       .map-area {
         flex: 1;
         display: flex;
+        justify-content: center;
+        align-items: center;
         width: $max-width600;
-        height: $height600;
+        height: $max-width600;
         margin-right: $margin-right40;
 
         .earth {
-          width: $width-default;
-          max-width: $max-width500;
+          width: $max-width600;
+          height: $max-width600;
+          max-width: $max-width600;
+          max-height: $max-width600;
           animation: float 5s ease-in-out infinite;
           border-radius: $border-radius16px;
         }
@@ -231,15 +259,96 @@
         }
       }
     }
+
+    @media (max-width: 992px) {
+      .dataline-wrap {
+        flex-direction: column;
+        gap: $gap30;
+        align-items: center;
+
+        .map-area {
+          width: $max-width600;
+          height: $max-width600;
+          margin-right: 0;
+          margin-bottom: $margin-bottom2;
+
+          .earth {
+            width: $max-width600;
+            height: $max-width600;
+            max-width: $max-width600;
+            max-height: $max-width600;
+          }
+        }
+
+        .dataline-content {
+          width: $width-default;
+          margin-top: $padding0;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: $padding15;
+      margin-top: $margin-top50;
+
+      .icon {
+        font-size: $font-size72px;
+        width: $width120;
+        margin-bottom: $margin-bottom10;
+      }
+
+      .title {
+        font-size: $font-size175rem;
+        margin-top: $margin-top15;
+      }
+
+      .dataline-wrap {
+        flex-direction: column;
+        gap: $gap30;
+        align-items: center;
+
+        .map-area {
+          width: $small-three-height;
+          height: $small-three-height;
+          margin-right: $padding0;
+          margin-top: $margin-right150;
+
+          .earth {
+            width: $small-three-height;
+            height: $small-three-height;
+            max-width: $small-three-height;
+            max-height: $small-three-height;
+            animation: float 5s ease-in-out infinite;
+            border-radius: $border-radius16px;
+            margin-left: $padding0;
+          }
+        }
+
+        .dataline-content {
+          width: $width-default;
+          margin-top: $width150;
+
+          .text-area {
+            .features {
+              width: $width-default;
+              margin-right: 0;
+              grid-template-columns: 1fr;
+              gap: $gap05;
+
+              li {
+                padding: 4px 8px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   @keyframes float {
-
-    0%,
-    100% {
+    0%, 100% {
       transform: $transform0;
     }
-
     50% {
       transform: $transform20;
     }
@@ -250,30 +359,9 @@
       opacity: 0;
       transform: scale(0.5);
     }
-
     to {
       opacity: 1;
       transform: scale(1);
-    }
-  }
-
-  @media(max-width:992px) {
-    .datalineaction .dataline-content {
-      flex-direction: column;
-      text-align: center;
-
-      .text-area,
-      .map-area {
-        width: $width-default;
-      }
-
-      .features {
-        grid-template-columns: 1fr;
-      }
-
-      .map-area {
-        margin-top: $margin-top2;
-      }
     }
   }
 

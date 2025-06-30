@@ -7,10 +7,10 @@
   /* 保证在滚动时，svg-section 保持可见 */
   animation: slideDown 1s ease-out forwards;
 
-  /* 小屏优化 */
-  @media (max-width: 768px) {
-    padding: $padding150;
-  }
+  // /* 小屏优化 */
+  // @media (max-width: 768px) {
+  //   padding: $padding150;
+  // }
 }
 
 @keyframes slideDown {
@@ -107,7 +107,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) scale(0.9);
-      width: $width150;
+      width: $width96;
+      height: $height80;
       opacity: 0.2;
       filter: $grayscale100;
       transition: all 0.2s ease;
@@ -120,19 +121,26 @@
 @media (max-width: 768px) {
   .svg-section {
     min-height: $small-three-height;
+    margin-top: $margin-top-100;
   }
-
+  .svg-inputs-wrapper {
+    position: absolute;
+    top: -110%;
+    left: -150%;
+  }
   .svg-outputs-wrapper {
-    top: 200px;
-  }
+    position: absolute;
+    top: -12%;
+    left: -170%;
+  } 
 
   .chip {
-    width: $width-default-px;
-    height: $height-default-px;
+    // width: $width-default-px;
+    // height: $height-default-px;
     transform: translate(-50%, -50%) scale(0.7);
   }
-
   .chip__logo {
-    width: $width-default-px;
+    // width: px;
+    height: 96px;
   }
 }

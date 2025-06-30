@@ -21,6 +21,27 @@ import TopBar from '@/layout/TopNav/index.vue'
   .TopNav {
     z-index: 100;
   }
+
+  @media (max-width: 768px) {
+    .top-container .right-nav {
+      margin-right: 20px;
+    }
+    .top-container .right-nav .top-bar {
+      display: none;
+    }
+
+    .top-container .right-nav .github-icon {
+      display: none;
+    }
+
+    .top-container .right-nav .gitee-icon {
+      display: none;
+    }
+
+    .top-container .header-search-overlay-wrapper .search-icon {
+      margin-left: 20px;
+    }
+  }
 }
 
 .main-container {

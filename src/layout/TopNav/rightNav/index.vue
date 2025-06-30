@@ -52,7 +52,7 @@ function changeLang(lang: 'zh' | 'en' | 'kr') {
     display: flex;
     gap: 10px;
     align-items: center;
-    margin-top: 6px;
+    margin-top: 5px;
 
     span {
         color: $index-text-color;
@@ -67,28 +67,28 @@ function changeLang(lang: 'zh' | 'en' | 'kr') {
     }
 }
 
-.custom-dropdown {
-    background-color: #101010;
-    border: none !important;
-    box-shadow: none !important;
-    .el-popper__arrow {
-        display: none;
-    }
+// .custom-dropdown {
+//     background-color: #101010;
+//     border: none !important;
+//     box-shadow: none !important;
+//     .el-popper__arrow {
+//         display: none;
+//     }
 
-}
-/* 同时强制修改 el-dropdown-menu 的背景色 */
-.custom-dropdown .el-dropdown-menu {
-    background-color: #101010;
-    border: none !important;
-}
+// }
+// /* 同时强制修改 el-dropdown-menu 的背景色 */
+// .custom-dropdown .el-dropdown-menu {
+//     background-color: #101010;
+//     border: none !important;
+// }
 
-/* 设置下拉项的颜色、hover 背景（可选） */
-.custom-dropdown .el-dropdown-menu__item {
-    color: #fff;
-}
+// /* 设置下拉项的颜色、hover 背景（可选） */
+// .custom-dropdown .el-dropdown-menu__item {
+//     color: #fff;
+// }
 
 
-.custom-dropdown .el-dropdown-menu__item:hover {
-  background-color: #1a1a1a !important;
-}
+// .custom-dropdown .el-dropdown-menu__item:hover {
+//   background-color: #1a1a1a !important;
+// }
 </style>
