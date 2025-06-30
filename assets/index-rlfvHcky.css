@@ -94,7 +94,7 @@
   position: absolute;
   /* 可根据父容器布局调整 */
 }
-.footer-main[data-v-0be5d7c5] {
+.footer-main[data-v-ad82fd55] {
   display: flex;
   justify-content: center;
   margin-top: 300px;
@@ -103,7 +103,7 @@
   width: 100%;
   min-height: 20vh;
 }
-.footer-main .text[data-v-0be5d7c5] {
+.footer-main .text[data-v-ad82fd55] {
   height: 6.2em;
   display: flex;
   flex-direction: column;
@@ -112,21 +112,20 @@
   overflow: hidden;
   margin-top: 20px;
 }
-.footer-main .text-container[data-v-0be5d7c5] {
+.footer-main .text-container[data-v-ad82fd55] {
   font-size: 15px;
   line-height: 1.5;
   background: linear-gradient(to top, #999, #fff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  white-space: nowrap;
   margin: 0.25rem 0;
 }
-@media (max-width < 768px) {
-.footer-main[data-v-0be5d7c5] {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 768px) {
+.footer-main .text-container[data-v-ad82fd55] {
+    white-space: normal;
+    word-break: break-word;
     text-align: center;
+    font-size: 12px;
 }
 }.page-root[data-v-182736b5] {
   overflow-x: hidden;
