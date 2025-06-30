@@ -124,11 +124,13 @@
     margin-top: $margin-top-100;
   }
   .svg-inputs-wrapper {
+    display: none;
     position: absolute;
     top: -110%;
     left: -150%;
   }
   .svg-outputs-wrapper {
+    display: none;
     position: absolute;
     top: -12%;
     left: -170%;
