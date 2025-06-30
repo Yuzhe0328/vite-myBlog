@@ -563,11 +563,13 @@
     margin-top: 100px;
   }
   .svg-inputs-wrapper {
+    display: none;
     position: absolute;
     top: -110%;
     left: -150%;
   }
   .svg-outputs-wrapper {
+    display: none;
     position: absolute;
     top: -12%;
     left: -170%;
@@ -988,7 +990,7 @@
     font-size: 1.25rem;
   }
   .frameworks-section .framework-row {
-    margin-left: 20px;
+    margin-left: 40px;
   }
 }
 
