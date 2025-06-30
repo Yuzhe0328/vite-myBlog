@@ -37,15 +37,17 @@
         background: linear-gradient(to top, #999, #fff);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        white-space: nowrap;
+        // white-space: nowrap;
         margin: 0.25rem 0;
     }
 
-    @media(max-width < 768px ) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    @media(max-width: 768px) {
+        .text-container {
+            white-space: normal;
+            word-break: break-word;
+            text-align: center;
+            font-size: 12px;
+        }
     }
 }
 </style>
